@@ -1,0 +1,73 @@
+/* [project]/src/components/HowIWork/HowIWork.module.css [app-client] (css) */
+.HowIWork-module__oM6r_q__section {
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: 6rem 2rem;
+}
+
+.HowIWork-module__oM6r_q__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.HowIWork-module__oM6r_q__header {
+  max-width: 540px;
+  margin-bottom: 3rem;
+}
+
+.HowIWork-module__oM6r_q__title {
+  margin-bottom: 1rem;
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.HowIWork-module__oM6r_q__intro {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.HowIWork-module__oM6r_q__grid {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  display: grid;
+}
+
+.HowIWork-module__oM6r_q__card {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  flex-direction: column;
+  gap: .75rem;
+  padding: 1.75rem;
+  display: flex;
+}
+
+.HowIWork-module__oM6r_q__cardTitle {
+  font-size: 1.05rem;
+  font-family: var(--font-display);
+}
+
+.HowIWork-module__oM6r_q__cardBody {
+  color: var(--color-text-muted);
+  font-size: .9rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 1024px) {
+  .HowIWork-module__oM6r_q__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .HowIWork-module__oM6r_q__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .HowIWork-module__oM6r_q__section {
+    padding: 4rem 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=src_components_HowIWork_HowIWork_module_css_0w3-wzy._.single.css.map*/

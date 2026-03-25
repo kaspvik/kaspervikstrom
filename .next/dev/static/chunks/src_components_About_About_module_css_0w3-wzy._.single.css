@@ -1,0 +1,50 @@
+/* [project]/src/components/About/About.module.css [app-client] (css) */
+.About-module__S-Ka5a__section {
+  padding: 6rem 2rem;
+}
+
+.About-module__S-Ka5a__inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.About-module__S-Ka5a__content {
+  flex-direction: column;
+  gap: 1.25rem;
+  display: flex;
+}
+
+.About-module__S-Ka5a__title {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.About-module__S-Ka5a__body {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.About-module__S-Ka5a__skills {
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: .75rem;
+  list-style: none;
+  display: flex;
+}
+
+.About-module__S-Ka5a__skill {
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  border-radius: 999px;
+  padding: .35rem .85rem;
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .About-module__S-Ka5a__section {
+    padding: 4rem 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=src_components_About_About_module_css_0w3-wzy._.single.css.map*/

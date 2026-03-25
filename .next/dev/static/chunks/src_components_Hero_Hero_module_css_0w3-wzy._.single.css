@@ -1,0 +1,108 @@
+/* [project]/src/components/Hero/Hero.module.css [app-client] (css) */
+.Hero-module__JgYmMq__hero {
+  padding: 6rem 2rem 5rem;
+}
+
+.Hero-module__JgYmMq__inner {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+}
+
+.Hero-module__JgYmMq__content {
+  flex-direction: column;
+  gap: 1.5rem;
+  display: flex;
+}
+
+.Hero-module__JgYmMq__label {
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.Hero-module__JgYmMq__headline {
+  color: var(--color-text);
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.Hero-module__JgYmMq__intro {
+  color: var(--color-text-muted);
+  max-width: 44ch;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.Hero-module__JgYmMq__actions {
+  flex-wrap: wrap;
+  gap: 1rem;
+  display: flex;
+}
+
+.Hero-module__JgYmMq__btnPrimary {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  border-radius: var(--radius-sm);
+  align-items: center;
+  padding: .75rem 1.75rem;
+  font-size: .9rem;
+  font-weight: 500;
+  transition: opacity .2s;
+  display: inline-flex;
+}
+
+.Hero-module__JgYmMq__btnPrimary:hover {
+  opacity: .8;
+}
+
+.Hero-module__JgYmMq__btnSecondary {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  align-items: center;
+  padding: .75rem 1.75rem;
+  font-size: .9rem;
+  font-weight: 500;
+  transition: border-color .2s, background-color .2s;
+  display: inline-flex;
+}
+
+.Hero-module__JgYmMq__btnSecondary:hover {
+  background-color: var(--color-surface);
+  border-color: var(--color-text-muted);
+}
+
+.Hero-module__JgYmMq__micro {
+  color: var(--color-text-muted);
+  font-size: .8rem;
+}
+
+.Hero-module__JgYmMq__visual {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+}
+
+.Hero-module__JgYmMq__visualPlaceholder {
+  background-color: var(--color-border);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .Hero-module__JgYmMq__inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .Hero-module__JgYmMq__hero {
+    padding: 4rem 1.5rem 3rem;
+  }
+}
+
+/*# sourceMappingURL=src_components_Hero_Hero_module_css_0w3-wzy._.single.css.map*/
