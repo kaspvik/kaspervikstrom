@@ -1,9 +1,9 @@
-import Navbar from "@/components/Navbar/Navbar";
-import Hero from "@/components/Hero/Hero";
-import SelectedWork from "@/components/SelectedWork/SelectedWork";
-import HowIWork from "@/components/HowIWork/HowIWork";
-import About from "@/components/About/About";
-import Footer from "@/components/Footer/Footer";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import SelectedWork from "@/components/SelectedWork";
+import HowIWork from "@/components/HowIWork";
+import About from "@/components/About";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
