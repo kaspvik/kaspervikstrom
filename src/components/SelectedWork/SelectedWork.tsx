@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import styles from "./SelectedWork.module.css";
 
@@ -12,6 +13,7 @@ const projects = [
       "A dashboard and presentation concept focused on clear information hierarchy, reusable components, and slide-based communication.",
     tags: ["React", "TypeScript", "Storybook", "Dashboard UI", "API Integration"],
     featured: true,
+    href: "/projects/webdoc",
   },
   {
     id: "boomi",
@@ -56,30 +58,38 @@ export default function SelectedWork() {
         </div>
 
         <div className={styles.grid}>
-          {projects.map((project, i) => (
-            <motion.article
-              key={project.id}
-              className={`${styles.card} ${project.featured ? styles.featured : ""}`}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ delay: i * 0.08, duration: 0.45, ease: "easeOut" }}
-            >
-              <div className={styles.cardVisual} />
-              <div className={styles.cardBody}>
-                <span className={styles.cardCategory}>{project.category}</span>
-                <h3 className={styles.cardTitle}>{project.title}</h3>
-                <p className={styles.cardDescription}>{project.description}</p>
-                <ul className={styles.tags} aria-label="Technologies">
-                  {project.tags.map((tag) => (
-                    <li key={tag} className={styles.tag}>
-                      {tag}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </motion.article>
-          ))}
+          {projects.map((project, i) => {
+            const card = (
+              <motion.article
+                key={project.id}
+                className={`${styles.card} ${project.featured ? styles.featured : ""}`}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-80px" }}
+                transition={{ delay: i * 0.08, duration: 0.45, ease: "easeOut" }}
+              >
+                <div className={styles.cardVisual} />
+                <div className={styles.cardBody}>
+                  <span className={styles.cardCategory}>{project.category}</span>
+                  <h3 className={styles.cardTitle}>{project.title}</h3>
+                  <p className={styles.cardDescription}>{project.description}</p>
+                  <ul className={styles.tags} aria-label="Technologies">
+                    {project.tags.map((tag) => (
+                      <li key={tag} className={styles.tag}>
+                        {tag}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </motion.article>
+            );
+
+            return project.href ? (
+              <Link key={project.id} href={project.href} className={styles.cardLink}>
+                {card}
+              </Link>
+            ) : card;
+          })}
         </div>
       </div>
     </section>
