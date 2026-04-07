@@ -18,6 +18,18 @@
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
+/* Jazz Mode theme */
+[data-jazz="true"] {
+  --color-bg: #1c1409;
+  --color-text: #f0e6d0;
+  --color-text-muted: #9a8870;
+  --color-accent: #c9902a;
+  --color-border: #3a2e1e;
+  --color-surface: #261b0f;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
 *,
 *::before,
 *::after {
@@ -33,6 +45,7 @@ html {
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
+  transition: background-color 0.5s ease, color 0.4s ease;
   font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.6;
