@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import styles from "./webdoc.module.css";
 
 const tech = [
@@ -32,16 +32,11 @@ export default function WebdocPage() {
           className={styles.back}
           initial={{ opacity: 0, x: -8 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.4 }}
-        >
+          transition={{ duration: 0.4 }}>
           <Link href="/#work">← Back to work</Link>
         </motion.div>
 
-        <motion.div
-          className={styles.hero}
-          initial="hidden"
-          animate="visible"
-        >
+        <motion.div className={styles.hero} initial="hidden" animate="visible">
           <motion.span className={styles.category} custom={0} variants={fadeUp}>
             Internship Project
           </motion.span>
@@ -60,8 +55,7 @@ export default function WebdocPage() {
           className={styles.images}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.5 }}
-        >
+          transition={{ delay: 0.3, duration: 0.5 }}>
           <div className={styles.imageFeatured} aria-hidden="true" />
           <div className={styles.imageGrid}>
             <div className={styles.imageThumb} aria-hidden="true" />
@@ -73,8 +67,7 @@ export default function WebdocPage() {
           className={styles.details}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.45, duration: 0.5 }}
-        >
+          transition={{ delay: 0.45, duration: 0.5 }}>
           <div className={styles.role}>
             <h2 className={styles.sectionTitle}>My role</h2>
             <p>
