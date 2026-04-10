@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import styles from "./webdoc.module.css";
 
 const tech = [
@@ -16,6 +17,11 @@ const tech = [
   "CSS Modules",
 ];
 
+const images = [
+  { src: "/images/widget-page.png", alt: "Widget page" },
+  { src: "/images/presentation-page.png", alt: "Presentation editor" },
+];
+
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
   visible: (i: number) => ({
@@ -26,6 +32,17 @@ const fadeUp = {
 };
 
 export default function WebdocPage() {
+  const [lightbox, setLightbox] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!lightbox) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setLightbox(null);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [lightbox]);
+
   return (
     <main className={styles.page}>
       <div className={styles.inner}>
@@ -57,49 +74,50 @@ export default function WebdocPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.5 }}>
-          <div className={styles.imageFeatured}>
-            <Image
-              src="/images/presentation-page.png"
-              alt="Presentation editor overview"
-              fill
+          <div className={`${styles.imageFeatured} ${styles.imageVideo}`}>
+            <video
+              src="/videos/webdoc-slides.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
               className={styles.img}
             />
           </div>
-          <div className={styles.imageGrid}>
-            <div className={styles.imageThumb}>
+          {images.map(({ src, alt }) => (
+            <button
+              key={src}
+              className={styles.imageThumb}
+              onClick={() => setLightbox(src)}
+              aria-label={`Enlarge: ${alt}`}>
               <Image
-                src="/images/widget-page.png"
-                alt="Widget page"
+                src={src}
+                alt={alt}
                 fill
+                sizes="(max-width: 768px) 85vw, 430px"
                 className={styles.img}
               />
-            </div>
-            <div className={styles.imageThumb}>
+            </button>
+          ))}
+        </motion.div>
+
+        {lightbox && (
+          <div
+            className={styles.lightbox}
+            onClick={() => setLightbox(null)}
+            role="dialog"
+            aria-modal="true">
+            <div className={styles.lightboxInner}>
               <Image
-                src="/images/metric-slide.png"
-                alt="Metric slide"
+                src={lightbox}
+                alt=""
                 fill
-                className={styles.img}
-              />
-            </div>
-            <div className={styles.imageThumb}>
-              <Image
-                src="/images/goodMorning-slide.png"
-                alt="Good morning slide"
-                fill
-                className={styles.img}
-              />
-            </div>
-            <div className={styles.imageThumb}>
-              <Image
-                src="/images/vastrafik-slide.png"
-                alt="Västtrafik slide"
-                fill
-                className={styles.img}
+                className={styles.lightboxImg}
               />
             </div>
           </div>
-        </motion.div>
+        )}
 
         <motion.div
           className={styles.details}

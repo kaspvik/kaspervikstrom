@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import LazyVideo from "@/components/LazyVideo/LazyVideo";
 import styles from "./SelectedWork.module.css";
 
 const projects = [
@@ -14,6 +15,7 @@ const projects = [
     tags: ["React", "TypeScript", "Storybook", "Dashboard UI", "API Integration"],
     featured: true,
     href: "/projects/webdoc",
+    video: "/videos/webdoc-slides.mp4",
   },
   {
     id: "boomi",
@@ -68,7 +70,11 @@ export default function SelectedWork() {
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ delay: i * 0.08, duration: 0.45, ease: "easeOut" }}
               >
-                <div className={styles.cardVisual} />
+                <div className={styles.cardVisual}>
+                  {project.video && (
+                    <LazyVideo src={project.video} className={styles.cardVideo} />
+                  )}
+                </div>
                 <div className={styles.cardBody}>
                   <span className={styles.cardCategory}>{project.category}</span>
                   <h3 className={styles.cardTitle}>{project.title}</h3>
