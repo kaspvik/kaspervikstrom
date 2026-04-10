@@ -1,8 +1,9 @@
 "use client";
 
-import Link from "next/link";
-import { motion } from "framer-motion";
 import LazyVideo from "@/components/LazyVideo/LazyVideo";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 import styles from "./SelectedWork.module.css";
 
 const projects = [
@@ -12,7 +13,13 @@ const projects = [
     category: "Internship Project",
     description:
       "A dashboard and presentation concept focused on clear information hierarchy, reusable components, and slide-based communication.",
-    tags: ["React", "TypeScript", "Storybook", "Dashboard UI", "API Integration"],
+    tags: [
+      "React",
+      "TypeScript",
+      "Storybook",
+      "Dashboard UI",
+      "API Integration",
+    ],
     featured: true,
     href: "/projects/webdoc",
     video: "/videos/webdoc-slides.mp4",
@@ -25,6 +32,8 @@ const projects = [
       "A playful interactive project combining strong visual identity, frontend logic, and an engaging user experience.",
     tags: ["React", "Game UI", "Interactive Design", "Frontend"],
     featured: false,
+    href: "/projects/boomi",
+    image: "/images/boomi-header.png",
   },
   {
     id: "onecom",
@@ -68,17 +77,37 @@ export default function SelectedWork() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
-                transition={{ delay: i * 0.08, duration: 0.45, ease: "easeOut" }}
-              >
+                transition={{
+                  delay: i * 0.08,
+                  duration: 0.45,
+                  ease: "easeOut",
+                }}>
                 <div className={styles.cardVisual}>
                   {project.video && (
-                    <LazyVideo src={project.video} className={styles.cardVideo} />
+                    <LazyVideo
+                      src={project.video}
+                      className={styles.cardVideo}
+                    />
+                  )}
+                  {project.image && !project.video && (
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className={styles.cardVideo}
+                      style={{ objectFit: "cover" }}
+                    />
                   )}
                 </div>
                 <div className={styles.cardBody}>
-                  <span className={styles.cardCategory}>{project.category}</span>
+                  <span className={styles.cardCategory}>
+                    {project.category}
+                  </span>
                   <h3 className={styles.cardTitle}>{project.title}</h3>
-                  <p className={styles.cardDescription}>{project.description}</p>
+                  <p className={styles.cardDescription}>
+                    {project.description}
+                  </p>
                   <ul className={styles.tags} aria-label="Technologies">
                     {project.tags.map((tag) => (
                       <li key={tag} className={styles.tag}>
@@ -91,10 +120,15 @@ export default function SelectedWork() {
             );
 
             return project.href ? (
-              <Link key={project.id} href={project.href} className={styles.cardLink}>
+              <Link
+                key={project.id}
+                href={project.href}
+                className={styles.cardLink}>
                 {card}
               </Link>
-            ) : card;
+            ) : (
+              card
+            );
           })}
         </div>
       </div>
