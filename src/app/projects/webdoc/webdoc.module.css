@@ -63,10 +63,11 @@
 }
 
 .imageFeatured {
+  position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
-  background: var(--color-border);
   border-radius: var(--radius-md);
+  overflow: hidden;
 }
 
 .imageGrid {
@@ -76,9 +77,14 @@
 }
 
 .imageThumb {
+  position: relative;
   aspect-ratio: 16 / 9;
-  background: var(--color-border);
   border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.img {
+  object-fit: cover;
 }
 
 /* Details */

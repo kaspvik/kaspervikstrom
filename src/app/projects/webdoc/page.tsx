@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./webdoc.module.css";
 
@@ -56,10 +57,47 @@ export default function WebdocPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.5 }}>
-          <div className={styles.imageFeatured} aria-hidden="true" />
+          <div className={styles.imageFeatured}>
+            <Image
+              src="/images/presentation-page.png"
+              alt="Presentation editor overview"
+              fill
+              className={styles.img}
+            />
+          </div>
           <div className={styles.imageGrid}>
-            <div className={styles.imageThumb} aria-hidden="true" />
-            <div className={styles.imageThumb} aria-hidden="true" />
+            <div className={styles.imageThumb}>
+              <Image
+                src="/images/widget-page.png"
+                alt="Widget page"
+                fill
+                className={styles.img}
+              />
+            </div>
+            <div className={styles.imageThumb}>
+              <Image
+                src="/images/metric-slide.png"
+                alt="Metric slide"
+                fill
+                className={styles.img}
+              />
+            </div>
+            <div className={styles.imageThumb}>
+              <Image
+                src="/images/goodMorning-slide.png"
+                alt="Good morning slide"
+                fill
+                className={styles.img}
+              />
+            </div>
+            <div className={styles.imageThumb}>
+              <Image
+                src="/images/vastrafik-slide.png"
+                alt="Västtrafik slide"
+                fill
+                className={styles.img}
+              />
+            </div>
           </div>
         </motion.div>
 
