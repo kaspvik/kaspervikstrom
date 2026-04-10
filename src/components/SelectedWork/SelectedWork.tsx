@@ -36,22 +36,15 @@ const projects = [
     image: "/images/boomi-header.png",
   },
   {
-    id: "onecom",
-    title: "One.com Project",
+    id: "flinq",
+    title: "Flinq",
     category: "Client Work",
     description:
-      "A client website developed from provided design direction, with focus on implementation quality, responsiveness, and visual consistency.",
-    tags: ["Client Work", "Responsive UI", "Frontend"],
+      "Design and launch of a new website focused on clearly communicating business value, building trust, and guiding potential customers to take the next step.",
+    tags: ["Client Work", "Web Design", "One", "Performance"],
     featured: false,
-  },
-  {
-    id: "gottigheter",
-    title: "Gottigheter",
-    category: "Personal Project",
-    description:
-      "A visually driven web project with a playful tone, built to explore interface design and interaction.",
-    tags: ["Frontend", "UI Design"],
-    featured: false,
+    href: "/projects/flinq",
+    image: "/images/flinq.png",
   },
 ];
 
