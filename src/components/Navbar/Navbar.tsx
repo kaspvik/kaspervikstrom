@@ -1,10 +1,17 @@
 "use client";
 
+import { useLang } from "@/context/LanguageContext";
+import en from "@/messages/en.json";
+import sv from "@/messages/sv.json";
 import Link from "next/link";
 import styles from "./Navbar.module.css";
 import { useJazzMode } from "./hooks/jazzMode";
 
+const messages = { en, sv };
+
 export default function Navbar() {
+  const { lang, toggle } = useLang();
+  const t = messages[lang].nav;
   const { jazzMode, setJazzMode, muted, toggleMute, audioRef } = useJazzMode();
 
   return (
@@ -14,20 +21,22 @@ export default function Navbar() {
         <Link href="/" className={styles.logo}>
           Kasper Vikström
         </Link>
+
         <ul className={styles.links}>
           <li>
-            <Link href="#work">Work</Link>
+            <Link href="#work">{t.work}</Link>
           </li>
           <li>
-            <Link href="#about">About</Link>
+            <Link href="#about">{t.about}</Link>
           </li>
           <li>
-            <Link href="#experience">Experience</Link>
+            <Link href="#experience">{t.experience}</Link>
           </li>
           <li>
-            <Link href="#contact">Contact</Link>
+            <Link href="#contact">{t.contact}</Link>
           </li>
         </ul>
+
         <div className={styles.jazzGroup}>
           <button
             className={`${styles.jazzBtn} ${jazzMode ? styles.jazzActive : ""}`}
@@ -36,6 +45,7 @@ export default function Navbar() {
             aria-label="Toggle Jazz Mode">
             {jazzMode ? "Jazz On" : "Jazz Mode"}
           </button>
+
           {jazzMode && (
             <button
               className={`${styles.saxBtn} ${muted ? styles.saxMuted : ""}`}
@@ -46,8 +56,16 @@ export default function Navbar() {
             </button>
           )}
         </div>
+
+        <button
+          onClick={toggle}
+          className={styles.langToggle}
+          aria-label="Toggle language">
+          {lang === "en" ? "SV" : "EN"}
+        </button>
+
         <Link href="#work" className={styles.cta}>
-          View Projects
+          {t.cta}
         </Link>
       </nav>
     </header>

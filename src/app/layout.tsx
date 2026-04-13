@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Serif_Display, Inter } from "next/font/google";
 import "@/styles/globals.css";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 const dmSerifDisplay = DM_Serif_Display({
   variable: "--font-display",
@@ -26,7 +27,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${dmSerifDisplay.variable} ${inter.variable}`}>
-      <body>{children}</body>
+      <body>
+        <LanguageProvider>{children}</LanguageProvider>
+      </body>
     </html>
   );
 }

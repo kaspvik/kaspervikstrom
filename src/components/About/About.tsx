@@ -1,7 +1,12 @@
 "use client";
 
+import { useLang } from "@/context/LanguageContext";
+import en from "@/messages/en.json";
+import sv from "@/messages/sv.json";
 import { motion } from "framer-motion";
 import styles from "./About.module.css";
+
+const messages = { en, sv };
 
 const skills = [
   "React",
@@ -16,6 +21,9 @@ const skills = [
 ];
 
 export default function About() {
+  const { lang } = useLang();
+  const t = messages[lang].about;
+
   return (
     <section id="about" className={styles.section}>
       <div className={styles.inner}>
@@ -26,23 +34,10 @@ export default function About() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
-          <h2 className={styles.title}>About</h2>
-          <p className={styles.body}>
-            I&apos;m a fullstack-trained developer with a strong interest in
-            frontend, UI, accessibility, and user experience. I enjoy creating
-            digital products that feel thoughtful, modern, and easy to use.
-          </p>
-          <p className={styles.body}>
-            My background includes school projects, internship work, client
-            projects, and component-based frontend development. I&apos;ve worked
-            with UI implementation, Storybook, Figma, API integration, and both
-            frontend and backend development.
-          </p>
-          <p className={styles.body}>
-            What drives me most is the combination of creativity and structure —
-            finding ways to turn ideas, layouts, and user needs into real
-            products.
-          </p>
+          <h2 className={styles.title}>{t.title}</h2>
+          <p className={styles.body}>{t.body1}</p>
+          <p className={styles.body}>{t.body2}</p>
+          <p className={styles.body}>{t.body3}</p>
           <ul className={styles.skills} aria-label="Skills">
             {skills.map((skill) => (
               <li key={skill} className={styles.skill}>

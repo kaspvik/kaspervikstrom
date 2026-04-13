@@ -1,0 +1,111 @@
+{
+  "hero": {
+    "label": "Fullstack Developer / UI-Focused",
+    "headline": "Fullstack developer focused on modern UI, accessibility, and thoughtful digital experiences.",
+    "intro": "I'm a fullstack-trained developer with a passion for thoughtful interfaces, strong component structure, and user-centered design.",
+    "btnPrimary": "View My Work",
+    "btnSecondary": "About Me",
+    "micro": "Based in Gothenburg, Sweden · Available for work and freelance opportunities"
+  },
+  "selectedWork": {
+    "title": "Selected Work",
+    "intro": "A selection of projects spanning internship work, client work, exam projects, and interactive concepts — with a focus on UI, structure, and user experience.",
+    "projects": {
+      "webdoc": {
+        "category": "Internship Project",
+        "description": "A dashboard and presentation concept focused on clear information hierarchy, reusable components, and slide-based communication."
+      },
+      "boomi": {
+        "category": "Exam Project",
+        "description": "A playful interactive project combining strong visual identity, frontend logic, and an engaging user experience."
+      },
+      "flinq": {
+        "category": "Client Work",
+        "description": "Design and launch of a new website focused on clearly communicating business value, building trust, and guiding potential customers to take the next step."
+      },
+      "akarui": {
+        "category": "Group Project",
+        "description": "A full-stack candle e-commerce store with product listings, cart, checkout, order confirmation, and an admin panel for managing products."
+      }
+    }
+  },
+  "howIWork": {
+    "title": "How I Work",
+    "intro": "I enjoy combining visual thinking with technical structure — building interfaces that feel modern, clear, and usable.",
+    "cards": [
+      {
+        "title": "UI with intention",
+        "body": "I care about layout, hierarchy, spacing, and visual clarity. Good design should not only look good — it should make things easier to understand and use."
+      },
+      {
+        "title": "Accessibility from the start",
+        "body": "I want interfaces to be readable, inclusive, and usable for more people. Accessibility is something I want to keep improving in every project."
+      },
+      {
+        "title": "Component-based thinking",
+        "body": "I enjoy building reusable components and structured UI systems that make products easier to scale and maintain."
+      },
+      {
+        "title": "Curious and fast-learning",
+        "body": "I like exploring new tools, workflows, and technologies early, especially when they can improve how something is built or experienced."
+      }
+    ]
+  },
+  "about": {
+    "title": "About",
+    "body1": "I'm a fullstack-trained developer with a strong interest in frontend, UI, accessibility, and user experience. I enjoy creating digital products that feel thoughtful, modern, and easy to use.",
+    "body2": "My background includes school projects, internship work, client projects, and component-based frontend development. I've worked with UI implementation, Storybook, Figma, API integration, and both frontend and backend development.",
+    "body3": "What drives me most is the combination of creativity and structure — finding ways to turn ideas, layouts, and user needs into real products."
+  },
+  "footer": {
+    "tagline": "Based in Gothenburg, Sweden · Available for work and freelance"
+  },
+  "common": {
+    "backToWork": "← Back to work"
+  },
+  "nav": {
+    "work": "Work",
+    "about": "About",
+    "experience": "Experience",
+    "contact": "Contact",
+    "cta": "View Projects"
+  },
+  "projects": {
+    "webdoc": {
+      "category": "Internship Project",
+      "intro": "Webdoc Insights is an internal web application for visualising key metrics and building presentation views with dynamic content. The project consists of a dashboard, a presentation editor, and a presentation player.",
+      "roleTitle": "My role",
+      "role1": "I worked primarily with frontend development and UI, contributing to building reusable components in Storybook, developing widgets for statistics display, and creating various slides for presenting data such as weather, traffic, and key metrics.",
+      "role2": "The focus was on creating a flexible, modern, and clear user experience where data becomes more accessible and visually engaging.",
+      "stackTitle": "Tech Stack"
+    },
+    "boomi": {
+      "category": "Exam Project",
+      "intro": "A fast, social party game for 4–12 players. Players connect via mobile or desktop to a shared room where a pixelated bomb creature — Boomi — is passed around during a 60-second round. One player secretly places Boomi. Everyone else tries to figure out who.",
+      "roleTitle": "My role",
+      "role1": "Solo project — I handled everything from game design and UX to frontend development and deployment. This included building the real-time multiplayer flow with Firestore, designing the pixel UI system, implementing sprite animations with PixiJS, and adding sound effects and background music via Howler.js.",
+      "role2": "The project was built over six weeks as part of a school exam, with a focus on playability, accessibility (WCAG 2.1 A/AA), and a coherent retro aesthetic throughout.",
+      "stackTitle": "Tech Stack"
+    },
+    "flinq": {
+      "category": "Client Work",
+      "intro": "Design and launch of a new website for Flinq, a company focused on cost savings and analysis within supply chain. The goal was to quickly communicate business value, build trust, and make it easy for potential customers to take the next step.",
+      "aboutTitle": "About the project",
+      "about1": "The project involved designing and launching a website that clearly explains what Flinq does, what problem they solve, and how to get in touch — with business value and user experience at the centre.",
+      "about2": "The site was built using One, which enabled an efficient workflow where design, content, and structure could be developed in parallel. This allowed for quick iteration and landing on a solution that is easy to maintain and ready to scale.",
+      "focusTitle": "Focus areas",
+      "focusAreas": ["Clear structure", "Business-driven content", "Fast performance", "Trust & credibility", "Easy to maintain"]
+    },
+    "akarui": {
+      "category": "Group Project",
+      "intro": "A full-stack e-commerce web application for a fictional candle brand. Built as a group assignment covering a complete webshop with product listings, cart, checkout, order confirmation, and an admin panel for managing products.",
+      "aboutTitle": "About the project",
+      "about1": "Hikari is a candle e-commerce store built with Next.js App Router, using Server Actions for all CRUD operations and Prisma with SQLite as the database layer. The project was developed in a group as part of a school assignment, covering both the customer-facing store and a full admin panel.",
+      "about2": "The store lets customers browse products, manage their cart, fill in shipping details with full form validation, and receive a confirmation with a unique order number. The admin panel supports adding, editing, and removing products from the database.",
+      "about3": "I also created all product images and mockups for the store — designing the candle visuals used across the product listings and detail pages.",
+      "stackTitle": "Tech stack",
+      "featuresTitle": "Features",
+      "features": ["Admin CRUD panel", "Shopping cart", "Checkout & validation", "Order confirmation", "LocalStorage persistence", "Responsive design"]
+    }
+  }
+}
