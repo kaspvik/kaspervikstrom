@@ -1,4 +1,14 @@
 {
+  "contact": {
+    "title": "Kontakt",
+    "intro": "Jag är öppen för nya möjligheter, samarbeten och frilansprojekt. Hör gärna av dig.",
+    "labels": {
+      "email": "E-post",
+      "phone": "Telefon",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
   "nav": {
     "work": "Projekt",
     "about": "Om mig",

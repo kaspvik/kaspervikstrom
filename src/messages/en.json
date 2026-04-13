@@ -63,6 +63,16 @@
   "common": {
     "backToWork": "← Back to work"
   },
+  "contact": {
+    "title": "Get in Touch",
+    "intro": "I'm open to new opportunities, collaborations, and freelance projects. Feel free to reach out.",
+    "labels": {
+      "email": "Email",
+      "phone": "Phone",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
   "nav": {
     "work": "Work",
     "about": "About",
