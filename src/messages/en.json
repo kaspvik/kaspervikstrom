@@ -6,5 +6,49 @@
     "btnPrimary": "View My Work",
     "btnSecondary": "About Me",
     "micro": "Based in Gothenburg, Sweden · Available for work and freelance opportunities"
+  },
+  "selectedWork": {
+    "title": "Selected Work",
+    "intro": "A selection of projects spanning internship work, client work, exam projects, and interactive concepts — with a focus on UI, structure, and user experience.",
+    "projects": {
+      "webdoc": {
+        "category": "Internship Project",
+        "description": "A dashboard and presentation concept focused on clear information hierarchy, reusable components, and slide-based communication."
+      },
+      "boomi": {
+        "category": "Exam Project",
+        "description": "A playful interactive project combining strong visual identity, frontend logic, and an engaging user experience."
+      },
+      "flinq": {
+        "category": "Client Work",
+        "description": "Design and launch of a new website focused on clearly communicating business value, building trust, and guiding potential customers to take the next step."
+      },
+      "akarui": {
+        "category": "Group Project",
+        "description": "A full-stack candle e-commerce store with product listings, cart, checkout, order confirmation, and an admin panel for managing products."
+      }
+    }
+  },
+  "howIWork": {
+    "title": "How I Work",
+    "intro": "I enjoy combining visual thinking with technical structure — building interfaces that feel modern, clear, and usable.",
+    "cards": [
+      {
+        "title": "UI with intention",
+        "body": "I care about layout, hierarchy, spacing, and visual clarity. Good design should not only look good — it should make things easier to understand and use."
+      },
+      {
+        "title": "Accessibility from the start",
+        "body": "I want interfaces to be readable, inclusive, and usable for more people. Accessibility is something I want to keep improving in every project."
+      },
+      {
+        "title": "Component-based thinking",
+        "body": "I enjoy building reusable components and structured UI systems that make products easier to scale and maintain."
+      },
+      {
+        "title": "Curious and fast-learning",
+        "body": "I like exploring new tools, workflows, and technologies early, especially when they can improve how something is built or experienced."
+      }
+    ]
   }
 }

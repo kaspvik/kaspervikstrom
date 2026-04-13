@@ -6,5 +6,49 @@
     "btnPrimary": "Se mina projekt",
     "btnSecondary": "Om mig",
     "micro": "Baserad i Göteborg, Sverige · Tillgänglig för arbete och frilansprojekt"
+  },
+  "selectedWork": {
+    "title": "Utvalda projekt",
+    "intro": "Ett urval projekt inom praktikarbete, kunduppdrag, examensprojekt och interaktiva koncept — med fokus på UI, struktur och användarupplevelse.",
+    "projects": {
+      "webdoc": {
+        "category": "Praktikprojekt",
+        "description": "Ett dashboard- och presentationskoncept med fokus på tydlig informationshierarki, återanvändbara komponenter och bildbaserad kommunikation."
+      },
+      "boomi": {
+        "category": "Examensprojekt",
+        "description": "Ett lekfullt interaktivt projekt som kombinerar stark visuell identitet, frontend-logik och en engagerande användarupplevelse."
+      },
+      "flinq": {
+        "category": "Kundarbete",
+        "description": "Design och lansering av en ny webbplats med fokus på att tydligt kommunicera affärsvärde, bygga förtroende och guida potentiella kunder till nästa steg."
+      },
+      "akarui": {
+        "category": "Grupprojekt",
+        "description": "En fullstack e-handelssajt för ljus med produktlistning, varukorg, checkout, orderbekräftelse och ett adminpanel för produkthantering."
+      }
+    }
+  },
+  "howIWork": {
+    "title": "Så här jobbar jag",
+    "intro": "Jag kombinerar gärna visuellt tänkande med teknisk struktur — och bygger gränssnitt som känns moderna, tydliga och användbara.",
+    "cards": [
+      {
+        "title": "UI med intention",
+        "body": "Jag bryr mig om layout, hierarki, spacing och visuell tydlighet. Bra design ska inte bara se bra ut — den ska göra saker lättare att förstå och använda."
+      },
+      {
+        "title": "Tillgänglighet från start",
+        "body": "Jag vill att gränssnitt ska vara läsbara, inkluderande och användbara för fler. Tillgänglighet är något jag vill fortsätta förbättra i varje projekt."
+      },
+      {
+        "title": "Komponentbaserat tänkande",
+        "body": "Jag gillar att bygga återanvändbara komponenter och strukturerade UI-system som gör produkter lättare att skala och underhålla."
+      },
+      {
+        "title": "Nyfiken och snabblärd",
+        "body": "Jag utforskar gärna nya verktyg, arbetsflöden och tekniker tidigt — särskilt när de kan förbättra hur något byggs eller upplevs."
+      }
+    ]
   }
 }

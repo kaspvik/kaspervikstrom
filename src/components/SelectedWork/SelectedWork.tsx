@@ -1,25 +1,21 @@
 "use client";
 
 import LazyVideo from "@/components/LazyVideo/LazyVideo";
+import { useLang } from "@/context/LanguageContext";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import en from "@/messages/en.json";
+import sv from "@/messages/sv.json";
 import styles from "./SelectedWork.module.css";
+
+const messages = { en, sv };
 
 const projects = [
   {
     id: "webdoc",
     title: "Webdoc Dashboard",
-    category: "Internship Project",
-    description:
-      "A dashboard and presentation concept focused on clear information hierarchy, reusable components, and slide-based communication.",
-    tags: [
-      "React",
-      "TypeScript",
-      "Storybook",
-      "Dashboard UI",
-      "API Integration",
-    ],
+    tags: ["React", "TypeScript", "Storybook", "Dashboard UI", "API Integration"],
     featured: true,
     href: "/projects/webdoc",
     video: "/videos/webdoc-slides.mp4",
@@ -27,9 +23,6 @@ const projects = [
   {
     id: "boomi",
     title: "Boomi Countdown",
-    category: "Exam Project",
-    description:
-      "A playful interactive project combining strong visual identity, frontend logic, and an engaging user experience.",
     tags: ["React", "Game UI", "Interactive Design", "Frontend"],
     featured: false,
     href: "/projects/boomi",
@@ -38,9 +31,6 @@ const projects = [
   {
     id: "flinq",
     title: "Flinq",
-    category: "Client Work",
-    description:
-      "Design and launch of a new website focused on clearly communicating business value, building trust, and guiding potential customers to take the next step.",
     tags: ["Client Work", "Web Design", "One", "Performance"],
     featured: false,
     href: "/projects/flinq",
@@ -49,9 +39,6 @@ const projects = [
   {
     id: "akarui",
     title: "Hikari",
-    category: "Group Project",
-    description:
-      "A full-stack candle e-commerce store with product listings, cart, checkout, order confirmation, and an admin panel for managing products.",
     tags: ["Next.js", "TypeScript", "Prisma", "Material UI"],
     featured: true,
     href: "/projects/akarui",
@@ -60,20 +47,20 @@ const projects = [
 ];
 
 export default function SelectedWork() {
+  const { lang } = useLang();
+  const t = messages[lang].selectedWork;
+
   return (
     <section id="work" className={styles.section}>
       <div className={styles.inner}>
         <div className={styles.header}>
-          <h2 className={styles.title}>Selected Work</h2>
-          <p className={styles.intro}>
-            A selection of projects spanning internship work, client work, exam
-            projects, and interactive concepts — with a focus on UI, structure,
-            and user experience.
-          </p>
+          <h2 className={styles.title}>{t.title}</h2>
+          <p className={styles.intro}>{t.intro}</p>
         </div>
 
         <div className={styles.grid}>
           {projects.map((project, i) => {
+            const projectT = t.projects[project.id as keyof typeof t.projects];
             const card = (
               <motion.article
                 key={project.id}
@@ -106,11 +93,11 @@ export default function SelectedWork() {
                 </div>
                 <div className={styles.cardBody}>
                   <span className={styles.cardCategory}>
-                    {project.category}
+                    {projectT.category}
                   </span>
                   <h3 className={styles.cardTitle}>{project.title}</h3>
                   <p className={styles.cardDescription}>
-                    {project.description}
+                    {projectT.description}
                   </p>
                   <ul className={styles.tags} aria-label="Technologies">
                     {project.tags.map((tag) => (

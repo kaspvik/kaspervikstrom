@@ -1,43 +1,29 @@
 "use client";
 
+import { useLang } from "@/context/LanguageContext";
+import en from "@/messages/en.json";
+import sv from "@/messages/sv.json";
 import { motion } from "framer-motion";
 import styles from "./HowIWork.module.css";
 
-const cards = [
-  {
-    title: "UI with intention",
-    body: "I care about layout, hierarchy, spacing, and visual clarity. Good design should not only look good — it should make things easier to understand and use.",
-  },
-  {
-    title: "Accessibility from the start",
-    body: "I want interfaces to be readable, inclusive, and usable for more people. Accessibility is something I want to keep improving in every project.",
-  },
-  {
-    title: "Component-based thinking",
-    body: "I enjoy building reusable components and structured UI systems that make products easier to scale and maintain.",
-  },
-  {
-    title: "Curious and fast-learning",
-    body: "I like exploring new tools, workflows, and technologies early, especially when they can improve how something is built or experienced.",
-  },
-];
+const messages = { en, sv };
 
 export default function HowIWork() {
+  const { lang } = useLang();
+  const t = messages[lang].howIWork;
+
   return (
     <section className={styles.section}>
       <div className={styles.inner}>
         <div className={styles.header}>
-          <h2 className={styles.title}>How I Work</h2>
-          <p className={styles.intro}>
-            I enjoy combining visual thinking with technical structure —
-            building interfaces that feel modern, clear, and usable.
-          </p>
+          <h2 className={styles.title}>{t.title}</h2>
+          <p className={styles.intro}>{t.intro}</p>
         </div>
 
         <div className={styles.grid}>
-          {cards.map((card, i) => (
+          {t.cards.map((card, i) => (
             <motion.div
-              key={card.title}
+              key={i}
               className={styles.card}
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
