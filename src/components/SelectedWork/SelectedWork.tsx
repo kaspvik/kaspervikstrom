@@ -46,6 +46,17 @@ const projects = [
     href: "/projects/flinq",
     image: "/images/flinq.png",
   },
+  {
+    id: "akarui",
+    title: "Hikari",
+    category: "Group Project",
+    description:
+      "A full-stack candle e-commerce store with product listings, cart, checkout, order confirmation, and an admin panel for managing products.",
+    tags: ["Next.js", "TypeScript", "Prisma", "Material UI"],
+    featured: true,
+    href: "/projects/akarui",
+    video: "/videos/hikari-video.mp4",
+  },
 ];
 
 export default function SelectedWork() {
