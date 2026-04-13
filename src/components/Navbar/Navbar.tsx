@@ -5,18 +5,45 @@ import en from "@/messages/en.json";
 import sv from "@/messages/sv.json";
 import Link from "next/link";
 import styles from "./Navbar.module.css";
-import { useJazzMode } from "./hooks/jazzMode";
+import { useDarkMode } from "./hooks/darkMode";
 
 const messages = { en, sv };
+
+function SunIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden>
+      <circle cx="8" cy="8" r="3" stroke="currentColor" strokeWidth="1.5" />
+      <path
+        d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3.05 3.05l1.06 1.06M11.89 11.89l1.06 1.06M12.95 3.05l-1.06 1.06M4.11 11.89l-1.06 1.06"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+function MoonIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden>
+      <path
+        d="M13.5 10A6 6 0 0 1 6 2.5a6 6 0 1 0 7.5 7.5Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
 
 export default function Navbar() {
   const { lang, toggle } = useLang();
   const t = messages[lang].nav;
-  const { jazzMode, setJazzMode, muted, toggleMute, audioRef } = useJazzMode();
+  const { darkMode, setDarkMode } = useDarkMode();
 
   return (
     <header className={styles.header}>
-      <audio ref={audioRef} src="/jazz.mp3" loop />
       <nav className={styles.nav}>
         <Link href="/" className={styles.logo}>
           Kasper Vikström
@@ -37,30 +64,20 @@ export default function Navbar() {
           </li>
         </ul>
 
-        <div className={styles.jazzGroup}>
-          <button
-            className={`${styles.jazzBtn} ${jazzMode ? styles.jazzActive : ""}`}
-            onClick={() => setJazzMode((prev) => !prev)}
-            aria-pressed={jazzMode}
-            aria-label="Toggle Jazz Mode">
-            {jazzMode ? "Jazz On" : "Jazz Mode"}
-          </button>
-
-          {jazzMode && (
-            <button
-              className={`${styles.saxBtn} ${muted ? styles.saxMuted : ""}`}
-              onClick={toggleMute}
-              aria-pressed={muted}
-              aria-label={muted ? "Unmute jazz" : "Mute jazz"}>
-              🎷
-            </button>
-          )}
-        </div>
+        <button
+          className={styles.themeToggle}
+          onClick={() => setDarkMode((prev: boolean) => !prev)}
+          aria-pressed={darkMode}
+          aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
+        >
+          {darkMode ? <SunIcon /> : <MoonIcon />}
+        </button>
 
         <button
           onClick={toggle}
           className={styles.langToggle}
-          aria-label="Toggle language">
+          aria-label="Toggle language"
+        >
           {lang === "en" ? "SV" : "EN"}
         </button>
 

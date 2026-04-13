@@ -13,7 +13,7 @@ export default function HowIWork() {
   const t = messages[lang].howIWork;
 
   return (
-    <section className={styles.section}>
+    <section id="process" className={styles.section}>
       <div className={styles.inner}>
         <div className={styles.header}>
           <h2 className={styles.title}>{t.title}</h2>

@@ -12,7 +12,7 @@ export default function Footer() {
   const t = messages[lang].footer;
 
   return (
-    <footer className={styles.footer}>
+    <footer id="contact" className={styles.footer}>
       <div className={styles.inner}>
         <span className={styles.name}>Kasper Vikström</span>
         <p className={styles.tagline}>{t.tagline}</p>

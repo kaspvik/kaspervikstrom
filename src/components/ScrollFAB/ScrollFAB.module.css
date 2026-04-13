@@ -1,0 +1,96 @@
+/* FAB is mobile-only */
+.fab {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .fab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 24px;
+    right: 20px;
+    z-index: 200;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    /* Prevent tap highlight flash on mobile */
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* ── SVG ring ─────────────────────────────────────────── */
+.ring {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.ringTrack {
+  stroke: var(--color-border);
+  opacity: 0.6;
+  transition: stroke 0.4s ease;
+}
+
+.ringProgress {
+  stroke: var(--color-accent);
+  transition: stroke-dashoffset 0.15s linear, stroke 0.4s ease;
+  filter: drop-shadow(0 0 3px color-mix(in srgb, var(--color-accent) 50%, transparent));
+}
+
+/* ── Glass core ───────────────────────────────────────── */
+.core {
+  position: absolute;
+  /* Inset to sit snugly inside the ring stroke */
+  inset: 7px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Glassmorphism */
+  background: color-mix(in srgb, var(--color-surface) 65%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 18%, var(--color-border));
+
+  /* Layered shadow + idle breathing glow */
+  box-shadow:
+    0 6px 24px rgba(0, 0, 0, 0.1),
+    0 2px 6px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+
+  animation: breathe 3.2s ease-in-out infinite;
+  transition: background 0.4s ease, border-color 0.4s ease;
+}
+
+/* Gentle pulse that spreads and fades without moving anything */
+@keyframes breathe {
+  0%, 100% {
+    box-shadow:
+      0 6px 24px rgba(0, 0, 0, 0.1),
+      0 2px 6px rgba(0, 0, 0, 0.06),
+      inset 0 1px 0 rgba(255, 255, 255, 0.18),
+      0 0 0 0px color-mix(in srgb, var(--color-accent) 0%, transparent);
+  }
+  50% {
+    box-shadow:
+      0 6px 24px rgba(0, 0, 0, 0.1),
+      0 2px 6px rgba(0, 0, 0, 0.06),
+      inset 0 1px 0 rgba(255, 255, 255, 0.18),
+      0 0 0 5px color-mix(in srgb, var(--color-accent) 10%, transparent);
+  }
+}
+
+/* ── Icon wrapper ─────────────────────────────────────── */
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  transition: color 0.4s ease;
+}

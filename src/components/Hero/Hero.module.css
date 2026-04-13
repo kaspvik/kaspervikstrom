@@ -1,5 +1,6 @@
 .hero {
   padding: 6rem 2rem 5rem;
+  background-color: var(--color-surface);
 }
 
 .inner {
@@ -100,6 +101,6 @@
   }
 
   .hero {
-    padding: 4rem 1.5rem 3rem;
+    padding: 2rem 1.5rem 3rem;
   }
 }

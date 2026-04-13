@@ -23,7 +23,7 @@ export default function Hero() {
   const t = messages[lang].hero;
 
   return (
-    <section className={styles.hero}>
+    <section id="hero" className={styles.hero}>
       <div className={styles.inner}>
         <div className={styles.content}>
           <motion.span

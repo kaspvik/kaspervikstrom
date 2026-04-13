@@ -4,6 +4,7 @@ import SelectedWork from "@/components/SelectedWork";
 import HowIWork from "@/components/HowIWork";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
+import ScrollFAB from "@/components/ScrollFAB/ScrollFAB";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <About />
       </main>
       <Footer />
+      <ScrollFAB />
     </>
   );
 }

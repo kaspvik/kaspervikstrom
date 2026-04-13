@@ -18,14 +18,14 @@
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
-/* Jazz Mode theme */
-[data-jazz="true"] {
-  --color-bg: #1c1409;
-  --color-text: #f0e6d0;
-  --color-text-muted: #9a8870;
-  --color-accent: #c9902a;
-  --color-border: #3a2e1e;
-  --color-surface: #261b0f;
+/* Dark mode theme */
+[data-theme="dark"] {
+  --color-bg: #090b1c;
+  --color-text: #b2d6ff;
+  --color-text-muted: #e2e9fb;
+  --color-accent: #6483e9;
+  --color-border: #1e1e3a;
+  --color-surface: #0f1126;
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
