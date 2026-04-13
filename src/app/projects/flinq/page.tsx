@@ -1,9 +1,14 @@
 "use client";
 
+import { useLang } from "@/context/LanguageContext";
+import en from "@/messages/en.json";
+import sv from "@/messages/sv.json";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./flinq.module.css";
+
+const messages = { en, sv };
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -15,6 +20,10 @@ const fadeUp = {
 };
 
 export default function FlinqPage() {
+  const { lang } = useLang();
+  const t = messages[lang].projects.flinq;
+  const common = messages[lang].common;
+
   return (
     <main className={styles.page}>
       <div className={styles.inner}>
@@ -23,7 +32,7 @@ export default function FlinqPage() {
           initial={{ opacity: 0, x: -8 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.4 }}>
-          <Link href="/#work">← Back to work</Link>
+          <Link href="/#work">{common.backToWork}</Link>
         </motion.div>
 
         <div className={styles.heroRow}>
@@ -35,16 +44,13 @@ export default function FlinqPage() {
               className={styles.category}
               custom={0}
               variants={fadeUp}>
-              Client Work
+              {t.category}
             </motion.span>
             <motion.h1 className={styles.title} custom={1} variants={fadeUp}>
               Flinq
             </motion.h1>
             <motion.p className={styles.intro} custom={2} variants={fadeUp}>
-              Design and launch of a new website for Flinq, a company focused on
-              cost savings and analysis within supply chain. The goal was to
-              quickly communicate business value, build trust, and make it easy
-              for potential customers to take the next step.
+              {t.intro}
             </motion.p>
             <motion.div className={styles.links} custom={3} variants={fadeUp}>
               <a
@@ -64,7 +70,7 @@ export default function FlinqPage() {
             transition={{ delay: 0.3, duration: 0.5 }}>
             <Image
               src="/images/flinq-sign.jpeg"
-              alt="Flinq website"
+              alt="Flinq logotype"
               width={1600}
               height={900}
               className={styles.image}
@@ -79,33 +85,17 @@ export default function FlinqPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.45, duration: 0.5 }}>
           <div className={styles.role}>
-            <h2 className={styles.sectionTitle}>About the project</h2>
-            <p>
-              The project involved designing and launching a website that
-              clearly explains what Flinq does, what problem they solve, and how
-              to get in touch — with business value and user experience at the
-              centre.
-            </p>
-            <p>
-              The site was built using One, which enabled an efficient workflow
-              where design, content, and structure could be developed in
-              parallel. This allowed for quick iteration and landing on a
-              solution that is easy to maintain and ready to scale.
-            </p>
+            <h2 className={styles.sectionTitle}>{t.aboutTitle}</h2>
+            <p>{t.about1}</p>
+            <p>{t.about2}</p>
           </div>
 
           <div className={styles.focus}>
-            <h2 className={styles.sectionTitle}>Focus areas</h2>
+            <h2 className={styles.sectionTitle}>{t.focusTitle}</h2>
             <ul className={styles.tags}>
-              {[
-                "Clear structure",
-                "Business-driven content",
-                "Fast performance",
-                "Trust & credibility",
-                "Easy to maintain",
-              ].map((t) => (
-                <li key={t} className={styles.tag}>
-                  {t}
+              {t.focusAreas.map((area) => (
+                <li key={area} className={styles.tag}>
+                  {area}
                 </li>
               ))}
             </ul>

@@ -1,10 +1,15 @@
 "use client";
 
+import { useLang } from "@/context/LanguageContext";
+import en from "@/messages/en.json";
+import sv from "@/messages/sv.json";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import styles from "./webdoc.module.css";
+
+const messages = { en, sv };
 
 const tech = [
   "Next.js",
@@ -32,6 +37,9 @@ const fadeUp = {
 };
 
 export default function WebdocPage() {
+  const { lang } = useLang();
+  const t = messages[lang].projects.webdoc;
+  const common = messages[lang].common;
   const [lightbox, setLightbox] = useState<string | null>(null);
 
   useEffect(() => {
@@ -51,21 +59,18 @@ export default function WebdocPage() {
           initial={{ opacity: 0, x: -8 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.4 }}>
-          <Link href="/#work">← Back to work</Link>
+          <Link href="/#work">{common.backToWork}</Link>
         </motion.div>
 
         <motion.div className={styles.hero} initial="hidden" animate="visible">
           <motion.span className={styles.category} custom={0} variants={fadeUp}>
-            Internship Project
+            {t.category}
           </motion.span>
           <motion.h1 className={styles.title} custom={1} variants={fadeUp}>
             Webdoc Insights
           </motion.h1>
           <motion.p className={styles.intro} custom={2} variants={fadeUp}>
-            Webdoc Insights is an internal web application for visualising key
-            metrics and building presentation views with dynamic content. The
-            project consists of a dashboard, a presentation editor, and a
-            presentation player.
+            {t.intro}
           </motion.p>
         </motion.div>
 
@@ -125,22 +130,13 @@ export default function WebdocPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.45, duration: 0.5 }}>
           <div className={styles.role}>
-            <h2 className={styles.sectionTitle}>My role</h2>
-            <p>
-              I worked primarily with frontend development and UI, contributing
-              to building reusable components in Storybook, developing widgets
-              for statistics display, and creating various slides for presenting
-              data such as weather, traffic, and key metrics.
-            </p>
-            <p>
-              The focus was on creating a flexible, modern, and clear user
-              experience where data becomes more accessible and visually
-              engaging.
-            </p>
+            <h2 className={styles.sectionTitle}>{t.roleTitle}</h2>
+            <p>{t.role1}</p>
+            <p>{t.role2}</p>
           </div>
 
           <div className={styles.stack}>
-            <h2 className={styles.sectionTitle}>Tech Stack</h2>
+            <h2 className={styles.sectionTitle}>{t.stackTitle}</h2>
             <ul className={styles.tags}>
               {tech.map((t) => (
                 <li key={t} className={styles.tag}>

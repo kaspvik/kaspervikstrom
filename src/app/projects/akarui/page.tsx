@@ -1,9 +1,14 @@
 "use client";
 
+import { useLang } from "@/context/LanguageContext";
+import en from "@/messages/en.json";
+import sv from "@/messages/sv.json";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./akarui.module.css";
+
+const messages = { en, sv };
 
 const tech = [
   "Next.js",
@@ -17,14 +22,6 @@ const tech = [
   "Vercel",
 ];
 
-const features = [
-  "Admin CRUD panel",
-  "Shopping cart",
-  "Checkout & validation",
-  "Order confirmation",
-  "LocalStorage persistence",
-  "Responsive design",
-];
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -36,6 +33,10 @@ const fadeUp = {
 };
 
 export default function AkaruiPage() {
+  const { lang } = useLang();
+  const t = messages[lang].projects.akarui;
+  const common = messages[lang].common;
+
   return (
     <main className={styles.page}>
       <div className={styles.inner}>
@@ -44,7 +45,7 @@ export default function AkaruiPage() {
           initial={{ opacity: 0, x: -8 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.4 }}>
-          <Link href="/#work">← Back to work</Link>
+          <Link href="/#work">{common.backToWork}</Link>
         </motion.div>
 
         <div className={styles.heroRow}>
@@ -56,16 +57,13 @@ export default function AkaruiPage() {
               className={styles.category}
               custom={0}
               variants={fadeUp}>
-              Group Project
+              {t.category}
             </motion.span>
             <motion.h1 className={styles.title} custom={1} variants={fadeUp}>
               Hikari
             </motion.h1>
             <motion.p className={styles.intro} custom={2} variants={fadeUp}>
-              A full-stack e-commerce web application for a fictional candle
-              brand. Built as a group assignment covering a complete webshop
-              with product listings, cart, checkout, order confirmation, and an
-              admin panel for managing products.
+              {t.intro}
             </motion.p>
             <motion.div className={styles.links} custom={3} variants={fadeUp}>
               <a
@@ -107,43 +105,28 @@ export default function AkaruiPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.45, duration: 0.5 }}>
           <div className={styles.role}>
-            <h2 className={styles.sectionTitle}>About the project</h2>
-            <p>
-              Hikari is a candle e-commerce store built with Next.js App Router,
-              using Server Actions for all CRUD operations and Prisma with SQLite
-              as the database layer. The project was developed in a group as part
-              of a school assignment, covering both the customer-facing store and
-              a full admin panel.
-            </p>
-            <p>
-              The store lets customers browse products, manage their cart, fill
-              in shipping details with full form validation, and receive a
-              confirmation with a unique order number. The admin panel supports
-              adding, editing, and removing products from the database.
-            </p>
-            <p>
-              I also created all product images and mockups for the store —
-              designing the candle visuals used across the product listings and
-              detail pages.
-            </p>
+            <h2 className={styles.sectionTitle}>{t.aboutTitle}</h2>
+            <p>{t.about1}</p>
+            <p>{t.about2}</p>
+            <p>{t.about3}</p>
           </div>
 
           <div className={styles.right}>
             <div className={styles.section}>
-              <h2 className={styles.sectionTitle}>Tech stack</h2>
+              <h2 className={styles.sectionTitle}>{t.stackTitle}</h2>
               <ul className={styles.tags}>
-                {tech.map((t) => (
-                  <li key={t} className={styles.tag}>
-                    {t}
+                {tech.map((item) => (
+                  <li key={item} className={styles.tag}>
+                    {item}
                   </li>
                 ))}
               </ul>
             </div>
 
             <div className={styles.section}>
-              <h2 className={styles.sectionTitle}>Features</h2>
+              <h2 className={styles.sectionTitle}>{t.featuresTitle}</h2>
               <ul className={styles.tags}>
-                {features.map((f) => (
+                {t.features.map((f) => (
                   <li key={f} className={styles.tag}>
                     {f}
                   </li>
