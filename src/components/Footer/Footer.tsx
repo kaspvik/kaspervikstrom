@@ -6,7 +6,7 @@ export default function Footer() {
       <div className={styles.inner}>
         <span className={styles.name}>Kasper Vikström</span>
         <p className={styles.tagline}>
-          Based in Sweden · Available for work and freelance
+          Based in Gothenburg, Sweden · Available for work and freelance
         </p>
       </div>
     </footer>
