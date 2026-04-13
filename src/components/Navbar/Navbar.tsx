@@ -2,8 +2,11 @@
 
 import Link from "next/link";
 import styles from "./Navbar.module.css";
+import { useLang } from "@/context/LanguageContext";
 
 export default function Navbar() {
+  const { lang, toggle } = useLang();
+
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
@@ -16,6 +19,9 @@ export default function Navbar() {
           <li><Link href="#experience">Experience</Link></li>
           <li><Link href="#contact">Contact</Link></li>
         </ul>
+        <button onClick={toggle} className={styles.langToggle} aria-label="Toggle language">
+          {lang === "en" ? "SV" : "EN"}
+        </button>
         <Link href="#work" className={styles.cta}>
           View Projects
         </Link>

@@ -3,6 +3,11 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import styles from "./Hero.module.css";
+import { useLang } from "@/context/LanguageContext";
+import en from "@/messages/en.json";
+import sv from "@/messages/sv.json";
+
+const messages = { en, sv };
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -14,6 +19,9 @@ const fadeUp = {
 };
 
 export default function Hero() {
+  const { lang } = useLang();
+  const t = messages[lang].hero;
+
   return (
     <section className={styles.hero}>
       <div className={styles.inner}>
@@ -24,7 +32,7 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             variants={fadeUp}>
-            Fullstack Developer / UI-Focused
+            {t.label}
           </motion.span>
 
           <motion.h1
@@ -33,8 +41,7 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             variants={fadeUp}>
-            Fullstack developer focused on modern UI, accessibility, and
-            thoughtful digital experiences.
+            {t.headline}
           </motion.h1>
 
           <motion.p
@@ -43,8 +50,7 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             variants={fadeUp}>
-            I'm a fullstack-trained developer with a passion for thoughtful
-            interfaces, strong component structure, and user-centered design.
+            {t.intro}
           </motion.p>
 
           <motion.div
@@ -54,10 +60,10 @@ export default function Hero() {
             animate="visible"
             variants={fadeUp}>
             <Link href="#work" className={styles.btnPrimary}>
-              View My Work
+              {t.btnPrimary}
             </Link>
             <Link href="#about" className={styles.btnSecondary}>
-              About Me
+              {t.btnSecondary}
             </Link>
           </motion.div>
 
@@ -67,8 +73,7 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             variants={fadeUp}>
-            Based in Gothenburg, Sweden · Available for work and freelance
-            opportunities
+            {t.micro}
           </motion.p>
         </div>
 
