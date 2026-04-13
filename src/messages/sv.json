@@ -50,5 +50,14 @@
         "body": "Jag utforskar gärna nya verktyg, arbetsflöden och tekniker tidigt — särskilt när de kan förbättra hur något byggs eller upplevs."
       }
     ]
+  },
+  "about": {
+    "title": "Om mig",
+    "body1": "Jag är en fullstack-utbildad utvecklare med stort intresse för frontend, UI, tillgänglighet och användarupplevelse. Jag gillar att skapa digitala produkter som känns genomtänkta, moderna och enkla att använda.",
+    "body2": "Min bakgrund inkluderar skolprojekt, praktikarbete, kundprojekt och komponentbaserad frontendutveckling. Jag har jobbat med UI-implementering, Storybook, Figma, API-integration samt både frontend- och backend-utveckling.",
+    "body3": "Det som driver mig mest är kombinationen av kreativitet och struktur — att hitta sätt att omvandla idéer, layouter och användarbehov till riktiga produkter."
+  },
+  "footer": {
+    "tagline": "Baserad i Göteborg, Sverige · Tillgänglig för arbete och frilansprojekt"
   }
 }

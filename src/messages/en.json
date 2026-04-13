@@ -50,5 +50,14 @@
         "body": "I like exploring new tools, workflows, and technologies early, especially when they can improve how something is built or experienced."
       }
     ]
+  },
+  "about": {
+    "title": "About",
+    "body1": "I'm a fullstack-trained developer with a strong interest in frontend, UI, accessibility, and user experience. I enjoy creating digital products that feel thoughtful, modern, and easy to use.",
+    "body2": "My background includes school projects, internship work, client projects, and component-based frontend development. I've worked with UI implementation, Storybook, Figma, API integration, and both frontend and backend development.",
+    "body3": "What drives me most is the combination of creativity and structure — finding ways to turn ideas, layouts, and user needs into real products."
+  },
+  "footer": {
+    "tagline": "Based in Gothenburg, Sweden · Available for work and freelance"
   }
 }
