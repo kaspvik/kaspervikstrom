@@ -1,0 +1,504 @@
+/* ── Root wrapper ────────────────────────────────────── */
+.root {
+  background: var(--color-bg);
+  padding: 3rem 1rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* ── Print button (hidden in print) ─────────────────── */
+.printBtn {
+  background: var(--color-accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 0.6rem 1.5rem;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-right: calc((100% - 794px) / 2);
+  transition: opacity 0.2s;
+}
+
+.printBtn:hover {
+  opacity: 0.85;
+}
+
+/* ── A4 page ─────────────────────────────────────────── */
+.page {
+  width: 794px;
+  min-height: 1123px;
+  background: var(--color-surface);
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.08);
+  border-radius: var(--radius-md);
+  padding: 56px 64px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle accent left bar on pages 2–3 */
+.pageInner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--color-accent);
+  opacity: 0.15;
+}
+
+/* ── Page 1: Hero header ─────────────────────────────── */
+.heroHeader {
+  /* Bleed past page padding to touch all edges */
+  margin: -56px -64px 0;
+  padding: 44px 64px 40px;
+  background: var(--color-accent);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+/* Decorative ghost circles */
+.heroDecorCircle {
+  position: absolute;
+  right: -80px;
+  top: -80px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.07);
+  pointer-events: none;
+}
+
+.heroDecorCircle2 {
+  position: absolute;
+  right: 80px;
+  bottom: -100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.heroRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.heroNames {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.nameFirst {
+  font-family: var(--font-display);
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+  color: #fff;
+  margin: 0;
+}
+
+.nameLast {
+  font-family: var(--font-display);
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: rgba(255, 255, 255, 0.55);
+  display: block;
+  margin: 0;
+}
+
+.heroJobTitle {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 1rem 0 0;
+}
+
+.heroMonogram {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -0.03em;
+  flex-shrink: 0;
+}
+
+/* ── Contact row ─────────────────────────────────────── */
+.contactRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.contactItem {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.contactItem:hover {
+  color: var(--color-accent);
+}
+
+.contactDot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--color-border);
+}
+
+/* ── Two-column body ─────────────────────────────────── */
+.body {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 3rem;
+  flex: 1;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ── Section ─────────────────────────────────────────── */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-bottom: 2.5rem;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.sectionLabel {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* ── Language items ──────────────────────────────────── */
+.langItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.langName {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.langLevel {
+  font-size: 0.775rem;
+  color: var(--color-text-muted);
+}
+
+/* ── Bullet list (soft skills) ───────────────────────── */
+.bulletList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.bulletList li {
+  font-size: 0.825rem;
+  color: var(--color-text-muted);
+  padding-left: 1rem;
+  position: relative;
+}
+
+.bulletList li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+
+/* ── Profile text ────────────────────────────────────── */
+.profileText {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* ── Skill blocks ────────────────────────────────────── */
+.skillBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skillGroupLabel {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  background: var(--color-border);
+  color: var(--color-text);
+}
+
+/* ── Running header (pages 2–3) ──────────────────────── */
+.pageRunning {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.pageRunningMonogram {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: #fff;
+  background: var(--color-accent);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  letter-spacing: -0.01em;
+}
+
+.pageRunningName {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  letter-spacing: -0.01em;
+}
+
+/* ── Timeline ────────────────────────────────────────── */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.timelineItem {
+  display: grid;
+  grid-template-columns: 148px 1fr;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+/* Vertical connecting line */
+.timelineItem:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 142px;
+  top: 8px;
+  bottom: 0;
+  width: 1px;
+  background: var(--color-border);
+}
+
+.timelineMeta {
+  padding-top: 0.15rem;
+  position: relative;
+}
+
+/* Accent dot */
+.timelineMeta::after {
+  content: "";
+  position: absolute;
+  right: -7px;
+  top: 0.45em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  border: 1.5px solid var(--color-surface);
+  outline: 1.5px solid var(--color-accent);
+}
+
+.timelineDate {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.timelineContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.timelineRole {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.timelineOrg {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin: 0 0 0.4rem;
+  letter-spacing: 0.02em;
+}
+
+.timelineSubDate {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  opacity: 0.7;
+  margin: 0.1rem 0 0.3rem;
+}
+
+.timelineDesc {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  margin: 0 0 0.4rem;
+}
+
+/* ── Project grid (page 3) ───────────────────────────── */
+.projectGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.projectCard {
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  background: var(--color-bg);
+}
+
+.projectCategory {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.projectName {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.projectDesc {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* ── Print styles ────────────────────────────────────── */
+@media print {
+  .root {
+    padding: 0;
+    gap: 0;
+    background: white;
+  }
+
+  .printBtn {
+    display: none;
+  }
+
+  .page {
+    width: 100%;
+    min-height: 0;
+    height: 297mm;
+    box-shadow: none;
+    border-radius: 0;
+    page-break-after: always;
+    break-after: page;
+    padding: 16mm 20mm;
+  }
+
+  .page::before {
+    display: none;
+  }
+
+  .tag {
+    border: 1px solid #e5e3de;
+    background: transparent;
+  }
+}

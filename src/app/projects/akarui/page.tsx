@@ -6,6 +6,7 @@ import sv from "@/messages/sv.json";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import ProjectNav from "@/components/ProjectNav/ProjectNav";
 import styles from "./akarui.module.css";
 
 const messages = { en, sv };
@@ -135,6 +136,11 @@ export default function AkaruiPage() {
             </div>
           </div>
         </motion.div>
+
+        <ProjectNav
+          prev={{ href: "/projects/flinq", name: "Flinq", category: messages[lang].projects.flinq.category }}
+          next={{ href: "/projects/webdoc", name: "Webdoc Insights", category: messages[lang].projects.webdoc.category }}
+        />
       </div>
     </main>
   );
