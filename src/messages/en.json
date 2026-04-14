@@ -113,7 +113,10 @@
       "solutionTitle": "Solution",
       "solution": "I focused on making the UI easy to understand while giving it a strong, distinct identity — playful and slightly retro, without sacrificing clarity. The project was structured with clear separation of concerns between logic, visual presentation, and interaction. Movement and animation reinforced feedback, and colour, shape, and typography contributed to a coherent visual style. The goal was for the interface to always be readable at a glance, so players could immediately tell what was happening on screen.",
       "outcomeTitle": "Result & learnings",
-      "outcome": "The end result was a working experience with a clear visual direction — not just a game that functioned technically, but something with a considered feel. I learned how important early structural planning is, especially in projects where animation, game mechanics, and UI all need to work together. The main takeaway was how much the user experience is shaped by small details — timing, feedback, and clarity in interactions."
+      "outcome": "The end result was a working experience with a clear visual direction — not just a game that functioned technically, but something with a considered feel. I learned how important early structural planning is, especially in projects where animation, game mechanics, and UI all need to work together. The main takeaway was how much the user experience is shaped by small details — timing, feedback, and clarity in interactions.",
+      "testimonialQuote": "Future text",
+      "testimonialName": "Johanna Collander",
+      "testimonialRole": "Programme Director, Medieinstitutet"
     },
     "flinq": {
       "category": "Client Work",

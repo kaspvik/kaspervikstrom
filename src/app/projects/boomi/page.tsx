@@ -121,6 +121,22 @@ export default function BoomiPage() {
           </div>
         </motion.div>
 
+        {t.testimonialQuote && (
+          <motion.blockquote
+            className={styles.testimonial}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.5 }}>
+            <p className={styles.testimonialQuote}>"{t.testimonialQuote}"</p>
+            <footer className={styles.testimonialAuthor}>
+              {t.testimonialName}
+              {t.testimonialRole && (
+                <span className={styles.testimonialRole}> — {t.testimonialRole}</span>
+              )}
+            </footer>
+          </motion.blockquote>
+        )}
+
         <motion.div
           className={styles.sections}
           initial={{ opacity: 0, y: 20 }}

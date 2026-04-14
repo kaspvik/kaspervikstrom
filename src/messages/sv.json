@@ -113,7 +113,10 @@
       "solutionTitle": "Lösning",
       "solution": "Jag la stor vikt vid att UI:t skulle vara enkelt att förstå men ha en stark, tydlig identitet — lekfullt och lite retro, utan att kompromissa med tydlighet. Projektet byggdes med tydlig separation av ansvar mellan logik, visuell presentation och interaktion. Rörelser och animationer förstärkte feedbacken, och färg, form och typografi bidrog till en sammanhängande stil. Målet var att gränssnittet alltid skulle vara lätt att läsa av, så att spelaren direkt förstår vad som händer på skärmen.",
       "outcomeTitle": "Resultat & lärdom",
-      "outcome": "Slutresultatet blev en fungerande upplevelse med tydlig visuell riktning — inte bara ett spel som tekniskt fungerade, utan något med en genomtänkt känsla. Jag lärde mig hur viktigt det är att planera struktur tidigt, särskilt i projekt där animation, spelmekanik och UI ska samverka. Det viktigaste jag tar med mig är hur mycket användarupplevelsen påverkas av små detaljer — timing, feedback och tydlighet i interaktioner."
+      "outcome": "Slutresultatet blev en fungerande upplevelse med tydlig visuell riktning — inte bara ett spel som tekniskt fungerade, utan något med en genomtänkt känsla. Jag lärde mig hur viktigt det är att planera struktur tidigt, särskilt i projekt där animation, spelmekanik och UI ska samverka. Det viktigaste jag tar med mig är hur mycket användarupplevelsen påverkas av små detaljer — timing, feedback och tydlighet i interaktioner.",
+      "testimonialQuote": "Framtida citat",
+      "testimonialName": "Johanna Collander",
+      "testimonialRole": "Utbildningsledare, Medieinstitutet"
     },
     "flinq": {
       "category": "Kundarbete",
