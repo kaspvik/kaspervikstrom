@@ -105,7 +105,15 @@
       "roleTitle": "Min roll",
       "role1": "Det här var ett soloprojekt där jag ansvarade för allt från speldesign och UX till frontendutveckling och driftsättning. Jag byggde multiplayerflödet i realtid med Firestore, designade pixel-UI:t, implementerade sprite-animationer med PixiJS och lade till ljudeffekter och bakgrundsmusik med Howler.js.",
       "role2": "Projektet byggdes under sex veckor som en del av examen, med fokus på spelbarhet, tillgänglighet (WCAG 2.1 A/AA) och en tydlig retrokänsla.",
-      "stackTitle": "Teknikstack"
+      "stackTitle": "Teknikstack",
+      "goalTitle": "Mål",
+      "goal": "Boomi Countdown byggdes som ett eget projekt med målet att skapa en lekfull och interaktiv digital upplevelse med tydlig spelkänsla. Det var ett sätt att utforska spelutveckling på webben och utmana mig tekniskt inom animation, logik och användarupplevelse — och att bygga något genomarbetat och roligt att faktiskt använda.",
+      "challengeTitle": "Utmaning",
+      "challenge": "Det svåraste var att få ihop helheten mellan teknik och känsla. Det handlade inte bara om att spelet skulle fungera, utan om att det skulle kännas responsivt, tydligt och roligt att använda. Att strukturera spellogiken med tydlig separation av states, timers och interaktioner var en utmaning i sig — liksom att få animationer och visuella effekter att stödja upplevelsen utan att påverka prestandan negativt.",
+      "solutionTitle": "Lösning",
+      "solution": "Jag la stor vikt vid att UI:t skulle vara enkelt att förstå men ha en stark, tydlig identitet — lekfullt och lite retro, utan att kompromissa med tydlighet. Projektet byggdes med tydlig separation av ansvar mellan logik, visuell presentation och interaktion. Rörelser och animationer förstärkte feedbacken, och färg, form och typografi bidrog till en sammanhängande stil. Målet var att gränssnittet alltid skulle vara lätt att läsa av, så att spelaren direkt förstår vad som händer på skärmen.",
+      "outcomeTitle": "Resultat & lärdom",
+      "outcome": "Slutresultatet blev en fungerande upplevelse med tydlig visuell riktning — inte bara ett spel som tekniskt fungerade, utan något med en genomtänkt känsla. Jag lärde mig hur viktigt det är att planera struktur tidigt, särskilt i projekt där animation, spelmekanik och UI ska samverka. Det viktigaste jag tar med mig är hur mycket användarupplevelsen påverkas av små detaljer — timing, feedback och tydlighet i interaktioner."
     },
     "flinq": {
       "category": "Kundarbete",

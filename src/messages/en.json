@@ -105,7 +105,15 @@
       "roleTitle": "My role",
       "role1": "Solo project — I handled everything from game design and UX to frontend development and deployment. This included building the real-time multiplayer flow with Firestore, designing the pixel UI system, implementing sprite animations with PixiJS, and adding sound effects and background music via Howler.js.",
       "role2": "The project was built over six weeks as part of a school exam, with a focus on playability, accessibility (WCAG 2.1 A/AA), and a coherent retro aesthetic throughout.",
-      "stackTitle": "Tech Stack"
+      "stackTitle": "Tech Stack",
+      "goalTitle": "Goal",
+      "goal": "Boomi Countdown was built as a personal project with the goal of creating a playful and interactive digital experience with a distinct game feel. It was a way to explore game development on the web and challenge myself technically across animation, logic, and user experience — and to build something polished and genuinely fun to use.",
+      "challengeTitle": "Challenge",
+      "challenge": "The hardest part was making the whole thing feel cohesive — not just functional, but responsive, clear, and genuinely fun to use. Structuring the game logic with clear separation of states, timers, and interactions was a challenge in itself, as was making animations and visual effects support the experience without hurting performance.",
+      "solutionTitle": "Solution",
+      "solution": "I focused on making the UI easy to understand while giving it a strong, distinct identity — playful and slightly retro, without sacrificing clarity. The project was structured with clear separation of concerns between logic, visual presentation, and interaction. Movement and animation reinforced feedback, and colour, shape, and typography contributed to a coherent visual style. The goal was for the interface to always be readable at a glance, so players could immediately tell what was happening on screen.",
+      "outcomeTitle": "Result & learnings",
+      "outcome": "The end result was a working experience with a clear visual direction — not just a game that functioned technically, but something with a considered feel. I learned how important early structural planning is, especially in projects where animation, game mechanics, and UI all need to work together. The main takeaway was how much the user experience is shaped by small details — timing, feedback, and clarity in interactions."
     },
     "flinq": {
       "category": "Client Work",
