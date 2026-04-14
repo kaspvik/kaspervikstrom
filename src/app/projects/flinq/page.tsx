@@ -6,6 +6,7 @@ import sv from "@/messages/sv.json";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import ProjectNav from "@/components/ProjectNav/ProjectNav";
 import styles from "./flinq.module.css";
 
 const messages = { en, sv };
@@ -101,6 +102,11 @@ export default function FlinqPage() {
             </ul>
           </div>
         </motion.div>
+
+        <ProjectNav
+          prev={{ href: "/projects/boomi", name: "Boomi Countdown", category: messages[lang].projects.boomi.category }}
+          next={{ href: "/projects/akarui", name: "Hikari", category: messages[lang].projects.akarui.category }}
+        />
       </div>
     </main>
   );

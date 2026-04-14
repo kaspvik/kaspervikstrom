@@ -6,6 +6,7 @@ import sv from "@/messages/sv.json";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import ProjectNav from "@/components/ProjectNav/ProjectNav";
 import styles from "./boomi.module.css";
 
 const messages = { en, sv };
@@ -119,6 +120,11 @@ export default function BoomiPage() {
             </ul>
           </div>
         </motion.div>
+
+        <ProjectNav
+          prev={{ href: "/projects/webdoc", name: "Webdoc Insights", category: messages[lang].projects.webdoc.category }}
+          next={{ href: "/projects/flinq", name: "Flinq", category: messages[lang].projects.flinq.category }}
+        />
       </div>
     </main>
   );

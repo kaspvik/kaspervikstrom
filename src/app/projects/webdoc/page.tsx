@@ -1,5 +1,6 @@
 "use client";
 
+import ProjectNav from "@/components/ProjectNav/ProjectNav";
 import { useLang } from "@/context/LanguageContext";
 import en from "@/messages/en.json";
 import sv from "@/messages/sv.json";
@@ -169,6 +170,18 @@ export default function WebdocPage() {
             <p>{t.outcome}</p>
           </div>
         </motion.div>
+        <ProjectNav
+          prev={{
+            href: "/projects/akarui",
+            name: "Hikari",
+            category: messages[lang].projects.akarui.category,
+          }}
+          next={{
+            href: "/projects/boomi",
+            name: "Boomi Countdown",
+            category: messages[lang].projects.boomi.category,
+          }}
+        />
       </div>
     </main>
   );
