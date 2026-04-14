@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import ProjectNav from "@/components/ProjectNav/ProjectNav";
 import styles from "./webdoc.module.css";
 
 const messages = { en, sv };
@@ -146,6 +147,11 @@ export default function WebdocPage() {
             </ul>
           </div>
         </motion.div>
+
+        <ProjectNav
+          prev={{ href: "/projects/akarui", name: "Hikari", category: messages[lang].projects.akarui.category }}
+          next={{ href: "/projects/boomi", name: "Boomi Countdown", category: messages[lang].projects.boomi.category }}
+        />
       </div>
     </main>
   );

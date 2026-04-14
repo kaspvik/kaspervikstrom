@@ -61,7 +61,9 @@
     "tagline": "Based in Gothenburg, Sweden · Available for work and freelance"
   },
   "common": {
-    "backToWork": "← Back to work"
+    "backToWork": "← Back to work",
+    "prevProject": "← Previous",
+    "nextProject": "Next →"
   },
   "contact": {
     "title": "Get in Touch",
