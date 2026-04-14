@@ -87,6 +87,14 @@
       "roleTitle": "Min roll",
       "role1": "Jag jobbade främst med frontend och UI, och var med och byggde återanvändbara komponenter i Storybook, utvecklade widgets för statistikvisning och skapade olika slides och presentationsvyer för data som väder, trafik och nyckeltal.",
       "role2": "Fokus låg på att skapa en tydlig och modern upplevelse där data blir enklare att ta till sig.",
+      "goalTitle": "Mål",
+      "goal": "Webdoc ville ha ett dashboard som ger en tydlig överblick av deras tjänster – samt slides för avgångar i Västtrafik, väder och andra dynamiska inslag.",
+      "challengeTitle": "Utmaning",
+      "challenge": "Det svåraste var att bygga ett gränssnitt som var både flexibelt och tydligt. Drag-and-drop-logiken med dnd-kit var särskilt utmanande – hur widgetar skulle kunna flyttas, sparas och visas i rätt ordning utan att layouten blev rörig eller svår att förstå. En annan utmaning var att skapa komponenter som fungerade sömlöst i både dashboarden och presentationsläget, utan att tappa struktur eller återanvändbarhet.",
+      "solutionTitle": "Lösning",
+      "solution": "Jag jobbade systematiskt med att dela upp gränssnittet i återanvändbara komponenter med tydliga ansvarsområden. Storybook användes för att bygga och testa UI-delar isolerat, vilket höll designen konsekvent genom hela projektet. Widgetlayouten strukturerades så att den kunde normaliseras, sparas och återställas stabilt. Med dnd-kit fokuserade jag på att göra redigeringsläget praktiskt och intuitivt, samtidigt som dashboarden skulle kännas enkel att använda. Responsivitet, underhållbarhet och tydlig state-hantering genomsyrade alla beslut.",
+      "outcomeTitle": "Resultat & lärdom",
+      "outcome": "Dashboarden blev mer modulär och lättare att vidareutveckla, och komponenterna kunde återanvändas mer konsekvent i flera delar av systemet. Projektet gav mig en djupare förståelse för hur designsystem, komponenttänk och state-hantering hänger ihop i större gränssnitt – och hur man bygger flexibla UI-lösningar som fortfarande känns stabila och genomtänkta för användaren.",
       "stackTitle": "Teknikstack"
     },
     "boomi": {
