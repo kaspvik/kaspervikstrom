@@ -41,10 +41,11 @@ function SparkleIcon() {
   );
 }
 
+const NAVBAR_HEIGHT = 64;
+
 export default function ScrollFAB() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [atBottom, setAtBottom] = useState(false);
-  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -56,7 +57,6 @@ export default function ScrollFAB() {
 
       setScrollProgress(clamped);
       setAtBottom(clamped >= 0.98);
-      setVisible(scrollTop > 80);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -78,7 +78,8 @@ export default function ScrollFAB() {
       if (el) {
         const top = el.getBoundingClientRect().top + window.scrollY;
         if (top > viewportMid + 16) {
-          el.scrollIntoView({ behavior: "smooth", block: "start" });
+          // Offset for sticky navbar so the title isn't hidden behind it
+          window.scrollTo({ top: top - NAVBAR_HEIGHT, behavior: "smooth" });
           return;
         }
       }
@@ -95,8 +96,7 @@ export default function ScrollFAB() {
 
   return (
     <AnimatePresence>
-      {visible && (
-        <motion.button
+      <motion.button
           className={styles.fab}
           onClick={handleClick}
           aria-label={atBottom ? "Back to top" : "Scroll to next section"}
@@ -164,7 +164,6 @@ export default function ScrollFAB() {
             </AnimatePresence>
           </div>
         </motion.button>
-      )}
     </AnimatePresence>
   );
 }

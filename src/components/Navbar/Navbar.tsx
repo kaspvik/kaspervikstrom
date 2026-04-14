@@ -51,9 +51,6 @@ export default function Navbar() {
 
         <ul className={styles.links}>
           <li>
-            <Link href="#work">{t.work}</Link>
-          </li>
-          <li>
             <Link href="#about">{t.about}</Link>
           </li>
           <li>
@@ -64,26 +61,28 @@ export default function Navbar() {
           </li>
         </ul>
 
+        <Link href="#work" className={styles.cta}>
+          {t.cta}
+        </Link>
+
+        <span className={styles.divider} aria-hidden />
+
         <button
           className={styles.themeToggle}
           onClick={() => setDarkMode((prev: boolean) => !prev)}
           aria-pressed={darkMode}
-          aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
-        >
+          aria-label={
+            darkMode ? "Switch to light mode" : "Switch to dark mode"
+          }>
           {darkMode ? <SunIcon /> : <MoonIcon />}
         </button>
 
         <button
           onClick={toggle}
           className={styles.langToggle}
-          aria-label="Toggle language"
-        >
+          aria-label="Toggle language">
           {lang === "en" ? "SV" : "EN"}
         </button>
-
-        <Link href="#work" className={styles.cta}>
-          {t.cta}
-        </Link>
       </nav>
     </header>
   );
