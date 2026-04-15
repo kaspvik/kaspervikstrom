@@ -79,6 +79,7 @@
   },
   "common": {
     "backToWork": "← Tillbaka till projekt",
+    "otherProjects": "Andra projekt",
     "prevProject": "← Föregående",
     "nextProject": "Nästa →"
   },

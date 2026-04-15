@@ -62,6 +62,7 @@
   },
   "common": {
     "backToWork": "← Back to work",
+    "otherProjects": "Other projects",
     "prevProject": "← Previous",
     "nextProject": "Next →"
   },

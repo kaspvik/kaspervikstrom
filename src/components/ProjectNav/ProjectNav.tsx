@@ -17,11 +17,57 @@ interface ProjectLink {
 interface Props {
   prev?: ProjectLink;
   next?: ProjectLink;
+  compact?: boolean;
+  back?: { href: string; label: string };
+  others?: ProjectLink[];
 }
 
-export default function ProjectNav({ prev, next }: Props) {
+export default function ProjectNav({ prev, next, compact, back, others }: Props) {
   const { lang } = useLang();
   const t = messages[lang].common;
+
+  if (compact) {
+    return (
+      <nav className={styles.navCompact} aria-label="Project navigation">
+        {back && (
+          <Link href={back.href} className={styles.backLink}>
+            {back.label}
+          </Link>
+        )}
+        {(others || prev || next) && (
+          <div className={styles.compactGroup}>
+            <span className={styles.compactTitle}>{t.otherProjects}</span>
+            {others && others.length > 0 && (
+              <ul className={`${styles.othersList} ${styles.desktopOnly}`}>
+                {others.map((p) => (
+                  <li key={p.href}>
+                    <Link href={p.href} className={styles.othersLink} onClick={() => window.scrollTo(0, 0)}>
+                      {p.name} →
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+            {(prev || next) && (
+              <div className={`${styles.compactPrevNext} ${styles.mobileOnly}`}>
+                {prev && (
+                  <Link href={prev.href} className={styles.othersLink} onClick={() => window.scrollTo(0, 0)}>
+                    ← {prev.name}
+                  </Link>
+                )}
+                {prev && next && <span className={styles.divider}>·</span>}
+                {next && (
+                  <Link href={next.href} className={styles.othersLink} onClick={() => window.scrollTo(0, 0)}>
+                    {next.name} →
+                  </Link>
+                )}
+              </div>
+            )}
+          </div>
+        )}
+      </nav>
+    );
+  }
 
   return (
     <nav className={styles.nav} aria-label="Project navigation">

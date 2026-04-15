@@ -5,7 +5,6 @@ import en from "@/messages/en.json";
 import sv from "@/messages/sv.json";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import ProjectNav from "@/components/ProjectNav/ProjectNav";
 import styles from "./akarui.module.css";
 
@@ -42,11 +41,20 @@ export default function AkaruiPage() {
     <main className={styles.page}>
       <div className={styles.inner}>
         <motion.div
-          className={styles.back}
-          initial={{ opacity: 0, x: -8 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: -8 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}>
-          <Link href="/#work">{common.backToWork}</Link>
+          <ProjectNav
+            compact
+            back={{ href: "/#work", label: common.backToWork }}
+            prev={{ href: "/projects/flinq", name: "Flinq", category: messages[lang].projects.flinq.category }}
+            next={{ href: "/projects/webdoc", name: "Webdoc Insights", category: messages[lang].projects.webdoc.category }}
+            others={[
+              { href: "/projects/webdoc", name: "Webdoc Insights", category: messages[lang].projects.webdoc.category },
+              { href: "/projects/boomi", name: "Boomi Countdown", category: messages[lang].projects.boomi.category },
+              { href: "/projects/flinq", name: "Flinq", category: messages[lang].projects.flinq.category },
+            ]}
+          />
         </motion.div>
 
         <div className={styles.heroRow}>
