@@ -83,6 +83,7 @@ export default function FlinqPage() {
               width={1600}
               height={900}
               className={styles.image}
+              sizes="(max-width: 768px) 100vw, 55vw"
               priority
             />
           </motion.div>
