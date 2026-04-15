@@ -59,10 +59,10 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             variants={fadeUp}>
-            <Link href="#work" className={styles.btnPrimary}>
+            <Link href="/#work" className={styles.btnPrimary}>
               {t.btnPrimary}
             </Link>
-            <Link href="#about" className={styles.btnSecondary}>
+            <Link href="/#about" className={styles.btnSecondary}>
               {t.btnSecondary}
             </Link>
           </motion.div>

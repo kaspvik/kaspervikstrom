@@ -51,17 +51,14 @@ export default function Navbar() {
 
         <ul className={styles.links}>
           <li>
-            <Link href="#about">{t.about}</Link>
+            <Link href="/#about">{t.about}</Link>
           </li>
           <li>
-            <Link href="#experience">{t.experience}</Link>
-          </li>
-          <li>
-            <Link href="#contact">{t.contact}</Link>
+            <Link href="/#contact">{t.contact}</Link>
           </li>
         </ul>
 
-        <Link href="#work" className={styles.cta}>
+        <Link href="/#work" className={styles.cta}>
           {t.cta}
         </Link>
 
