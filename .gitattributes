@@ -1,0 +1,7 @@
+# Tell GitHub Linguist to treat this as a TypeScript project
+*.ts linguist-language=TypeScript
+*.tsx linguist-language=TypeScript
+
+# Exclude generated/vendored files from language stats
+package-lock.json linguist-generated=true
+src/messages/*.json linguist-documentation=true
