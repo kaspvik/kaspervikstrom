@@ -48,6 +48,10 @@
       {
         "title": "Curious and fast-learning",
         "body": "I like exploring new tools, workflows, and technologies early, especially when they can improve how something is built or experienced."
+      },
+      {
+        "title": "People over process",
+        "body": "I believe the best results come from good communication and a positive atmosphere. I enjoy being part of a team, sharing ideas openly, and solving problems together with others — preferably over a cup of coffee or two."
       }
     ]
   },
@@ -55,7 +59,7 @@
     "title": "About",
     "body1": "I'm a fullstack-trained developer with a strong interest in frontend, UI, accessibility, and user experience. I enjoy creating digital products that feel thoughtful, modern, and easy to use.",
     "body2": "My background includes school projects, internship work, client projects, and component-based frontend development. I've worked with UI implementation, Storybook, Figma, API integration, and both frontend and backend development.",
-    "body3": "What drives me most is the combination of creativity and structure — finding ways to turn ideas, layouts, and user needs into real products."
+    "body3": "What drives me most is the combination of creativity and structure — finding ways to turn ideas, layouts, and user needs into real products. Outside of that, I'm a people person at heart. I genuinely enjoy collaborating, exchanging ideas, and being part of a team where everyone's working toward something together."
   },
   "footer": {
     "tagline": "Based in Gothenburg, Sweden · Available for work and freelance"
@@ -68,7 +72,7 @@
   },
   "contact": {
     "title": "Get in Touch",
-    "intro": "I'm open to new opportunities, collaborations, and freelance projects. Feel free to reach out.",
+    "intro": "I'm always happy to connect — whether it's about a new opportunity, a collaboration, or just a chat about design and code. Don't hesitate to reach out.",
     "labels": {
       "email": "Email",
       "phone": "Phone",
@@ -91,7 +95,7 @@
       "role1": "I worked primarily with frontend development and UI, contributing to building reusable components in Storybook, developing widgets for statistics display, and creating various slides for presenting data such as weather, traffic, and key metrics.",
       "role2": "The focus was on creating a flexible, modern, and clear user experience where data becomes more accessible and visually engaging.",
       "goalTitle": "Goal",
-      "goal": "Webdoc wanted a dashboard giving a clear overview of their services, along with slides for Västtrafik departures, weather, and other dynamic content.",
+      "goal": "Webdoc wanted a dashboard that gave a clear overview of their services, along with slides for Västtrafik departures, weather, and other dynamic content.",
       "challengeTitle": "Challenge",
       "challenge": "One of the biggest challenges was connecting backend data to our widgets in a way that worked reliably and consistently. The data came from different sources and needed to be mapped correctly to each widget type — requiring precision and a clear understanding of both the data structures and the interface logic.",
       "solutionTitle": "Solution",
@@ -113,14 +117,14 @@
       "solutionTitle": "Solution",
       "solution": "I worked through it by testing and iterating a lot, and simplifying where needed. A key insight was that you don't always have to reinvent the wheel — some things turned out better and smoother to solve with something as straightforward as CSS transitions.",
       "outcomeTitle": "Result & learnings",
-      "outcome": "The end result is a project that reflects me as a developer — both technically and visually. I learned a lot about animation, logic, and the value of choosing smart solutions instead of doing everything the hard way. And above all — a playable game!",
+      "outcome": "The end result was a project that reflected me as a developer — both technically and visually. I learned a lot about animation, logic, and the value of choosing smart solutions instead of doing everything the hard way. And above all — a playable game!",
       "stackTitle": "Tech Stack"
     },
     "flinq": {
       "category": "Client Work",
       "intro": "Design and launch of a new website for Flinq, a company focused on cost savings and analysis within supply chain. The goal was to quickly communicate business value, build trust, and make it easy for potential customers to take the next step.",
       "aboutTitle": "About the project",
-      "about1": "The project involved designing and launching a website that clearly explains what Flinq does, what problem they solve, and how to get in touch — with business value and user experience at the centre.",
+      "about1": "The project involved designing and launching a website that clearly explained what Flinq does, what problem they solve, and how to get in touch — with business value and user experience at the centre.",
       "about2": "The site was built using One, which enabled an efficient workflow where design, content, and structure could be developed in parallel. This allowed for quick iteration and landing on a solution that is easy to maintain and ready to scale.",
       "focusTitle": "Focus areas",
       "focusAreas": ["Clear structure", "Business-driven content", "Fast performance", "Trust & credibility", "Easy to maintain"],
@@ -142,7 +146,7 @@
       "goalTitle": "Goal",
       "goal": "The goal was to apply what we had learned in a realistic, full-stack setting — working as a group on a shared codebase while using technologies like Next.js App Router and Server Actions that were new to us. We wanted the end result to feel like a real product, not just a school assignment.",
       "challengeTitle": "Challenge",
-      "challenge": "One of the bigger challenges was coordinating the work across the group while keeping the code consistent. We were also working with Next.js App Router and Server Actions for the first time, which meant understanding a new mental model for how data flows between client and server.",
+      "challenge": "One of the biggest challenges was coordinating the work across the group while keeping the code consistent. We were also working with Next.js App Router and Server Actions for the first time, which meant understanding a new mental model for how data flows between client and server.",
       "solutionTitle": "Solution",
       "solution": "We divided responsibilities clearly early on and kept communication ongoing throughout the project. Using Server Actions for all CRUD operations gave us a clean and consistent pattern across the whole app, and Prisma made the database layer straightforward to work with once we had the schema in place.",
       "outcomeTitle": "Result & learnings",
