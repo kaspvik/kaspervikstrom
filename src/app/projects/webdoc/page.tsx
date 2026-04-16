@@ -6,7 +6,7 @@ import en from "@/messages/en.json";
 import sv from "@/messages/sv.json";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./webdoc.module.css";
 
 const messages = { en, sv };
@@ -22,9 +22,10 @@ const tech = [
   "CSS Modules",
 ];
 
-const images = [
-  { src: "/images/widget-page.png", alt: "Widget page" },
-  { src: "/images/presentation-page.png", alt: "Presentation editor" },
+const media = [
+  { type: "video" as const, src: "/videos/webdoc-slides.mp4", alt: "Webdoc demo video" },
+  { type: "image" as const, src: "/images/widget-page.png", alt: "Widget page" },
+  { type: "image" as const, src: "/images/presentation-page.png", alt: "Presentation editor" },
 ];
 
 const fadeUp = {
@@ -41,14 +42,13 @@ export default function WebdocPage() {
   const t = messages[lang].projects.webdoc;
   const common = messages[lang].common;
   const [lightbox, setLightbox] = useState<number | null>(null);
-  const touchStartX = useRef<number | null>(null);
 
   useEffect(() => {
     if (lightbox === null) return;
     document.body.style.overflow = "hidden";
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setLightbox(null);
-      if (e.key === "ArrowRight") setLightbox((i) => (i !== null ? Math.min(i + 1, images.length - 1) : null));
+      if (e.key === "ArrowRight") setLightbox((i) => (i !== null ? Math.min(i + 1, media.length - 1) : null));
       if (e.key === "ArrowLeft") setLightbox((i) => (i !== null ? Math.max(i - 1, 0) : null));
     };
     window.addEventListener("keydown", onKey);
@@ -95,7 +95,10 @@ export default function WebdocPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.5 }}>
-          <div className={`${styles.imageFeatured} ${styles.imageVideo}`}>
+          <button
+            className={`${styles.imageFeatured} ${styles.imageVideo}`}
+            onClick={() => setLightbox(0)}
+            aria-label="Enlarge video">
             <video
               src="/videos/webdoc-slides.mp4"
               autoPlay
@@ -105,12 +108,12 @@ export default function WebdocPage() {
               preload="metadata"
               className={styles.img}
             />
-          </div>
-          {images.map(({ src, alt }, index) => (
+          </button>
+          {media.slice(1).map(({ src, alt }, i) => (
             <button
               key={src}
               className={styles.imageThumb}
-              onClick={() => setLightbox(index)}
+              onClick={() => setLightbox(i + 1)}
               aria-label={`Enlarge: ${alt}`}>
               <Image
                 src={src}
@@ -128,26 +131,46 @@ export default function WebdocPage() {
             className={styles.lightbox}
             onClick={() => setLightbox(null)}
             role="dialog"
-            aria-modal="true"
-            onTouchStart={(e) => { touchStartX.current = e.touches[0].clientX; }}
-            onTouchEnd={(e) => {
-              if (touchStartX.current === null) return;
-              const delta = touchStartX.current - e.changedTouches[0].clientX;
-              if (delta > 50) setLightbox((i) => i !== null ? Math.min(i + 1, images.length - 1) : null);
-              if (delta < -50) setLightbox((i) => i !== null ? Math.max(i - 1, 0) : null);
-              touchStartX.current = null;
-            }}>
-            <div className={styles.lightboxInner}>
-              <Image
-                src={images[lightbox].src}
-                alt={images[lightbox].alt}
-                fill
-                className={styles.lightboxImg}
-              />
-              <div className={styles.lightboxDots}>
-                {images.map((_, i) => (
-                  <span key={i} className={`${styles.dot} ${i === lightbox ? styles.dotActive : ""}`} />
-                ))}
+            aria-modal="true">
+            <div className={styles.lightboxInner} onClick={(e) => e.stopPropagation()}>
+              {media[lightbox].type === "video" ? (
+                <video
+                  src={media[lightbox].src}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className={styles.lightboxImg}
+                  style={{ width: "100%", height: "100%", objectFit: "contain" }}
+                />
+              ) : (
+                <Image
+                  src={media[lightbox].src}
+                  alt={media[lightbox].alt}
+                  fill
+                  className={styles.lightboxImg}
+                />
+              )}
+              <div className={styles.lightboxControls}>
+                <button
+                  className={styles.lightboxArrow}
+                  onClick={() => setLightbox((i) => i !== null ? Math.max(i - 1, 0) : null)}
+                  disabled={lightbox === 0}
+                  aria-label="Previous">
+                  ‹
+                </button>
+                <div className={styles.lightboxDots}>
+                  {media.map((_, i) => (
+                    <span key={i} className={`${styles.dot} ${i === lightbox ? styles.dotActive : ""}`} />
+                  ))}
+                </div>
+                <button
+                  className={styles.lightboxArrow}
+                  onClick={() => setLightbox((i) => i !== null ? Math.min(i + 1, media.length - 1) : null)}
+                  disabled={lightbox === media.length - 1}
+                  aria-label="Next">
+                  ›
+                </button>
               </div>
             </div>
           </div>

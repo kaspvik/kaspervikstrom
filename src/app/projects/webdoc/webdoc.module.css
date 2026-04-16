@@ -79,7 +79,7 @@
 }
 
 .imageVideo {
-  cursor: default;
+  cursor: zoom-in;
 }
 
 .img {
@@ -117,13 +117,40 @@
   object-fit: contain;
 }
 
-.lightboxDots {
+.lightboxControls {
   position: absolute;
-  bottom: -2rem;
+  bottom: -3rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lightboxArrow {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 0.25rem;
+  transition: color 0.2s;
+}
+
+.lightboxArrow:hover:not(:disabled) {
+  color: #fff;
+}
+
+.lightboxArrow:disabled {
+  opacity: 0.2;
+  cursor: default;
+}
+
+.lightboxDots {
+  display: flex;
   gap: 0.5rem;
+  align-items: center;
 }
 
 .dot {
