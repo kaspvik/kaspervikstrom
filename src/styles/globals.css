@@ -20,12 +20,12 @@
 
 /* Dark mode theme */
 [data-theme="dark"] {
-  --color-bg: #090b1c;
-  --color-text: #b2d6ff;
-  --color-text-muted: #e2e9fb;
-  --color-accent: #6483e9;
-  --color-border: #1e1e3a;
-  --color-surface: #0f1126;
+--color-bg:         #080d1e;
+--color-text:       #e8eeff;
+--color-text-muted: #8899cc;
+--color-accent:     #5b7ef5;
+--color-border:     #1a2040;
+--color-surface:    #0e1428;
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
 }

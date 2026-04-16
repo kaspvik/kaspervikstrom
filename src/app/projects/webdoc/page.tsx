@@ -6,7 +6,7 @@ import en from "@/messages/en.json";
 import sv from "@/messages/sv.json";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./webdoc.module.css";
 
 const messages = { en, sv };
@@ -40,15 +40,22 @@ export default function WebdocPage() {
   const { lang } = useLang();
   const t = messages[lang].projects.webdoc;
   const common = messages[lang].common;
-  const [lightbox, setLightbox] = useState<string | null>(null);
+  const [lightbox, setLightbox] = useState<number | null>(null);
+  const touchStartX = useRef<number | null>(null);
 
   useEffect(() => {
-    if (!lightbox) return;
+    if (lightbox === null) return;
+    document.body.style.overflow = "hidden";
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setLightbox(null);
+      if (e.key === "ArrowRight") setLightbox((i) => (i !== null ? Math.min(i + 1, images.length - 1) : null));
+      if (e.key === "ArrowLeft") setLightbox((i) => (i !== null ? Math.max(i - 1, 0) : null));
     };
     window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onKey);
+    };
   }, [lightbox]);
 
   return (
@@ -99,11 +106,11 @@ export default function WebdocPage() {
               className={styles.img}
             />
           </div>
-          {images.map(({ src, alt }) => (
+          {images.map(({ src, alt }, index) => (
             <button
               key={src}
               className={styles.imageThumb}
-              onClick={() => setLightbox(src)}
+              onClick={() => setLightbox(index)}
               aria-label={`Enlarge: ${alt}`}>
               <Image
                 src={src}
@@ -116,19 +123,32 @@ export default function WebdocPage() {
           ))}
         </motion.div>
 
-        {lightbox && (
+        {lightbox !== null && (
           <div
             className={styles.lightbox}
             onClick={() => setLightbox(null)}
             role="dialog"
-            aria-modal="true">
+            aria-modal="true"
+            onTouchStart={(e) => { touchStartX.current = e.touches[0].clientX; }}
+            onTouchEnd={(e) => {
+              if (touchStartX.current === null) return;
+              const delta = touchStartX.current - e.changedTouches[0].clientX;
+              if (delta > 50) setLightbox((i) => i !== null ? Math.min(i + 1, images.length - 1) : null);
+              if (delta < -50) setLightbox((i) => i !== null ? Math.max(i - 1, 0) : null);
+              touchStartX.current = null;
+            }}>
             <div className={styles.lightboxInner}>
               <Image
-                src={lightbox}
-                alt=""
+                src={images[lightbox].src}
+                alt={images[lightbox].alt}
                 fill
                 className={styles.lightboxImg}
               />
+              <div className={styles.lightboxDots}>
+                {images.map((_, i) => (
+                  <span key={i} className={`${styles.dot} ${i === lightbox ? styles.dotActive : ""}`} />
+                ))}
+              </div>
             </div>
           </div>
         )}

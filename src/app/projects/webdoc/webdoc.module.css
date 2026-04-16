@@ -117,6 +117,28 @@
   object-fit: contain;
 }
 
+.lightboxDots {
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: background 0.2s;
+}
+
+.dotActive {
+  background: #fff;
+}
+
+
 /* Details */
 .details {
   display: grid;
