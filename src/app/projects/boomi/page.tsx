@@ -130,6 +130,29 @@ export default function BoomiPage() {
           </div>
         </motion.div>
 
+        <motion.div
+          className={styles.sections}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.55, duration: 0.5 }}>
+          <div className={styles.section}>
+            <h2 className={styles.sectionTitle}>{t.goalTitle}</h2>
+            <p>{t.goal}</p>
+          </div>
+          <div className={styles.section}>
+            <h2 className={styles.sectionTitle}>{t.challengeTitle}</h2>
+            <p>{t.challenge}</p>
+          </div>
+          <div className={styles.section}>
+            <h2 className={styles.sectionTitle}>{t.solutionTitle}</h2>
+            <p>{t.solution}</p>
+          </div>
+          <div className={styles.section}>
+            <h2 className={styles.sectionTitle}>{t.outcomeTitle}</h2>
+            <p>{t.outcome}</p>
+          </div>
+        </motion.div>
+
         <ProjectNav
           prev={{ href: "/projects/webdoc", name: "Webdoc Insights", category: messages[lang].projects.webdoc.category }}
           next={{ href: "/projects/flinq", name: "Flinq", category: messages[lang].projects.flinq.category }}

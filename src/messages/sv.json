@@ -18,8 +18,8 @@
   },
   "hero": {
     "label": "Fullstack-utvecklare / UI-fokus",
-    "headline": "Fullstack-utvecklare med fokus på UI & tillgänglighet.",
-    "intro": "Jag är en fullstack-utbildad utvecklare som gillar att bygga tydliga gränssnitt, smart komponentstruktur och lösningar med användaren i fokus.",
+    "headline": "Fullstack-utvecklare med passion för UI",
+    "intro": "Jag bygger moderna webbappar med starkt fokus på design, användbarhet och ren komponentstruktur. Jag gillar att skapa gränssnitt som inte bara fungerar bra — utan känns rätt att använda.",
     "btnPrimary": "Se mina projekt",
     "btnSecondary": "Om mig",
     "micro": "Baserad i Göteborg, Sverige · Tillgänglig för arbete och frilansprojekt"
@@ -106,6 +106,14 @@
       "roleTitle": "Min roll",
       "role1": "Det här var ett soloprojekt där jag ansvarade för allt från speldesign och UX till frontendutveckling och driftsättning. Jag byggde multiplayerflödet i realtid med Firestore, designade pixel-UI:t, implementerade sprite-animationer med PixiJS och lade till ljudeffekter och bakgrundsmusik med Howler.js.",
       "role2": "Projektet byggdes under sex veckor som en del av examen, med fokus på spelbarhet, tillgänglighet (WCAG 2.1 A/AA) och en tydlig retrokänsla.",
+      "goalTitle": "Mål",
+      "goal": "Målet med Boomi Countdown var att utmana mig själv tekniskt och samtidigt förbättra mina kunskaper inom UI/UX. Jag ville samla det jag lärt mig under utbildningen och praktiken i ett projekt som kändes genomarbetat, lekfullt och personligt.",
+      "challengeTitle": "Utmaning",
+      "challenge": "Det svåraste var att jobba med PixiJS. Det krävde mer logik än jag först trodde, särskilt för att få rörelser och animationer att kännas bra. Det var också en utmaning att få ihop det tekniska med en tydlig och rolig användarupplevelse.",
+      "solutionTitle": "Lösning",
+      "solution": "Jag löste det genom att testa mig fram mycket och förenkla där det behövdes. En viktig insikt var att man inte alltid måste uppfinna hjulet själv — vissa saker blev bättre och smidigare att lösa med exempelvis CSS-transitions.",
+      "outcomeTitle": "Resultat & insikter",
+      "outcome": "Slutresultatet blev ett projekt som speglar mig som utvecklare, både tekniskt och visuellt. Jag lärde mig mycket om animation, logik och vikten av att välja smarta lösningar istället för att göra allt på det svåraste sättet. Men framförallt — ett spelbart spel!",
       "stackTitle": "Teknikstack"
     },
     "flinq": {
@@ -115,18 +123,30 @@
       "about1": "Projektet gick ut på att designa och lansera en webbplats som tydligt visar vad Flinq gör, vilket problem de löser och hur man kommer i kontakt med dem.",
       "about2": "Sajten byggdes i One.com, vilket gjorde det möjligt att jobba snabbt med design, innehåll och struktur samtidigt. Resultatet blev en lösning som är enkel att underhålla och lätt att bygga vidare på.",
       "focusTitle": "Fokusområden",
-      "focusAreas": ["Tydlig struktur", "Affärsdrivet innehåll", "Snabb prestanda", "Förtroende & trovärdighet", "Enkel att underhålla"]
+      "focusAreas": ["Tydlig struktur", "Affärsdrivet innehåll", "Snabb prestanda", "Förtroende & trovärdighet", "Enkel att underhålla"],
+      "goalTitle": "Mål",
+      "goal": "Målet med Flinq-projektet var att skapa en webbplats som tydligt visar vad företaget erbjuder och varför det är värdefullt för kunden. Jag ville bygga något som kändes professionellt, förtroendeingivande och enkelt att ta till sig, med fokus på struktur, snabbhet och tydlig kommunikation.",
+      "challengeTitle": "Utmaning",
+      "challenge": "Den största utmaningen var att jobba i one.coms byggverktyg, eftersom det fanns begränsningar i både responsivitet och hur fritt man kunde arbeta med komponenterna. Det gjorde att jag behövde tänka mer kreativt för att få sidan att kännas modern och genomarbetad, trots verktygets ramar.",
+      "solutionTitle": "Lösning",
+      "solution": "Jag löste det genom att fokusera på det som faktiskt gjorde störst skillnad: tydlig struktur, bra innehåll och en enkel men genomtänkt design. I stället för att fastna i verktygets begränsningar försökte jag använda dem smart och anpassa layouten så att sidan fungerade så bra som möjligt på olika skärmstorlekar.",
+      "outcomeTitle": "Resultat & insikter",
+      "outcome": "Slutresultatet blev en webbplats som klienten blev nöjd med och som uppfyllde sitt syfte på ett tydligt sätt. Det jag tog med mig från projektet var framför allt att ett bra resultat inte alltid handlar om att ha full frihet tekniskt, utan om att kunna anpassa sig, prioritera rätt och skapa värde utifrån de förutsättningar man har."
     },
     "akarui": {
       "category": "Grupprojekt",
       "intro": "En fullstack e-handelsapplikation för ett fiktivt ljusvarumärke. Projektet gjordes i grupp och innehåller en komplett webshop med produktlistning, varukorg, checkout, orderbekräftelse och en adminpanel för produkthantering.",
-      "aboutTitle": "Om projektet",
-      "about1": "Hikari är en e-handelssajt för ljus byggd med Next.js App Router, Server Actions för CRUD-operationer och Prisma med SQLite som databas. Projektet utvecklades i grupp som en del av en skoluppgift och innehåller både den kundvända butiken och en adminpanel.",
-      "about2": "Butiken låter kunder bläddra bland produkter, hantera sin varukorg, fylla i leveransuppgifter med validering och få en orderbekräftelse med ett unikt ordernummer. I adminpanelen går det att lägga till, redigera och ta bort produkter.",
-      "about3": "Jag skapade också alla produktbilder och mockups till butiken, och designade ljusvisualerna som används på produktlistningar och detaljsidor.",
       "stackTitle": "Teknikstack",
       "featuresTitle": "Funktioner",
-      "features": ["Admin CRUD-panel", "Varukorg", "Checkout & validering", "Orderbekräftelse", "LocalStorage-persistens", "Responsiv design"]
+      "features": ["Admin CRUD-panel", "Varukorg", "Checkout & validering", "Orderbekräftelse", "LocalStorage-persistens", "Responsiv design"],
+      "goalTitle": "Mål",
+      "goal": "Målet var att omsätta det vi lärt oss i ett realistiskt, fullstack-sammanhang — jobba som grupp på en gemensam kodbas och använda tekniker som Next.js App Router och Server Actions som var nya för oss. Vi ville att slutresultatet skulle kännas som en riktig produkt, inte bara en skoluppgift.",
+      "challengeTitle": "Utmaning",
+      "challenge": "En av de större utmaningarna var att koordinera arbetet i gruppen och hålla koden konsekvent. Vi jobbade också med Next.js App Router och Server Actions för första gången, vilket innebar att förstå ett nytt tankesätt kring hur data flödar mellan klient och server.",
+      "solutionTitle": "Lösning",
+      "solution": "Vi delade upp ansvaret tydligt tidigt i projektet och höll kommunikationen igång under hela tiden. Att använda Server Actions för alla CRUD-operationer gav oss ett enhetligt mönster genom hela appen, och Prisma gjorde databaslagret enkelt att jobba med när vi väl hade schemat på plats.",
+      "outcomeTitle": "Resultat & insikter",
+      "outcome": "Det viktigaste jag tog med mig var hur mycket smidigare ett grupprojekt löper när struktur och kommunikation prioriteras från start. Jag fick också en gedigen förståelse för hur Server Actions och Prisma fungerar ihop i en riktig app — och hur mycket ett konsekvent mönster i kodbasen minskar friktionen när flera jobbar på samma sak. Utöver det skapade jag alla produktbilder och mockups till butiken, och implementerade darkmode — vilket lärde mig mycket om tematisering, CSS-variabler och att tänka i designsystem."
     }
   }
 }
