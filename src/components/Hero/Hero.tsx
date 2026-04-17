@@ -88,7 +88,15 @@ export default function Hero() {
             alt="Portfolio image in the making"
             width={1000}
             height={1000}
-            className={styles.visualImage}
+            className={`${styles.visualImage} ${styles.lightOnly}`}
+            priority
+          />
+          <Image
+            src="/images/portfolioimage-dark.png"
+            alt="Portfolio image in the making"
+            width={1000}
+            height={1000}
+            className={`${styles.visualImage} ${styles.darkOnly}`}
             priority
           />
         </motion.div>

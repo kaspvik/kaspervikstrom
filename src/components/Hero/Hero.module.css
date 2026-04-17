@@ -94,6 +94,18 @@
   border-radius: var(--radius-lg);
 }
 
+.darkOnly {
+  display: none;
+}
+
+[data-theme="dark"] .lightOnly {
+  display: none;
+}
+
+[data-theme="dark"] .darkOnly {
+  display: block;
+}
+
 @media (max-width: 768px) {
   .inner {
     grid-template-columns: 1fr;
