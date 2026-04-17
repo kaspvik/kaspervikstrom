@@ -26,6 +26,7 @@ function LinkedInIcon() {
 export default function Footer() {
   const { lang } = useLang();
   const t = messages[lang].footer;
+  const contact = messages[lang].contact;
 
   return (
     <footer id="contact" className={styles.footer}>
@@ -36,6 +37,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.contact}>
+          <span className={styles.contactTitle}>{contact.title}</span>
           <a href="mailto:kasper.vik@hotmail.com" className={styles.contactLink}>
             kasper.vik@hotmail.com
           </a>

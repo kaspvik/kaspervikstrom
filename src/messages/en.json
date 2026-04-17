@@ -2,14 +2,14 @@
   "hero": {
     "label": "Fullstack Developer / UI-Focused",
     "headline": "Fullstack Developer with a passion for UI",
-    "intro": "I build modern web apps with a strong focus on design, usability and clean component structure. I enjoy creating interfaces that not only work well — but feel right to use.",
+    "intro": "I build modern web apps with a strong focus on design, usability and clean component structure.",
     "btnPrimary": "View My Work",
     "btnSecondary": "About Me",
     "micro": "Based in Gothenburg, Sweden · Available for work and freelance opportunities"
   },
   "selectedWork": {
     "title": "Selected Work",
-    "intro": "A selection of projects spanning internship work, client work, exam projects, and interactive concepts — with a focus on UI, structure, and user experience.",
+    "intro": "A selection of projects spanning internship work, client work, exam projects, and interactive concepts, with a focus on UI, structure, and user experience.",
     "projects": {
       "webdoc": {
         "category": "Internship Project",
@@ -30,12 +30,11 @@
     }
   },
   "howIWork": {
-    "title": "How I Work",
-    "intro": "I enjoy combining visual thinking with technical structure — building interfaces that feel modern, clear, and usable.",
+    "title": "How I Work:",
     "cards": [
       {
         "title": "UI with intention",
-        "body": "I care about layout, hierarchy, spacing, and visual clarity. Good design should not only look good — it should make things easier to understand and use."
+        "body": "I care about layout, hierarchy, spacing, and visual clarity. Good design should not only look good, it should make things easier to understand and use."
       },
       {
         "title": "Accessibility from the start",
@@ -47,11 +46,11 @@
       },
       {
         "title": "Curious and fast-learning",
-        "body": "I like exploring new tools, workflows, and technologies early, especially when they can improve how something is built or experienced."
+        "body": "I learn quickly and enjoy exploring. It has led to me picking up things outside of courses and projects fairly often, and bringing them into the next thing I work on."
       },
       {
         "title": "People over process",
-        "body": "I believe the best results come from good communication and a positive atmosphere. I enjoy being part of a team, sharing ideas openly, and solving problems together with others — preferably over a cup of coffee or two."
+        "body": "I believe the best results come from good communication and a positive atmosphere. I enjoy being part of a team, sharing ideas openly, and solving problems together with others, preferably over a cup of coffee or two."
       }
     ]
   },
@@ -59,7 +58,10 @@
     "title": "About",
     "body1": "I'm a fullstack-trained developer with a strong interest in frontend, UI, accessibility, and user experience. I enjoy creating digital products that feel thoughtful, modern, and easy to use.",
     "body2": "My background includes school projects, internship work, client projects, and component-based frontend development. I've worked with UI implementation, Storybook, Figma, API integration, and both frontend and backend development.",
-    "body3": "What drives me most is the combination of creativity and structure — finding ways to turn ideas, layouts, and user needs into real products. Outside of that, I'm a people person at heart. I genuinely enjoy collaborating, exchanging ideas, and being part of a team where everyone's working toward something together."
+    "body3": "What drives me most is the combination of creativity and structure, finding ways to turn ideas, layouts, and user needs into real products. Outside of that, I'm a people person at heart. I genuinely enjoy collaborating, exchanging ideas, and being part of a team where everyone's working toward something together.",
+    "body4": "Before moving into development, I completed a Bachelor's degree in Project Management, specialising in Media, Aesthetics and Cultural Entrepreneurship at the University of Gothenburg. That background shaped the way I think about communication, creative processes, and how to bring people and ideas together. It's something I carry into every project.",
+    "cta": "Want to know more or just say hi? Feel free to reach out.",
+    "ctaLink": "Get in touch"
   },
   "footer": {
     "tagline": "Based in Gothenburg, Sweden · Available for work and freelance"
@@ -72,7 +74,7 @@
   },
   "contact": {
     "title": "Get in Touch",
-    "intro": "I'm always happy to connect — whether it's about a new opportunity, a collaboration, or just a chat about design and code. Don't hesitate to reach out.",
+    "intro": "I'm always happy to connect, whether it's about a new opportunity, a collaboration, or just a chat about design and code. Don't hesitate to reach out.",
     "labels": {
       "email": "Email",
       "phone": "Phone",
@@ -97,45 +99,45 @@
       "goalTitle": "Goal",
       "goal": "Webdoc wanted a dashboard that gave a clear overview of their services, along with slides for Västtrafik departures, weather, and other dynamic content.",
       "challengeTitle": "Challenge",
-      "challenge": "One of the biggest challenges was connecting backend data to our widgets in a way that worked reliably and consistently. The data came from different sources and needed to be mapped correctly to each widget type — requiring precision and a clear understanding of both the data structures and the interface logic.",
+      "challenge": "One of the biggest challenges was connecting backend data to our widgets in a way that worked reliably and consistently. The data came from different sources and needed to be mapped correctly to each widget type, requiring precision and a clear understanding of both the data structures and the interface logic.",
       "solutionTitle": "Solution",
-      "solution": "The key was communication. By keeping an ongoing dialogue with the backend team, we could identify early on what the data looked like, what needed to be adjusted, and where responsibilities lay. Many problems were solved faster by talking them through together rather than working in isolation — a clear reminder of how essential collaboration and clarity are in a shared system.",
+      "solution": "The key was communication. By keeping an ongoing dialogue with the backend team, we could identify early on what the data looked like, what needed to be adjusted, and where responsibilities lay. Many problems were solved faster by talking them through together rather than working in isolation, a clear reminder of how essential collaboration and clarity are in a shared system.",
       "outcomeTitle": "Result & learnings",
-      "outcome": "The dashboard became more modular and easier to extend, with components reused consistently across multiple parts of the system. The project gave me a deeper understanding of how design systems, component thinking, and state management connect in larger interfaces — and how to build flexible UI solutions that still feel stable and well-considered for the user.",
+      "outcome": "The dashboard became more modular and easier to extend, with components reused consistently across multiple parts of the system. The project gave me a deeper understanding of how design systems, component thinking, and state management connect in larger interfaces, and how to build flexible UI solutions that still feel stable and well-considered for the user.",
       "stackTitle": "Tech Stack"
     },
     "boomi": {
       "category": "Exam Project",
-      "intro": "A fast, social party game for 4–12 players. Players connect via mobile or desktop to a shared room where a pixelated bomb creature — Boomi — is passed around during a 60-second round. One player secretly places Boomi. Everyone else tries to figure out who.",
+      "intro": "A fast, social party game for 4–12 players. Players connect via mobile or desktop to a shared room where a pixelated bomb creature Boomi, is passed around during a 60-second round. One player secretly places Boomi. Everyone else tries to figure out who.",
       "roleTitle": "My role",
-      "role1": "Solo project — I handled everything from game design and UX to frontend development and deployment. This included building the real-time multiplayer flow with Firestore, designing the pixel UI system, implementing sprite animations with PixiJS, and adding sound effects and background music via Howler.js.",
+      "role1": "Solo project, I handled everything from game design and UX to frontend development and deployment. This included building the real-time multiplayer flow with Firestore, designing the pixel UI system, implementing sprite animations with PixiJS, and adding sound effects and background music via Howler.js.",
       "role2": "The project was built over six weeks as part of a school exam, with a focus on playability, accessibility (WCAG 2.1 A/AA), and a coherent retro aesthetic throughout.",
       "goalTitle": "Goal",
       "goal": "The goal with Boomi Countdown was to challenge myself technically while improving my skills in UI/UX. I wanted to bring together what I had learned throughout my education and internship into a project that felt thorough, playful, and personal.",
       "challengeTitle": "Challenge",
-      "challenge": "The hardest part was working with PixiJS. It required more logic than I initially expected — especially getting movements and animations to feel right. It was also a challenge to combine the technical side with a clear and fun user experience.",
+      "challenge": "The hardest part was working with PixiJS. It required more logic than I initially expected, especially getting movements and animations to feel right. It was also a challenge to combine the technical side with a clear and fun user experience.",
       "solutionTitle": "Solution",
-      "solution": "I worked through it by testing and iterating a lot, and simplifying where needed. A key insight was that you don't always have to reinvent the wheel — some things turned out better and smoother to solve with something as straightforward as CSS transitions.",
+      "solution": "I worked through it by testing and iterating a lot, and simplifying where needed. A key insight was that you don't always have to reinvent the wheel, some things turned out better and smoother to solve with something as straightforward as CSS transitions.",
       "outcomeTitle": "Result & learnings",
-      "outcome": "The end result was a project that reflected me as a developer — both technically and visually. I learned a lot about animation, logic, and the value of choosing smart solutions instead of doing everything the hard way. And above all — a playable game!",
+      "outcome": "The end result was a project that reflected me as a developer, both technically and visually. I learned a lot about animation, logic, and the value of choosing smart solutions instead of doing everything the hard way. And above all, a playable game!",
       "stackTitle": "Tech Stack"
     },
     "flinq": {
       "category": "Client Work",
       "intro": "Design and launch of a new website for Flinq, a company focused on cost savings and analysis within supply chain. The goal was to quickly communicate business value, build trust, and make it easy for potential customers to take the next step.",
       "aboutTitle": "About the project",
-      "about1": "The project involved designing and launching a website that clearly explained what Flinq does, what problem they solve, and how to get in touch — with business value and user experience at the centre.",
+      "about1": "The project involved designing and launching a website that clearly explained what Flinq does, what problem they solve, and how to get in touch, with business value and user experience at the centre.",
       "about2": "The site was built using One, which enabled an efficient workflow where design, content, and structure could be developed in parallel. This allowed for quick iteration and landing on a solution that is easy to maintain and ready to scale.",
       "focusTitle": "Focus areas",
       "focusAreas": ["Clear structure", "Business-driven content", "Fast performance", "Trust & credibility", "Easy to maintain"],
       "goalTitle": "Goal",
-      "goal": "The goal with the Flinq project was to create a website that clearly communicates what the company offers and why it's valuable to the customer. I wanted to build something that felt professional, trustworthy, and easy to take in — with a focus on structure, speed, and clear communication.",
+      "goal": "The goal with the Flinq project was to create a website that clearly communicates what the company offers and why it's valuable to the customer. I wanted to build something that felt professional, trustworthy, and easy to take in, with a focus on structure, speed, and clear communication.",
       "challengeTitle": "Challenge",
       "challenge": "The biggest challenge was working within One's website builder, which had limitations in both responsiveness and how freely you could work with components. That pushed me to think more creatively to make the site feel modern and polished despite the tool's constraints.",
       "solutionTitle": "Solution",
       "solution": "I solved it by focusing on what actually made the biggest difference: clear structure, solid content, and a simple but considered design. Instead of getting stuck on the tool's limitations, I tried to use them smartly and adapt the layout so the site worked as well as possible across screen sizes.",
       "outcomeTitle": "Result & learnings",
-      "outcome": "The end result was a website the client was happy with and that served its purpose clearly. What I took away from the project was above all that a good result isn't always about having full technical freedom — it's about being adaptable, prioritising well, and creating value within the constraints you're given."
+      "outcome": "The end result was a website the client was happy with and that served its purpose clearly. What I took away from the project was above all that a good result isn't always about having full technical freedom, it's about being adaptable, prioritising well, and creating value within the constraints you're given."
     },
     "akarui": {
       "category": "Group Project",
@@ -144,13 +146,13 @@
       "featuresTitle": "Features",
       "features": ["Admin CRUD panel", "Shopping cart", "Checkout & validation", "Order confirmation", "LocalStorage persistence", "Responsive design"],
       "goalTitle": "Goal",
-      "goal": "The goal was to apply what we had learned in a realistic, full-stack setting — working as a group on a shared codebase while using technologies like Next.js App Router and Server Actions that were new to us. We wanted the end result to feel like a real product, not just a school assignment.",
+      "goal": "The goal was to apply what we had learned in a realistic, full-stack setting, working as a group on a shared codebase while using technologies like Next.js App Router and Server Actions that were new to us. We wanted the end result to feel like a real product, not just a school assignment.",
       "challengeTitle": "Challenge",
       "challenge": "One of the biggest challenges was coordinating the work across the group while keeping the code consistent. We were also working with Next.js App Router and Server Actions for the first time, which meant understanding a new mental model for how data flows between client and server.",
       "solutionTitle": "Solution",
       "solution": "We divided responsibilities clearly early on and kept communication ongoing throughout the project. Using Server Actions for all CRUD operations gave us a clean and consistent pattern across the whole app, and Prisma made the database layer straightforward to work with once we had the schema in place.",
       "outcomeTitle": "Result & learnings",
-      "outcome": "The biggest takeaway was how much smoother a group project runs when structure and communication are prioritised from the start. I also got a solid understanding of how Server Actions and Prisma work together in a real app — and how much a consistent pattern across the codebase reduces friction when multiple people are working on the same thing. On top of that, I created all product images and mockups for the store, and implemented dark mode — which taught me a lot about theming, CSS variables, and thinking in design systems."
+      "outcome": "The biggest takeaway was how much smoother a group project runs when structure and communication are prioritised from the start. I also got a solid understanding of how Server Actions and Prisma work together in a real app, and how much a consistent pattern across the codebase reduces friction when multiple people are working on the same thing. On top of that, I created all product images and mockups for the store, and implemented dark mode, which taught me a lot about theming, CSS variables, and thinking in design systems."
     }
   }
 }
