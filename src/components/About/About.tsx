@@ -32,14 +32,13 @@ export default function About() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-        >
+          transition={{ duration: 0.5, ease: "easeOut" }}>
           <h2 className={styles.title}>{t.title}</h2>
           <p className={styles.body}>{t.body1}</p>
           <p className={styles.body}>{t.body2}</p>
           <p className={styles.body}>{t.body3}</p>
           <p className={styles.body}>{t.body4}</p>
-          <p className={styles.body}>{t.cta} {t.ctaLink}</p>
+          <p className={styles.body}>{t.cta}</p>
           <ul className={styles.skills} aria-label="Skills">
             {skills.map((skill) => (
               <li key={skill} className={styles.skill}>
