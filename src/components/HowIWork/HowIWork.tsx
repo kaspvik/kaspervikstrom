@@ -17,7 +17,6 @@ export default function HowIWork() {
       <div className={styles.inner}>
         <div className={styles.header}>
           <h2 className={styles.title}>{t.title}</h2>
-          {t.intro && <p className={styles.intro}>{t.intro}</p>}
         </div>
 
         <div className={styles.grid}>
@@ -28,8 +27,7 @@ export default function HowIWork() {
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
-              transition={{ delay: i * 0.08, duration: 0.4, ease: "easeOut" }}
-            >
+              transition={{ delay: i * 0.08, duration: 0.4, ease: "easeOut" }}>
               <h3 className={styles.cardTitle}>{card.title}</h3>
               <p className={styles.cardBody}>{card.body}</p>
             </motion.div>
