@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./Hero.module.css";
 import { useLang } from "@/context/LanguageContext";
@@ -82,8 +83,14 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.97 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}>
-          {/* Project visuals go here */}
-          <div className={styles.visualPlaceholder} aria-hidden="true" />
+          <Image
+            src="/images/portfolioimage.png"
+            alt="Portfolio image in the making"
+            width={1000}
+            height={1000}
+            className={styles.visualImage}
+            priority
+          />
         </motion.div>
       </div>
     </section>

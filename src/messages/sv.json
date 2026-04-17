@@ -1,7 +1,7 @@
 {
   "contact": {
     "title": "Kontakt",
-    "intro": "Jag är öppen för nya möjligheter, samarbeten och frilansprojekt. Hör gärna av dig.",
+    "intro": "Jag tar alltid gärna ett snack, oavsett om det handlar om en ny möjlighet, ett samarbete eller bara ett samtal om design och kod. Hör av dig!",
     "labels": {
       "email": "E-post",
       "phone": "Telefon",
@@ -19,22 +19,22 @@
   "hero": {
     "label": "Fullstack-utvecklare / UI-fokus",
     "headline": "Fullstack-utvecklare med passion för UI",
-    "intro": "Jag bygger moderna webbappar med starkt fokus på design, användbarhet och ren komponentstruktur. Jag gillar att skapa gränssnitt som inte bara fungerar bra — utan känns rätt att använda.",
+    "intro": "Jag bygger moderna webbappar med starkt fokus på design, användbarhet och ren komponentstruktur.",
     "btnPrimary": "Se mina projekt",
     "btnSecondary": "Om mig",
     "micro": "Baserad i Göteborg, Sverige · Tillgänglig för arbete och frilansprojekt"
   },
   "selectedWork": {
     "title": "Utvalda projekt",
-    "intro": "Ett urval av projekt från praktik, kunduppdrag, examensarbete och andra interaktiva koncept — med fokus på UI, struktur och användarupplevelse.",
+    "intro": "Ett urval av projekt från praktik, kunduppdrag, examensarbete och andra interaktiva koncept, med fokus på UI, struktur och användarupplevelse.",
     "projects": {
       "webdoc": {
         "category": "Praktikprojekt",
-        "description": "Ett dashboard- och presentationskoncept med fokus på tydlig struktur, återanvändbara komponenter och visuell tydlighet."
+        "description": "En dashboard och ett presentationskoncept med fokus på tydlig struktur, återanvändbara komponenter och visuell tydlighet."
       },
       "boomi": {
         "category": "Examensprojekt",
-        "description": "Ett lekfullt interaktivt projekt där visuell identitet, frontend-logik och spelkänsla står i fokus."
+        "description": "Ett lekfullt Fullstack projekt där visuell identitet och spelkänsla står i fokus."
       },
       "flinq": {
         "category": "Kundarbete",
@@ -47,12 +47,11 @@
     }
   },
   "howIWork": {
-    "title": "Så här jobbar jag",
-    "intro": "Jag gillar att kombinera det visuella med det tekniska och bygga gränssnitt som känns tydliga, moderna och enkla att använda.",
+    "title": "Så här jobbar jag:",
     "cards": [
       {
         "title": "UI med tanke bakom",
-        "body": "Jag lägger mycket fokus på layout, hierarki, spacing och tydlighet. Design ska inte bara vara snygg — den ska också göra det lätt att förstå och använda en produkt."
+        "body": "Jag lägger mycket fokus på layout, hierarki, spacing och tydlighet. Design ska inte bara vara snygg, den ska också göra det lätt att förstå och enkel att använda."
       },
       {
         "title": "Tillgänglighet från start",
@@ -64,7 +63,11 @@
       },
       {
         "title": "Nyfiken och snabblärd",
-        "body": "Jag testar gärna nya verktyg, arbetssätt och tekniker — särskilt när de kan göra något bättre, tydligare eller smidigare."
+        "body": "Jag lär mig snabbt och gillar att utforska. Det har lett till att jag ofta plockar upp saker utanför kurser och projekt, och tar med det vidare in i nästa."
+      },
+      {
+        "title": "Människor före process",
+        "body": "Jag tror att de bästa resultaten skapas genom bra kommunikation och en positiv stämning. Jag trivs i team, delar gärna idéer öppet och löser helst problem tillsammans med andra, gärna över en kopp kaffe eller två."
       }
     ]
   },
@@ -72,7 +75,10 @@
     "title": "Om mig",
     "body1": "Jag är en fullstack-utbildad utvecklare med stort intresse för frontend, UI, tillgänglighet och användarupplevelse. Jag gillar att skapa digitala produkter som känns tydliga, moderna och enkla att använda.",
     "body2": "Min bakgrund består av skolprojekt, praktik, kundprojekt och komponentbaserad frontendutveckling. Jag har jobbat med UI-implementering, Storybook, Figma, API-integration och både frontend och backend.",
-    "body3": "Det jag gillar mest är kombinationen av kreativitet och struktur — att ta idéer, skisser och behov och göra dem till riktiga produkter."
+    "body3": "Det jag gillar mest är kombinationen av kreativitet och struktur, att ta idéer, skisser och behov och göra dem till riktiga produkter. Utöver det är jag en person som trivs med människor. Jag gillar verkligen att samarbeta, utbyta idéer och vara del av ett team där alla jobbar mot samma mål.",
+    "body4": "Innan jag gick in i utveckling tog jag en kandidatexamen i projektledning med inriktning mot medier, estetik och kulturellt entreprenörskap vid Göteborgs universitet. Den bakgrunden har format hur jag tänker kring kommunikation, kreativa processer och hur man får ihop människor och idéer. Det är något jag tar med mig in i varje projekt.",
+    "cta": "Vill du veta mer eller bara ta ett snack?",
+    "ctaLink": "Kontakta mig här nedan!"
   },
   "footer": {
     "tagline": "Baserad i Göteborg, Sverige · Tillgänglig för arbete och frilansprojekt"
@@ -86,12 +92,12 @@
   "projects": {
     "webdoc": {
       "category": "Praktikprojekt",
-      "intro": "Webdoc Insights är en intern webbapplikation för att visa nyckeltal och bygga presentationsvyer med dynamiskt innehåll. Projektet består av ett dashboard, en presentationseditor och en presentationsspelare.",
+      "intro": "Webdoc Insights är en intern webbapplikation för att visa nyckeltal och bygga presentationsvyer med dynamiskt innehåll. Projektet består av en dashboard, en presentationseditor och en presentationsspelare.",
       "roleTitle": "Min roll",
       "role1": "Jag jobbade främst med frontend och UI, och var med och byggde återanvändbara komponenter i Storybook, utvecklade widgets för statistikvisning och skapade olika slides och presentationsvyer för data som väder, trafik och nyckeltal.",
       "role2": "Fokus låg på att skapa en tydlig och modern upplevelse där data blir enklare att ta till sig.",
       "goalTitle": "Mål",
-      "goal": "Webdoc ville ha ett dashboard som ger en tydlig överblick av deras tjänster – samt slides för avgångar i Västtrafik, väder och andra dynamiska inslag.",
+      "goal": "Webdoc ville ha en dashboard som gav en tydlig överblick av deras tjänster – samt slides för avgångar i Västtrafik, väder och andra dynamiska inslag.",
       "challengeTitle": "Utmaning",
       "challenge": "En av de största utmaningarna var att koppla ihop backenddata med våra widgets på ett sätt som fungerade stabilt och konsekvent. Datan kom från olika källor och behövde mappas rätt mot varje widgettyp – vilket krävde noggrannhet och tydlig förståelse för både datastruktur och gränssnittslogik.",
       "solutionTitle": "Lösning",
@@ -102,7 +108,7 @@
     },
     "boomi": {
       "category": "Examensprojekt",
-      "intro": "Ett snabbt och socialt sällskapsspel för 4–12 spelare. Spelarna ansluter via mobil eller dator till ett gemensamt rum där en pixlad bombvarelse — Boomi — skickas runt under en 60-sekundersrunda. En spelare placerar Boomi i hemlighet, och alla andra försöker lista ut vem.",
+      "intro": "Ett snabbt och socialt sällskapsspel för 4–12 spelare. Spelarna ansluter via mobil eller dator till ett gemensamt rum där en pixlad bombvarelse Boomi, skickas runt under en 60-sekundersrunda. En spelare placerar Boomi i hemlighet, och alla andra försöker lista ut vem.",
       "roleTitle": "Min roll",
       "role1": "Det här var ett soloprojekt där jag ansvarade för allt från speldesign och UX till frontendutveckling och driftsättning. Jag byggde multiplayerflödet i realtid med Firestore, designade pixel-UI:t, implementerade sprite-animationer med PixiJS och lade till ljudeffekter och bakgrundsmusik med Howler.js.",
       "role2": "Projektet byggdes under sex veckor som en del av examen, med fokus på spelbarhet, tillgänglighet (WCAG 2.1 A/AA) och en tydlig retrokänsla.",
@@ -111,9 +117,9 @@
       "challengeTitle": "Utmaning",
       "challenge": "Det svåraste var att jobba med PixiJS. Det krävde mer logik än jag först trodde, särskilt för att få rörelser och animationer att kännas bra. Det var också en utmaning att få ihop det tekniska med en tydlig och rolig användarupplevelse.",
       "solutionTitle": "Lösning",
-      "solution": "Jag löste det genom att testa mig fram mycket och förenkla där det behövdes. En viktig insikt var att man inte alltid måste uppfinna hjulet själv — vissa saker blev bättre och smidigare att lösa med exempelvis CSS-transitions.",
+      "solution": "Jag löste det genom att testa mig fram mycket och förenkla där det behövdes. En viktig insikt var att man inte alltid måste uppfinna hjulet själv, vissa saker blev bättre och smidigare att lösa med exempelvis CSS-transitions.",
       "outcomeTitle": "Resultat & insikter",
-      "outcome": "Slutresultatet blev ett projekt som speglar mig som utvecklare, både tekniskt och visuellt. Jag lärde mig mycket om animation, logik och vikten av att välja smarta lösningar istället för att göra allt på det svåraste sättet. Men framförallt — ett spelbart spel!",
+      "outcome": "Slutresultatet blev ett projekt som speglade mig som utvecklare, både tekniskt och visuellt. Jag lärde mig mycket om animation, logik och vikten av att välja smarta lösningar istället för att göra allt på det svåraste sättet. Men framförallt, ett spelbart spel!",
       "stackTitle": "Teknikstack"
     },
     "flinq": {
@@ -140,13 +146,13 @@
       "featuresTitle": "Funktioner",
       "features": ["Admin CRUD-panel", "Varukorg", "Checkout & validering", "Orderbekräftelse", "LocalStorage-persistens", "Responsiv design"],
       "goalTitle": "Mål",
-      "goal": "Målet var att omsätta det vi lärt oss i ett realistiskt, fullstack-sammanhang — jobba som grupp på en gemensam kodbas och använda tekniker som Next.js App Router och Server Actions som var nya för oss. Vi ville att slutresultatet skulle kännas som en riktig produkt, inte bara en skoluppgift.",
+      "goal": "Målet var att omsätta det vi lärt oss i ett realistiskt, fullstack-sammanhang, jobba som grupp på en gemensam kodbas och använda tekniker som Next.js App Router och Server Actions som var nya för oss. Vi ville att slutresultatet skulle kännas som en riktig produkt, inte bara en skoluppgift.",
       "challengeTitle": "Utmaning",
       "challenge": "En av de större utmaningarna var att koordinera arbetet i gruppen och hålla koden konsekvent. Vi jobbade också med Next.js App Router och Server Actions för första gången, vilket innebar att förstå ett nytt tankesätt kring hur data flödar mellan klient och server.",
       "solutionTitle": "Lösning",
       "solution": "Vi delade upp ansvaret tydligt tidigt i projektet och höll kommunikationen igång under hela tiden. Att använda Server Actions för alla CRUD-operationer gav oss ett enhetligt mönster genom hela appen, och Prisma gjorde databaslagret enkelt att jobba med när vi väl hade schemat på plats.",
       "outcomeTitle": "Resultat & insikter",
-      "outcome": "Det viktigaste jag tog med mig var hur mycket smidigare ett grupprojekt löper när struktur och kommunikation prioriteras från start. Jag fick också en gedigen förståelse för hur Server Actions och Prisma fungerar ihop i en riktig app — och hur mycket ett konsekvent mönster i kodbasen minskar friktionen när flera jobbar på samma sak. Utöver det skapade jag alla produktbilder och mockups till butiken, och implementerade darkmode — vilket lärde mig mycket om tematisering, CSS-variabler och att tänka i designsystem."
+      "outcome": "Det viktigaste jag tog med mig var hur mycket smidigare ett grupprojekt löper när struktur och kommunikation prioriteras från start. Jag fick också en gedigen förståelse för hur Server Actions och Prisma fungerar ihop i en riktig app, och hur mycket ett konsekvent mönster i kodbasen minskar friktionen när flera jobbar på samma sak. Utöver det skapade jag alla produktbilder och mockups till butiken, och implementerade darkmode, vilket lärde mig mycket om tematisering, CSS-variabler och att tänka i designsystem."
     }
   }
 }

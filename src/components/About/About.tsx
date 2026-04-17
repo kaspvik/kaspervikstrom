@@ -38,6 +38,8 @@ export default function About() {
           <p className={styles.body}>{t.body1}</p>
           <p className={styles.body}>{t.body2}</p>
           <p className={styles.body}>{t.body3}</p>
+          <p className={styles.body}>{t.body4}</p>
+          <p className={styles.body}>{t.cta} {t.ctaLink}</p>
           <ul className={styles.skills} aria-label="Skills">
             {skills.map((skill) => (
               <li key={skill} className={styles.skill}>
