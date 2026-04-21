@@ -1,11 +1,11 @@
 "use client";
 
+import ProjectNav from "@/components/ProjectNav/ProjectNav";
 import { useLang } from "@/context/LanguageContext";
 import en from "@/messages/en.json";
 import sv from "@/messages/sv.json";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import ProjectNav from "@/components/ProjectNav/ProjectNav";
 import styles from "./boomi.module.css";
 
 const messages = { en, sv };
@@ -45,12 +45,32 @@ export default function BoomiPage() {
           <ProjectNav
             compact
             back={{ href: "/#work", label: common.backToWork }}
-            prev={{ href: "/projects/webdoc", name: "Webdoc Insights", category: messages[lang].projects.webdoc.category }}
-            next={{ href: "/projects/flinq", name: "Flinq", category: messages[lang].projects.flinq.category }}
+            prev={{
+              href: "/projects/webdoc",
+              name: "Webdoc Insights",
+              category: messages[lang].projects.webdoc.category,
+            }}
+            next={{
+              href: "/projects/flinq",
+              name: "Flinq",
+              category: messages[lang].projects.flinq.category,
+            }}
             others={[
-              { href: "/projects/webdoc", name: "Webdoc Insights", category: messages[lang].projects.webdoc.category },
-              { href: "/projects/flinq", name: "Flinq", category: messages[lang].projects.flinq.category },
-              { href: "/projects/akarui", name: "Hikari", category: messages[lang].projects.akarui.category },
+              {
+                href: "/projects/webdoc",
+                name: "Webdoc Insights",
+                category: messages[lang].projects.webdoc.category,
+              },
+              {
+                href: "/projects/flinq",
+                name: "Flinq",
+                category: messages[lang].projects.flinq.category,
+              },
+              {
+                href: "/projects/akarui",
+                name: "Hikari",
+                category: messages[lang].projects.akarui.category,
+              },
             ]}
           />
         </motion.div>
@@ -130,6 +150,25 @@ export default function BoomiPage() {
           </div>
         </motion.div>
 
+        {t.testimonialQuote && (
+          <motion.blockquote
+            className={styles.testimonial}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.5 }}>
+            <p className={styles.testimonialQuote}>"{t.testimonialQuote}"</p>
+            <footer className={styles.testimonialAuthor}>
+              {t.testimonialName}
+              {t.testimonialRole && (
+                <span className={styles.testimonialRole}>
+                  {" "}
+                  — {t.testimonialRole}
+                </span>
+              )}
+            </footer>
+          </motion.blockquote>
+        )}
+
         <motion.div
           className={styles.sections}
           initial={{ opacity: 0, y: 20 }}
@@ -154,8 +193,16 @@ export default function BoomiPage() {
         </motion.div>
 
         <ProjectNav
-          prev={{ href: "/projects/webdoc", name: "Webdoc Insights", category: messages[lang].projects.webdoc.category }}
-          next={{ href: "/projects/flinq", name: "Flinq", category: messages[lang].projects.flinq.category }}
+          prev={{
+            href: "/projects/webdoc",
+            name: "Webdoc Insights",
+            category: messages[lang].projects.webdoc.category,
+          }}
+          next={{
+            href: "/projects/flinq",
+            name: "Flinq",
+            category: messages[lang].projects.flinq.category,
+          }}
         />
       </div>
     </main>
