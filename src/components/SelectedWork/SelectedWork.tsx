@@ -2,11 +2,11 @@
 
 import LazyVideo from "@/components/LazyVideo/LazyVideo";
 import { useLang } from "@/context/LanguageContext";
+import en from "@/messages/en.json";
+import sv from "@/messages/sv.json";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import en from "@/messages/en.json";
-import sv from "@/messages/sv.json";
 import styles from "./SelectedWork.module.css";
 
 const messages = { en, sv };
@@ -15,7 +15,13 @@ const projects = [
   {
     id: "webdoc",
     title: "Webdoc Dashboard",
-    tags: ["React", "TypeScript", "Storybook", "Dashboard UI", "API Integration"],
+    tags: [
+      "React",
+      "TypeScript",
+      "Storybook",
+      "Dashboard UI",
+      "API Integration",
+    ],
     featured: true,
     href: "/projects/webdoc",
     video: "/videos/webdoc-slides.mp4",
@@ -23,7 +29,7 @@ const projects = [
   {
     id: "boomi",
     title: "Boomi Countdown",
-    tags: ["React", "Game UI", "Interactive Design", "Frontend"],
+    tags: ["React", "Firebase", "Game UI", "Interactive Design", "Fullstack"],
     featured: false,
     href: "/projects/boomi",
     image: "/images/boomi-header.png",
@@ -31,7 +37,7 @@ const projects = [
   {
     id: "flinq",
     title: "Flinq",
-    tags: ["Client Work", "Web Design", "One", "Performance"],
+    tags: ["Client Work", "Web Design", "One.com", "Performance"],
     featured: false,
     href: "/projects/flinq",
     image: "/images/flinq.png",
@@ -39,7 +45,7 @@ const projects = [
   {
     id: "akarui",
     title: "Hikari",
-    tags: ["Next.js", "TypeScript", "Prisma", "Material UI"],
+    tags: ["Next.js", "TypeScript", "Prisma", "Material UI", "Product Design"],
     featured: true,
     href: "/projects/akarui",
     video: "/videos/hikari-video.mp4",

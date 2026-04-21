@@ -1,12 +1,11 @@
 "use client";
 
+import ProjectNav from "@/components/ProjectNav/ProjectNav";
 import { useLang } from "@/context/LanguageContext";
 import en from "@/messages/en.json";
 import sv from "@/messages/sv.json";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
-import ProjectNav from "@/components/ProjectNav/ProjectNav";
 import styles from "./boomi.module.css";
 
 const messages = { en, sv };
@@ -40,11 +39,40 @@ export default function BoomiPage() {
     <main className={styles.page}>
       <div className={styles.inner}>
         <motion.div
-          className={styles.back}
-          initial={{ opacity: 0, x: -8 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: -8 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}>
-          <Link href="/#work">{common.backToWork}</Link>
+          <ProjectNav
+            compact
+            back={{ href: "/#work", label: common.backToWork }}
+            prev={{
+              href: "/projects/webdoc",
+              name: "Webdoc Insights",
+              category: messages[lang].projects.webdoc.category,
+            }}
+            next={{
+              href: "/projects/flinq",
+              name: "Flinq",
+              category: messages[lang].projects.flinq.category,
+            }}
+            others={[
+              {
+                href: "/projects/webdoc",
+                name: "Webdoc Insights",
+                category: messages[lang].projects.webdoc.category,
+              },
+              {
+                href: "/projects/flinq",
+                name: "Flinq",
+                category: messages[lang].projects.flinq.category,
+              },
+              {
+                href: "/projects/akarui",
+                name: "Hikari",
+                category: messages[lang].projects.akarui.category,
+              },
+            ]}
+          />
         </motion.div>
 
         <div className={styles.heroRow}>
@@ -93,6 +121,7 @@ export default function BoomiPage() {
               width={1600}
               height={900}
               className={styles.image}
+              sizes="(max-width: 768px) 100vw, 55vw"
               priority
             />
           </motion.div>
@@ -131,7 +160,10 @@ export default function BoomiPage() {
             <footer className={styles.testimonialAuthor}>
               {t.testimonialName}
               {t.testimonialRole && (
-                <span className={styles.testimonialRole}> — {t.testimonialRole}</span>
+                <span className={styles.testimonialRole}>
+                  {" "}
+                  — {t.testimonialRole}
+                </span>
               )}
             </footer>
           </motion.blockquote>
@@ -161,8 +193,16 @@ export default function BoomiPage() {
         </motion.div>
 
         <ProjectNav
-          prev={{ href: "/projects/webdoc", name: "Webdoc Insights", category: messages[lang].projects.webdoc.category }}
-          next={{ href: "/projects/flinq", name: "Flinq", category: messages[lang].projects.flinq.category }}
+          prev={{
+            href: "/projects/webdoc",
+            name: "Webdoc Insights",
+            category: messages[lang].projects.webdoc.category,
+          }}
+          next={{
+            href: "/projects/flinq",
+            name: "Flinq",
+            category: messages[lang].projects.flinq.category,
+          }}
         />
       </div>
     </main>
