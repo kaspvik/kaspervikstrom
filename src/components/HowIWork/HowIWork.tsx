@@ -17,7 +17,7 @@ export default function HowIWork() {
       <div className={styles.inner}>
         <div className={styles.header}>
           <h2 className={styles.title}>{t.title}</h2>
-          <p className={styles.intro}>{t.intro}</p>
+          {t.intro && <p className={styles.intro}>{t.intro}</p>}
         </div>
 
         <div className={styles.grid}>

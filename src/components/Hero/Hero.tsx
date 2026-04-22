@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./Hero.module.css";
 import { useLang } from "@/context/LanguageContext";
@@ -59,10 +60,10 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             variants={fadeUp}>
-            <Link href="#work" className={styles.btnPrimary}>
+            <Link href="/#work" className={styles.btnPrimary}>
               {t.btnPrimary}
             </Link>
-            <Link href="#about" className={styles.btnSecondary}>
+            <Link href="/#about" className={styles.btnSecondary}>
               {t.btnSecondary}
             </Link>
           </motion.div>
@@ -82,8 +83,22 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.97 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}>
-          {/* Project visuals go here */}
-          <div className={styles.visualPlaceholder} aria-hidden="true" />
+          <Image
+            src="/images/portfolioimage.png"
+            alt="Portfolio image in the making"
+            width={1000}
+            height={1000}
+            className={`${styles.visualImage} ${styles.lightOnly}`}
+            priority
+          />
+          <Image
+            src="/images/portfolioimage-dark.png"
+            alt="Portfolio image in the making"
+            width={1000}
+            height={1000}
+            className={`${styles.visualImage} ${styles.darkOnly}`}
+            priority
+          />
         </motion.div>
       </div>
     </section>

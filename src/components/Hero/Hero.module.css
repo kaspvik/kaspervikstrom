@@ -88,11 +88,22 @@
   aspect-ratio: 4 / 3;
 }
 
-.visualPlaceholder {
+.visualImage {
   width: 100%;
-  height: 100%;
-  background-color: var(--color-border);
+  height: auto;
   border-radius: var(--radius-lg);
+}
+
+.darkOnly {
+  display: none;
+}
+
+[data-theme="dark"] .lightOnly {
+  display: none;
+}
+
+[data-theme="dark"] .darkOnly {
+  display: block;
 }
 
 @media (max-width: 768px) {

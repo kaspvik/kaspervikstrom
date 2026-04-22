@@ -36,6 +36,15 @@
   align-items: center;
 }
 
+.contactTitle {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin-bottom: 0.15rem;
+}
+
 .contactLink {
   font-size: 0.85rem;
   color: var(--color-text-muted);
