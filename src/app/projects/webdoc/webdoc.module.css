@@ -212,6 +212,34 @@
   color: var(--color-text);
 }
 
+/* Testimonial */
+.testimonial {
+  margin: 0;
+  padding: 1.75rem 2rem;
+  border-left: 3px solid var(--color-accent, currentColor);
+  background: var(--color-surface, transparent);
+  border-radius: 0 8px 8px 0;
+}
+
+.testimonialQuote {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--color-text);
+  margin: 0 0 0.75rem;
+  font-style: italic;
+}
+
+.testimonialAuthor {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.testimonialRole {
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
 /* Case sections (goal, challenge, solution, outcome) */
 .sections {
   display: flex;
