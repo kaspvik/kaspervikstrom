@@ -238,7 +238,7 @@ export default function CVPage() {
                 Fullstackutbildad frontendutvecklare med ett genuint intresse
                 för UI, tillgänglighet och användarupplevelse. Jag är en person
                 som sprider energi och glädje i gruppen och trivs verkligen med
-                att jobba nära andra människor – oavsett om det är i ett team,
+                att jobba nära andra människor, oavsett om det är i ett team,
                 med kunder eller i ideella sammanhang.
               </p>
               <p className={styles.profileText}>
@@ -246,7 +246,7 @@ export default function CVPage() {
                 och är som bäst när jag får omvandla idéer och layouts till
                 moderna, genomtänkta produkter som faktiskt är enkla att
                 använda. Min bakgrund spänner över frontend-utveckling,
-                designsystem, kommunikation och projektledning – och jag lär mig
+                designsystem, kommunikation och projektledning, och jag lär mig
                 snabbt i nya sammanhang.
               </p>
             </section>
@@ -413,7 +413,7 @@ export default function CVPage() {
                 </p>
                 <p className={styles.timelineDesc}>
                   Studentrepresentant i Fakultetsstyrelsen och Humanistiska
-                  utbildningsberedningen – företrädde studentperspektivet i
+                  utbildningsberedningen, företrädde studentperspektivet i
                   frågor om studiemiljö, kurslitteratur och utbildningskvalitet.
                   Ledande ansvar inom eventföreningen Humöret.
                 </p>

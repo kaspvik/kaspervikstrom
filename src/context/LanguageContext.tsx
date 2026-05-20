@@ -10,7 +10,7 @@ const LanguageContext = createContext<{
 }>({ lang: "en", toggle: () => {} });
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [lang, setLang] = useState<Language>("en");
+  const [lang, setLang] = useState<Language>("sv");
   const [fading, setFading] = useState(false);
 
   const toggle = () => {
