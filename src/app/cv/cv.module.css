@@ -34,6 +34,7 @@
   min-height: 1123px;
   background: var(--color-surface);
   box-shadow: 0 4px 32px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   padding: 56px 64px 64px;
   display: flex;
@@ -57,43 +58,20 @@
 
 /* ── Page 1: Hero header ─────────────────────────────── */
 .heroHeader {
-  /* Bleed past page padding to touch all edges */
   margin: -56px -64px 0;
-  padding: 44px 64px 40px;
-  background: var(--color-accent);
-  position: relative;
+  background: var(--color-surface);
   overflow: hidden;
   margin-bottom: 0;
-}
-
-/* Decorative ghost circles */
-.heroDecorCircle {
-  position: absolute;
-  right: -80px;
-  top: -80px;
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.07);
-  pointer-events: none;
-}
-
-.heroDecorCircle2 {
-  position: absolute;
-  right: 80px;
-  bottom: -100px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  pointer-events: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 220px;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .heroRow {
+  padding: 44px 2.5rem 40px 64px;
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
-  gap: 2rem;
 }
 
 .heroNames {
@@ -104,21 +82,21 @@
 
 .nameFirst {
   font-family: var(--font-display);
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 400;
   line-height: 0.92;
   letter-spacing: -0.04em;
-  color: #fff;
+  color: var(--color-text);
   margin: 0;
 }
 
 .nameLast {
   font-family: var(--font-display);
-  font-size: 3.6rem;
+  font-size: 3rem;
   font-weight: 400;
   line-height: 1;
   letter-spacing: -0.03em;
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--color-text);
   display: block;
   margin: 0;
 }
@@ -128,24 +106,18 @@
   font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--color-accent);
   margin: 1rem 0 0;
 }
 
-.heroMonogram {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.25);
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  font-family: var(--font-display);
-  font-size: 2.1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  letter-spacing: -0.03em;
-  flex-shrink: 0;
+.heroPhoto {
+  position: relative;
+  overflow: hidden;
+}
+
+.heroPhotoImg {
+  object-fit: cover;
+  object-position: center 25%;
 }
 
 /* ── Contact row ─────────────────────────────────────── */
@@ -304,8 +276,9 @@
   font-weight: 500;
   padding: 0.25rem 0.65rem;
   border-radius: 999px;
-  background: var(--color-border);
-  color: var(--color-text);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
 }
 
 /* ── Running header (pages 2–3) ──────────────────────── */
@@ -487,6 +460,7 @@
     min-height: 0;
     height: 297mm;
     box-shadow: none;
+    border: none;
     border-radius: 0;
     page-break-after: always;
     break-after: page;
@@ -498,7 +472,6 @@
   }
 
   .tag {
-    border: 1px solid #e5e3de;
     background: transparent;
   }
 }

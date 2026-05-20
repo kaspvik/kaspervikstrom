@@ -1,15 +1,18 @@
 "use client";
 
+import Image from "next/image";
 import styles from "./cv.module.css";
 
 const techFrontend = [
-  "HTML",
+  "HTML5",
   "CSS / SASS",
   "JavaScript",
   "TypeScript",
   "React",
+  "Vue",
   "Next.js",
   "CSS Modules",
+  "Tailwind CSS",
 ];
 const techTools = [
   "Git",
@@ -17,6 +20,7 @@ const techTools = [
   "Figma",
   "Zustand",
   "Firebase",
+  "Supabase",
   "Prisma / SQLite",
   "Drupal",
   "One CMS",
@@ -142,15 +146,22 @@ export default function CVPage() {
       {/* ─────────────────── SIDA 1 ─────────────────── */}
       <div className={styles.page}>
         <header className={styles.heroHeader}>
-          <div className={styles.heroDecorCircle} />
-          <div className={styles.heroDecorCircle2} />
           <div className={styles.heroRow}>
             <div className={styles.heroNames}>
               <h1 className={styles.nameFirst}>Kasper</h1>
               <span className={styles.nameLast}>Vikström</span>
               <p className={styles.heroJobTitle}>Front End Developer</p>
             </div>
-            <div className={styles.heroMonogram}>KV</div>
+          </div>
+          <div className={styles.heroPhoto}>
+            <Image
+              src="/images/portfolio-picture.jpg"
+              alt="Kasper Vikström"
+              fill
+              sizes="397px"
+              className={styles.heroPhotoImg}
+              priority
+            />
           </div>
         </header>
 
@@ -186,7 +197,7 @@ export default function CVPage() {
           </a>
           <span className={styles.contactDot} />
           <a
-            href="https://kaspervik.se"
+            href="https://kaspervikstrom.se"
             className={styles.contactItem}
             target="_blank"
             rel="noopener noreferrer">
