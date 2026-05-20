@@ -98,6 +98,7 @@ export default function Hero() {
               src="/images/portfolio-picture.jpg"
               alt="Kasper Vikström"
               fill
+              sizes="(max-width: 900px) min(100vw, 420px), 46vw"
               className={styles.visualImage}
               priority
             />
