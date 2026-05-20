@@ -84,7 +84,7 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}>
           <Image
-            src="/images/portfolioimage.png"
+            src="/images/portfolio-picture.jpg"
             alt="Portfolio image in the making"
             width={1000}
             height={1000}
@@ -92,7 +92,7 @@ export default function Hero() {
             priority
           />
           <Image
-            src="/images/portfolioimage-dark.png"
+            src="/images/portfolio-picture.jpg"
             alt="Portfolio image in the making"
             width={1000}
             height={1000}
