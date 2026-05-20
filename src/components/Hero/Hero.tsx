@@ -11,11 +11,11 @@ import sv from "@/messages/sv.json";
 const messages = { en, sv };
 
 const fadeUp = {
-  hidden: { opacity: 0, y: 24 },
+  hidden: { opacity: 0, y: 20 },
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.1, duration: 0.5, ease: "easeOut" },
+    transition: { delay: i * 0.12, duration: 0.55, ease: "easeOut" },
   }),
 };
 
@@ -27,14 +27,15 @@ export default function Hero() {
     <section id="hero" className={styles.hero}>
       <div className={styles.inner}>
         <div className={styles.content}>
-          <motion.span
-            className={styles.label}
+          <motion.div
+            className={styles.badge}
             custom={0}
             initial="hidden"
             animate="visible"
             variants={fadeUp}>
+            <span className={styles.badgeDot} />
             {t.label}
-          </motion.span>
+          </motion.div>
 
           <motion.h1
             className={styles.headline}
@@ -62,6 +63,15 @@ export default function Hero() {
             variants={fadeUp}>
             <Link href="/#work" className={styles.btnPrimary}>
               {t.btnPrimary}
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path
+                  d="M3 8h10M9 4l4 4-4 4"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             </Link>
             <Link href="/#about" className={styles.btnSecondary}>
               {t.btnSecondary}
@@ -80,25 +90,18 @@ export default function Hero() {
 
         <motion.div
           className={styles.visual}
-          initial={{ opacity: 0, scale: 0.97 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}>
-          <Image
-            src="/images/portfolio-picture.jpg"
-            alt="Portfolio image in the making"
-            width={1000}
-            height={1000}
-            className={`${styles.visualImage} ${styles.lightOnly}`}
-            priority
-          />
-          <Image
-            src="/images/portfolio-picture.jpg"
-            alt="Portfolio image in the making"
-            width={1000}
-            height={1000}
-            className={`${styles.visualImage} ${styles.darkOnly}`}
-            priority
-          />
+          initial={{ opacity: 0, x: 24 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.2, duration: 0.7, ease: "easeOut" }}>
+          <div className={styles.imageWrap}>
+            <Image
+              src="/images/portfolio-picture.jpg"
+              alt="Kasper Vikström"
+              fill
+              className={styles.visualImage}
+              priority
+            />
+          </div>
         </motion.div>
       </div>
     </section>
