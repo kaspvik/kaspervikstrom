@@ -150,6 +150,19 @@ export default function BoomiPage() {
           </div>
         </motion.div>
 
+        {t.awardTitle && (
+          <motion.div
+            className={styles.award}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.5 }}>
+            <span className={styles.awardLabel}>{t.awardLabel}</span>
+            <h2 className={styles.awardTitle}>{t.awardTitle}</h2>
+            <p className={styles.awardQuote}>"{t.awardQuote}"</p>
+            <span className={styles.awardSource}>{t.awardSource}</span>
+          </motion.div>
+        )}
+
         {t.testimonialQuote && (
           <motion.blockquote
             className={styles.testimonial}

@@ -145,6 +145,48 @@
   color: var(--color-text);
 }
 
+/* Award */
+.award {
+  padding: 1.75rem 2rem;
+  border: 1px solid var(--color-border);
+  border-left: 3px solid #b8922e;
+  border-radius: 0 8px 8px 0;
+  background: var(--color-surface, transparent);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.awardLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #b8922e;
+}
+
+.awardTitle {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.awardQuote {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin: 0.25rem 0 0;
+}
+
+.awardSource {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
 /* Testimonial */
 .testimonial {
   margin: 0;
