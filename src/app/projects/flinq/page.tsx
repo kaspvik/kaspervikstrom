@@ -78,7 +78,7 @@ export default function FlinqPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.5 }}>
             <Image
-              src="/images/flinq-sign.jpeg"
+              src="/images/flinq-sign-opt.png"
               alt="Flinq logotype"
               width={1600}
               height={900}

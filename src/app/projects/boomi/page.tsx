@@ -116,7 +116,7 @@ export default function BoomiPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.5 }}>
             <Image
-              src="/images/boomi-screen.png"
+              src="/images/boomi-screen-opt.png"
               alt="Logo image for Boomi Countdown"
               width={1600}
               height={900}
