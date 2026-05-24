@@ -1,12 +1,12 @@
 "use client";
 
+import { useLang } from "@/context/LanguageContext";
+import en from "@/messages/en.json";
+import sv from "@/messages/sv.json";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./Hero.module.css";
-import { useLang } from "@/context/LanguageContext";
-import en from "@/messages/en.json";
-import sv from "@/messages/sv.json";
 
 const messages = { en, sv };
 
@@ -27,16 +27,6 @@ export default function Hero() {
     <section id="hero" className={styles.hero}>
       <div className={styles.inner}>
         <div className={styles.content}>
-          <motion.div
-            className={styles.badge}
-            custom={0}
-            initial="hidden"
-            animate="visible"
-            variants={fadeUp}>
-            <span className={styles.badgeDot} />
-            {t.label}
-          </motion.div>
-
           <motion.h1
             className={styles.headline}
             custom={1}
@@ -63,7 +53,12 @@ export default function Hero() {
             variants={fadeUp}>
             <Link href="/#work" className={styles.btnPrimary}>
               {t.btnPrimary}
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                aria-hidden="true">
                 <path
                   d="M3 8h10M9 4l4 4-4 4"
                   stroke="currentColor"
