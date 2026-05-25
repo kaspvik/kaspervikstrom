@@ -137,19 +137,28 @@
 
 
 @media (max-width: 480px) {
+  .side {
+    min-width: 0;
+  }
+
   .nav {
-    flex-direction: column;
-    gap: 0;
+    gap: 0.5rem;
   }
 
   .sideRight {
-    justify-content: flex-start;
-    border-top: 1px solid var(--color-border);
+    padding-left: 0.5rem;
   }
 
-  .linkRight {
-    align-items: flex-start;
-    text-align: left;
+  .nav {
+    padding-top: 1.5rem;
+  }
+
+  .link {
+    padding: 0.5rem 0;
+  }
+
+  .name {
+    font-size: 1rem;
   }
 
   .desktopOnly {
