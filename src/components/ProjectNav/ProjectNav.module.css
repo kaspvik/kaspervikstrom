@@ -159,4 +159,15 @@
   .mobileOnly {
     display: flex;
   }
+
+  .backLink {
+    white-space: normal;
+    flex: 1;
+  }
+
+  .compactPrevNext {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+  }
 }

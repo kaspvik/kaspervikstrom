@@ -52,10 +52,9 @@ export default function ProjectNav({ prev, next, compact, back, others }: Props)
               <div className={`${styles.compactPrevNext} ${styles.mobileOnly}`}>
                 {prev && (
                   <Link href={prev.href} className={styles.othersLink} onClick={() => window.scrollTo(0, 0)}>
-                    ← {prev.name}
+                    {prev.name} →
                   </Link>
                 )}
-                {prev && next && <span className={styles.divider}>·</span>}
                 {next && (
                   <Link href={next.href} className={styles.othersLink} onClick={() => window.scrollTo(0, 0)}>
                     {next.name} →
