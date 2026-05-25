@@ -23,9 +23,9 @@ const tech = [
 ];
 
 const media = [
-  { type: "video" as const, src: "/videos/webdoc-slides.mp4", alt: "Webdoc demo video" },
-  { type: "image" as const, src: "/images/widget-page.png", alt: "Widget page" },
-  { type: "image" as const, src: "/images/presentation-page.png", alt: "Presentation editor" },
+  { type: "video" as const, src: "/videos/webdoc-slides.mp4", alt: "Webdoc demo video", blur: "" },
+  { type: "image" as const, src: "/images/widget-page.png", alt: "Widget page", blur: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAtElEQVR4nFWPzWoDMRCD/Sg9JT0k5BDSS0ueN8myaenDFAp9ggQ8+2N7vGbtr6whhwwISTAIyRw/3jk1V/pOuN9uhBDw3lcex5Gf3z+sCGa9PXC+tJSc6ULAimX0DpcmpBM0JVyMmNfdW00speBV0aiVpe+ZpomYEj4EzGpzoP38Zrl5nsk5k1IieF/1EhBVMS+rHU37VR+Xbqpa+znnqn54s97sOTctlIJIxzAMT1gGWWv5BwtO1TdylkgHAAAAAElFTkSuQmCC" },
+  { type: "image" as const, src: "/images/presentation-page.png", alt: "Presentation editor", blur: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAYAAAD68A/GAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAlklEQVR4nH2MuwrCMABF8ylO1sHHoOig+LvSWq3+iYODv9Bim5AM6SPpkXQQEfHCme7hiP1uyyFOKYqcPM8xxqC1xmiNVIrb/cGzLBHRbMUpu1LXFmst3nucc3RdR9u2hDVNg5jMNyTpBe8dSqmh+EmoB0Q0W5OkGX3vkVK+j2/EaLwgPp7/iqEsoumSZBD7n2KQqqriBY6R0+nPzfGOAAAAAElFTkSuQmCC" },
 ];
 
 const fadeUp = {
@@ -109,7 +109,7 @@ export default function WebdocPage() {
               className={styles.img}
             />
           </button>
-          {media.slice(1).map(({ src, alt }, i) => (
+          {media.slice(1).map(({ src, alt, blur }, i) => (
             <button
               key={src}
               className={styles.imageThumb}
@@ -121,6 +121,8 @@ export default function WebdocPage() {
                 fill
                 sizes="(max-width: 768px) 85vw, 430px"
                 className={styles.img}
+                placeholder="blur"
+                blurDataURL={blur}
               />
             </button>
           ))}

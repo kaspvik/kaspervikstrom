@@ -88,6 +88,8 @@ export default function FlinqPage() {
               className={styles.image}
               sizes="(max-width: 768px) 100vw, 55vw"
               priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAKCAYAAACJxx+AAAAACXBIWXMAAAsTAAALEwEAmpwYAAABLklEQVR4nAXBzUoCUQCA0fs0UavatdBFBIWRREQIajolKpqKWs5o6pWZ1PG3xMpBScFKSEJaFkRBuzbZAwQ9y9c5Qia2eb5Y4aG+zGd/Aau4iMflYNbxI2NOxLTuYGKu8ToO8/Pe4uXxlHblhHbBSzq4hejk9ogfrHI3aDCffzEaDehe1hhWFDbtS4io4iDuszEeVfn7/ebjbcbwtsuwGcG/a0dEDzYwEjv0dC95LUkwkqSrBxi3QtTzQcTkMk3fTGGZKXxKANu6k6p2hF7UUNUMwjwvUTYkWvaMqFrErOkU8llkIYchcwirLWnoGdScijQNatU8vUqC6ZXG042GmPYLXBthrssRKmchrGaG+/oxvXKMdimK6MhDutJHI+NCCzoxEvuEjtwoigev180/VZLDNf34RwIAAAAASUVORK5CYII="
             />
           </motion.div>
         </div>

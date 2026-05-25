@@ -126,6 +126,8 @@ export default function BoomiPage() {
               className={styles.image}
               sizes="(max-width: 768px) 100vw, 55vw"
               priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAKCAYAAACXDi8zAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA80lEQVR4nGNgYGBgUJOTUxQTEerQ0tCoExcXLZeVFdcGiTPIqKqXCEvK/peWlfvOyc3zX15BYQpYQtrScY5VQPL/2LSczwrGdv+NnRyKGf7/Z2BUsHE/qm7v+1/HyuWPqKHlf1t3F2+G/Pp8AVFd81c5NbX/g1Iy/wtq6H4PjwtXZnAKDDSStjT94xAe8V/Zxv6/gqn5vf319RwM5n4eEZoB7v/V3N1+Kbja/dd2sNkGtlhBQ61FVEP1v6ip4TcVd/v/Bg62fWAJOWm5YG5OrkcsLCy/+IQE/xuZm6aCJUDgzP//rKqqqrbSYpIFNjY2oiBBAAiyRYynB1rUAAAAAElFTkSuQmCC"
             />
           </motion.div>
         </div>

@@ -108,6 +108,8 @@ export default function AkaruiPage() {
               className={styles.image}
               sizes="(max-width: 768px) 100vw, 55vw"
               priority
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABQUlEQVR4nAE2Acn+AA8WHBAVGw4TGQ0RGAwQFw0SGAwRGAwRGA0SGQ4TGQARFRsQFRsPExk5PUI6PUNBREkhJiwKDhYOExoNFBoAEhcdERYdDhMZICQpNTg9JiowERUcDhIZDxQaDxQbAAsQFxIUFw4SFwcLEgcLEgsPFgoPFgwRGAoPFg8VHAAqLzVVV1k2OT01OT49QEUXHCMzOUCUlpc5PUILERgAeXyA////m5ydw8TG7u3wREhNo6eq////fX+BChEYAFFWW6KjpFpdYXF0eImLjiIoLztDS4uRlRceJw8XIgBsc3lFS1FYXmRRV19CSFBlbnVxfoZPWWFbZW5mcnoAr7W5trzAsbe7s7q+tbzArLO3q7K2tby/qbC0paywAKiusrG3u6mvs6yytq+2uaOqrqmvtLG3u6ivs6Cnq74sZZee71xzAAAAAElFTkSuQmCC"
             />
           </motion.div>
         </div>

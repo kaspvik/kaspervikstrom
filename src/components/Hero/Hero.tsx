@@ -96,6 +96,8 @@ export default function Hero() {
               sizes="(max-width: 900px) min(100vw, 420px), 46vw"
               className={styles.visualImage}
               priority
+              placeholder="blur"
+              blurDataURL="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAKAAcDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUG/8QAIxAAAQIFAwUAAAAAAAAAAAAAAgESAAMEBWEGESEHFBcx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAQF/8QAGREAAgMBAAAAAAAAAAAAAAAAAREAAgNR/9oADAMBAAIRAxEAPwDUWjWlJUdRqzTQhNGdJFRSYSIxwAilnZXcZTKQiHaQHzPeTaj+3JHbc+pX2ET9QKpcj6Eluf/Z"
             />
           </div>
         </motion.div>
