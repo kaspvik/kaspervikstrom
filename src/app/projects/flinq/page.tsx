@@ -67,7 +67,10 @@ export default function FlinqPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.linkBtn}>
-                ↗ Visit site
+                {t.visitSite}
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+                  <path d="M2 11L11 2M11 2H5M11 2V8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </a>
             </motion.div>
           </motion.div>

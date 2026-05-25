@@ -55,7 +55,7 @@
       },
       {
         "title": "Tillgänglighet från start",
-        "body": "Jag vill bygga gränssnitt som är läsbara, tydliga och fungerar för fler. Det är något jag försöker ha med mig i varje projekt."
+        "body": "Jag vill bygga gränssnitt som är läsbara, tydliga och fungerar för fler. Det är något jag försöker ha med mig i varje projekt. Verktyg som Wave och Lighthouse är exempel på verktyg som hjälper mig att säkerställa tillgänglighet."
       },
       {
         "title": "Komponenttänk",
@@ -94,22 +94,23 @@
       "category": "Praktikprojekt",
       "intro": "Webdoc Insights är en intern webbapplikation för att visa nyckeltal och bygga presentationsvyer med dynamiskt innehåll. Projektet består av en dashboard, en presentationseditor och en presentationsspelare.",
       "roleTitle": "Min roll",
-      "role1": "Jag jobbade främst med frontend och UI, och var med och byggde återanvändbara komponenter i Storybook, utvecklade widgets för statistikvisning och skapade olika slides och presentationsvyer för data som väder, trafik och nyckeltal.",
+      "role1": "Jag jobbade främst med frontend och UI och byggde återanvändbara komponenter i Storybook, utvecklade widgets för statistikvisning och skapade olika slides och presentationsvyer för data som väder, trafik och nyckeltal.",
       "role2": "Fokus låg på att skapa en tydlig och modern upplevelse där data blir enklare att ta till sig.",
       "testimonialQuote2": "Kasper har under sin LIA här på Webdoc visat prov på stark teknisk kompetens inom frontendutveckling och levererat arbete av mycket hög kvalitet. Han är driven, lyhörd och mycket skicklig i sin kommunikation med både utvecklare och andra intressenter. Kasper är dessutom pålitlig och tar stort ansvar för sina uppgifter. Som person bidrar han med värme och en positiv energi som stärker teamkänslan. Jag kan varmt rekommendera Kasper i framtida uppdrag.",
       "testimonialName2": "Sebastian Ekstrand",
       "testimonialRole2": "Head of UX & Frontend, Webdoc",
       "goalTitle": "Mål",
-      "goal": "Webdoc ville ha en dashboard som gav en tydlig överblick av deras tjänster, samt slides för avgångar i Västtrafik, väder och andra dynamiska inslag.",
+      "goal": "Webdoc ville ha en dashboard som gav en tydlig överblick av deras tjänster, samt andra slides som till exempel visade avgångar i Västtrafik, dagens väder och andra dynamiska inslag som önskades på kontoret.",
       "challengeTitle": "Utmaning",
-      "challenge": "En av de största utmaningarna var att koppla ihop backenddata med våra widgets på ett sätt som fungerade stabilt och konsekvent. Datan kom från olika källor och behövde mappas rätt mot varje widgettyp, vilket krävde noggrannhet och tydlig förståelse för både datastruktur och gränssnittslogik.",
+      "challenge": "En av de största utmaningarna under projektet var samarbetet mellan olika yrkesroller och arbetssätt, framför allt i dialogen mellan frontend och backend. Vi arbetade med olika verktyg, perspektiv och tekniska förutsättningar, vilket ibland skapade missförstånd kring hur datan skulle levereras och användas i gränssnittet. För att kunna bygga stabila och konsekventa widgets krävdes därför en tydlig samsyn kring både struktur, ansvar och tekniska lösningar.",
       "solutionTitle": "Lösning",
-      "solution": "Nyckeln var kommunikation. Genom att ha en löpande dialog med backendteamet kunde vi tidigt identifiera hur datan såg ut, vad som behövde anpassas och var ansvaret låg. Många problem löstes snabbare när vi pratade igenom dem tillsammans snarare än att jobba isolerat, ett tydligt bevis på hur avgörande samarbete och tydlighet är i ett gemensamt system.",
+      "solution": "Nyckeln blev tät kommunikation och ett nära samarbete mellan teamen. Genom kontinuerliga avstämningar med backendutvecklarna kunde vi snabbare förstå varandras arbetssätt, identifiera potentiella hinder och hitta lösningar tillsammans. I stället för att arbeta isolerat skapade vi en gemensam förståelse för hur systemen skulle samverka, vilket gjorde samarbetet både effektivare och mer hållbart över tid.",
       "outcomeTitle": "Resultat & lärdom",
       "outcome": "Dashboarden blev mer modulär och lättare att vidareutveckla, och komponenterna kunde återanvändas mer konsekvent i flera delar av systemet. Projektet gav mig en djupare förståelse för hur designsystem, komponenttänk och state-hantering hänger ihop i större gränssnitt, och hur man bygger flexibla UI-lösningar som fortfarande känns stabila och genomtänkta för användaren.",
       "stackTitle": "Teknikstack"
     },
     "boomi": {
+      "liveDemo": "Live demo",
       "category": "Examensprojekt",
       "intro": "Ett snabbt och socialt sällskapsspel för 4–12 spelare. Spelarna ansluter via mobil eller dator till ett gemensamt rum där en pixlad bombvarelse Boomi, skickas runt under en 60-sekundersrunda. En spelare placerar Boomi i hemlighet, och alla andra försöker lista ut vem.",
       "roleTitle": "Min roll",
@@ -123,16 +124,17 @@
       "testimonialName": "Johanna Collander",
       "testimonialRole": "Utbildningsledare, Medieinstitutet",
       "goalTitle": "Mål",
-      "goal": "Målet med Boomi Countdown var att utmana mig själv tekniskt och samtidigt förbättra mina kunskaper inom UI/UX. Jag ville samla det jag lärt mig under utbildningen och praktiken i ett projekt som kändes genomarbetat, lekfullt och personligt.",
+      "goal": "Målet med Boomi Countdown var att utmana mig själv tekniskt samtidigt som jag ville utveckla mina kunskaper inom UI/UX och interaktiv design. Jag ville skapa ett projekt där jag kunde samla mycket av det jag lärt mig under utbildningen och praktiken i en och samma helhet — från komponenttänk och state-hantering till animationer, spelmekanik och användarupplevelse. Samtidigt ville jag bygga något som kändes personligt, lekfullt och visuellt genomarbetat, snarare än ännu en traditionell webbapplikation.",
       "challengeTitle": "Utmaning",
-      "challenge": "Det svåraste var att jobba med PixiJS. Det krävde mer logik än jag först trodde, särskilt för att få rörelser och animationer att kännas bra. Det var också en utmaning att få ihop det tekniska med en tydlig och rolig användarupplevelse.",
+      "challenge": "Den största utmaningen var att arbeta med PixiJS och förstå hur mycket logik som faktiskt krävs för att skapa ett spel som känns responsivt och naturligt. Det handlade inte bara om att få saker att fungera tekniskt, utan också om att få rörelser, animationer och timing att upplevas mjuka och intuitiva för spelaren.\n\nSamtidigt blev samspelet mellan teknik och användarupplevelse en stor utmaning. Jag behövde hela tiden balansera visuella idéer med prestanda, struktur och spelbarhet. Många lösningar som först verkade bra i teorin visade sig antingen bli för komplexa eller skapa en sämre upplevelse i praktiken.",
       "solutionTitle": "Lösning",
-      "solution": "Jag löste det genom att testa mig fram mycket och förenkla där det behövdes. En viktig insikt var att man inte alltid måste uppfinna hjulet själv, vissa saker blev bättre och smidigare att lösa med exempelvis CSS-transitions.",
+      "solution": "Jag löste mycket genom att arbeta iterativt och testa mig fram steg för steg. I stället för att fastna i perfektion tidigt fokuserade jag på att snabbt bygga fungerande lösningar, utvärdera dem och därefter förbättra detaljerna. Det gjorde att jag kunde identifiera vad som faktiskt tillförde värde till upplevelsen och vad som bara gjorde projektet onödigt komplicerat.\n\nEn viktig insikt under arbetet var också att man inte alltid behöver bygga allt från grunden. Vissa animationer och övergångar blev både smidigare och mer lättunderhållna genom enklare lösningar, exempelvis med CSS-transitions istället för avancerad spellogik i varje del. Det hjälpte mig att fokusera mer på helhetsupplevelsen än på att göra allt tekniskt komplext.",
       "outcomeTitle": "Resultat & insikter",
-      "outcome": "Slutresultatet blev ett projekt som speglade mig som utvecklare, både tekniskt och visuellt. Jag lärde mig mycket om animation, logik och vikten av att välja smarta lösningar istället för att göra allt på det svåraste sättet. Men framförallt, ett spelbart spel!",
+      "outcome": "Slutresultatet blev ett projekt som speglar mig både tekniskt och kreativt. Boomi Countdown blev inte bara ett sätt att fördjupa mina kunskaper inom animation, logik och interaktivitet, utan också ett kvitto på hur mycket jag utvecklats under utbildningen.\n\nJag fick en större förståelse för hur viktigt det är att välja rätt lösning för rätt problem, och att enkelhet ofta kan skapa en bättre användarupplevelse än överkomplicerade implementationer. Framför allt lärde jag mig hur mycket iteration, testning och användarperspektiv påverkar slutresultatet — och kanske viktigast av allt: jag lyckades skapa ett faktiskt spelbart spel med en tydlig identitet och personlighet.",
       "stackTitle": "Teknikstack"
     },
     "flinq": {
+      "visitSite": "Besök sidan",
       "category": "Kundarbete",
       "intro": "Design och lansering av en ny webbplats för Flinq, ett företag som arbetar med kostnadsbesparingar och analys inom supply chain. Målet var att snabbt förklara värdet, bygga förtroende och göra det enkelt för potentiella kunder att ta kontakt.",
       "aboutTitle": "Om projektet",
@@ -150,6 +152,7 @@
       "outcome": "Slutresultatet blev en webbplats som klienten blev nöjd med och som uppfyllde sitt syfte på ett tydligt sätt. Det jag tog med mig från projektet var framför allt att ett bra resultat inte alltid handlar om att ha full frihet tekniskt, utan om att kunna anpassa sig, prioritera rätt och skapa värde utifrån de förutsättningar man har."
     },
     "akarui": {
+      "liveDemo": "Live demo",
       "category": "Grupprojekt",
       "intro": "En fullstack e-handelsapplikation för ett fiktivt ljusvarumärke. Projektet gjordes i grupp och innehåller en komplett webshop med produktlistning, varukorg, checkout, orderbekräftelse och en adminpanel för produkthantering.",
       "stackTitle": "Teknikstack",

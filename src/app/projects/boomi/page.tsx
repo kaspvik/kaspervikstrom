@@ -98,7 +98,10 @@ export default function BoomiPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.linkBtn}>
-                ↗ Live demo
+                {t.liveDemo}
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+                  <path d="M2 11L11 2M11 2H5M11 2V8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </a>
               <a
                 href="https://github.com/kaspvik/boomi-countdown"
@@ -189,19 +192,19 @@ export default function BoomiPage() {
           transition={{ delay: 0.55, duration: 0.5 }}>
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>{t.goalTitle}</h2>
-            <p>{t.goal}</p>
+            {t.goal.split('\n\n').map((p, i) => <p key={i}>{p}</p>)}
           </div>
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>{t.challengeTitle}</h2>
-            <p>{t.challenge}</p>
+            {t.challenge.split('\n\n').map((p, i) => <p key={i}>{p}</p>)}
           </div>
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>{t.solutionTitle}</h2>
-            <p>{t.solution}</p>
+            {t.solution.split('\n\n').map((p, i) => <p key={i}>{p}</p>)}
           </div>
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>{t.outcomeTitle}</h2>
-            <p>{t.outcome}</p>
+            {t.outcome.split('\n\n').map((p, i) => <p key={i}>{p}</p>)}
           </div>
         </motion.div>
 

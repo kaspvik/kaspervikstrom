@@ -101,14 +101,15 @@
       "goalTitle": "Goal",
       "goal": "Webdoc wanted a dashboard that gave a clear overview of their services, along with slides for Västtrafik departures, weather, and other dynamic content.",
       "challengeTitle": "Challenge",
-      "challenge": "One of the biggest challenges was connecting backend data to our widgets in a way that worked reliably and consistently. The data came from different sources and needed to be mapped correctly to each widget type, requiring precision and a clear understanding of both the data structures and the interface logic.",
+      "challenge": "One of the biggest challenges during the project was the collaboration between different professional roles and working methods, especially in the dialogue between frontend and backend. We worked with different tools, perspectives and technical conditions, which sometimes created misunderstandings about how the data should be delivered and used in the interface. In order to be able to build stable and consistent widgets, a clear consensus was therefore required on both structure, responsibilities and technical solutions.",
       "solutionTitle": "Solution",
-      "solution": "The key was communication. By keeping an ongoing dialogue with the backend team, we could identify early on what the data looked like, what needed to be adjusted, and where responsibilities lay. Many problems were solved faster by talking them through together rather than working in isolation, a clear reminder of how essential collaboration and clarity are in a shared system.",
+      "solution": "The key was close communication and collaboration between the teams. Through continuous coordination with the backend developers, we were able to more quickly understand each other's working methods, identify potential obstacles, and find solutions together. Instead of working in isolation, we created a shared understanding of how the systems would work together, which made the collaboration both more effective and more sustainable over time.",
       "outcomeTitle": "Result & learnings",
       "outcome": "The dashboard became more modular and easier to extend, with components reused consistently across multiple parts of the system. The project gave me a deeper understanding of how design systems, component thinking, and state management connect in larger interfaces, and how to build flexible UI solutions that still feel stable and well-considered for the user.",
       "stackTitle": "Tech Stack"
     },
     "boomi": {
+      "liveDemo": "Live demo",
       "category": "Exam Project",
       "intro": "A fast, social party game for 4–12 players. Players connect via mobile or desktop to a shared room where a pixelated bomb creature Boomi, is passed around during a 60-second round. One player secretly places Boomi. Everyone else tries to figure out who.",
       "roleTitle": "My role",
@@ -132,6 +133,7 @@
       "stackTitle": "Tech Stack"
     },
     "flinq": {
+      "visitSite": "Visit site",
       "category": "Client Work",
       "intro": "Design and launch of a new website for Flinq, a company focused on cost savings and analysis within supply chain. The goal was to quickly communicate business value, build trust, and make it easy for potential customers to take the next step.",
       "aboutTitle": "About the project",
@@ -149,6 +151,7 @@
       "outcome": "The end result was a website the client was happy with and that served its purpose clearly. What I took away from the project was above all that a good result isn't always about having full technical freedom, it's about being adaptable, prioritising well, and creating value within the constraints you're given."
     },
     "akarui": {
+      "liveDemo": "Live demo",
       "category": "Group Project",
       "intro": "A full-stack e-commerce web application for a fictional candle brand. Built as a group assignment covering a complete webshop with product listings, cart, checkout, order confirmation, and an admin panel for managing products.",
       "stackTitle": "Tech stack",
