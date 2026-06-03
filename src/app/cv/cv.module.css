@@ -444,11 +444,23 @@
 }
 
 /* ── Print styles ────────────────────────────────────── */
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
 @media print {
+  :root {
+    --color-accent: #111;
+  }
+
   .root {
     padding: 0;
     gap: 0;
     background: white;
+    align-items: stretch;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
   }
 
   .printBtn {
@@ -459,12 +471,20 @@
     width: 100%;
     min-height: 0;
     height: 297mm;
+    overflow: hidden;
     box-shadow: none;
     border: none;
     border-radius: 0;
     page-break-after: always;
     break-after: page;
     padding: 16mm 20mm;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .page:last-child {
+    break-after: auto;
+    page-break-after: auto;
   }
 
   .page::before {
@@ -473,5 +493,9 @@
 
   .tag {
     background: transparent;
+  }
+
+  .pageRunningMonogram {
+    background: #111;
   }
 }
