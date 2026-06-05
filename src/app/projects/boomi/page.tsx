@@ -99,8 +99,40 @@ export default function BoomiPage() {
                 rel="noopener noreferrer"
                 className={styles.linkBtn}>
                 {t.liveDemo}
-                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
-                  <path d="M2 11L11 2M11 2H5M11 2V8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <svg
+                  width="13"
+                  height="13"
+                  viewBox="0 0 13 13"
+                  fill="none"
+                  aria-hidden="true">
+                  <path
+                    d="M2 11L11 2M11 2H5M11 2V8"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.figma.com/design/tYiUJVHlg6IAlJMTxUxRn0/Boomi?node-id=0-1&t=njOSmugY4CDMoU9N-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.linkBtn}>
+                Figma
+                <svg
+                  width="13"
+                  height="13"
+                  viewBox="0 0 13 13"
+                  fill="none"
+                  aria-hidden="true">
+                  <path
+                    d="M2 11L11 2M11 2H5M11 2V8"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
               </a>
               <a
@@ -194,19 +226,27 @@ export default function BoomiPage() {
           transition={{ delay: 0.55, duration: 0.5 }}>
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>{t.goalTitle}</h2>
-            {t.goal.split('\n\n').map((p, i) => <p key={i}>{p}</p>)}
+            {t.goal.split("\n\n").map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
           </div>
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>{t.challengeTitle}</h2>
-            {t.challenge.split('\n\n').map((p, i) => <p key={i}>{p}</p>)}
+            {t.challenge.split("\n\n").map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
           </div>
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>{t.solutionTitle}</h2>
-            {t.solution.split('\n\n').map((p, i) => <p key={i}>{p}</p>)}
+            {t.solution.split("\n\n").map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
           </div>
           <div className={styles.section}>
             <h2 className={styles.sectionTitle}>{t.outcomeTitle}</h2>
-            {t.outcome.split('\n\n').map((p, i) => <p key={i}>{p}</p>)}
+            {t.outcome.split("\n\n").map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
           </div>
         </motion.div>
 

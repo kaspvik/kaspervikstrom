@@ -110,7 +110,7 @@
       "stackTitle": "Teknikstack"
     },
     "boomi": {
-      "liveDemo": "Live demo",
+      "liveDemo": "Besök sidan",
       "category": "Examensprojekt",
       "intro": "Ett snabbt och socialt sällskapsspel för 4–12 spelare. Spelarna ansluter via mobil eller dator till ett gemensamt rum där en pixlad bombvarelse Boomi, skickas runt under en 60-sekundersrunda. En spelare placerar Boomi i hemlighet, och alla andra försöker lista ut vem.",
       "roleTitle": "Min roll",
@@ -152,7 +152,7 @@
       "outcome": "Slutresultatet blev en webbplats som klienten blev nöjd med och som uppfyllde sitt syfte på ett tydligt sätt. Det jag tog med mig från projektet var framför allt att ett bra resultat inte alltid handlar om att ha full frihet tekniskt, utan om att kunna anpassa sig, prioritera rätt och skapa värde utifrån de förutsättningar man har."
     },
     "akarui": {
-      "liveDemo": "Live demo",
+      "liveDemo": "Besök sidan",
       "category": "Grupprojekt",
       "intro": "En fullstack e-handelsapplikation för ett fiktivt ljusvarumärke. Projektet gjordes i grupp och innehåller en komplett webshop med produktlistning, varukorg, checkout, orderbekräftelse och en adminpanel för produkthantering.",
       "stackTitle": "Teknikstack",

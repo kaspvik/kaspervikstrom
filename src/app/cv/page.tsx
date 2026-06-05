@@ -38,15 +38,6 @@ const liaStack = [
   "SASS",
 ];
 
-const softSkills = [
-  "Kundservice & bemötande",
-  "Kommunikation",
-  "Marknadsföring",
-  "Eventplanering",
-  "Projektledning",
-  "Ledarskap",
-];
-
 function MailIcon() {
   return (
     <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden>
@@ -136,6 +127,29 @@ function GlobeIcon() {
   );
 }
 
+function ExtLinkIcon() {
+  return (
+    <svg
+      width="9"
+      height="9"
+      viewBox="0 0 10 10"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      style={{
+        display: "inline",
+        verticalAlign: "middle",
+        marginLeft: "0.15em",
+        opacity: 0.45,
+      }}
+      aria-hidden>
+      <path d="M1.5 8.5L8.5 1.5M5 1.5h3v3" />
+    </svg>
+  );
+}
+
 export default function CVPage() {
   return (
     <div className={styles.root}>
@@ -220,34 +234,20 @@ export default function CVPage() {
                 </span>
               </div>
             </section>
-
-            <section className={styles.section}>
-              <h2 className={styles.sectionLabel}>Övriga färdigheter</h2>
-              <ul className={styles.bulletList}>
-                {softSkills.map((s) => (
-                  <li key={s}>{s}</li>
-                ))}
-              </ul>
-            </section>
           </aside>
 
           <div className={styles.main}>
             <section className={styles.section}>
               <h2 className={styles.sectionLabel}>Profil</h2>
               <p className={styles.profileText}>
-                Fullstackutbildad frontendutvecklare med ett genuint intresse
-                för UI, tillgänglighet och användarupplevelse. Jag är en person
-                som sprider energi och glädje i gruppen och trivs verkligen med
-                att jobba nära andra människor, oavsett om det är i ett team,
-                med kunder eller i ideella sammanhang.
-              </p>
-              <p className={styles.profileText}>
-                Jag trivs i skärningspunkten mellan kreativitet och struktur,
-                och är som bäst när jag får omvandla idéer och layouts till
-                moderna, genomtänkta produkter som faktiskt är enkla att
-                använda. Min bakgrund spänner över frontend-utveckling,
-                designsystem, kommunikation och projektledning, och jag lär mig
-                snabbt i nya sammanhang.
+                Frontendutvecklare med LIA på Webdoc (Carasent Group) där jag
+                byggde en produktionssatt dashboard- och presentationslösning
+                med Next.js, TypeScript och Storybook. Trivs i gränslandet
+                mellan design och kod – van att arbeta nära UX och omsätta
+                Figmaunderlag till välstrukturerade komponenter med hög visuell
+                kvalitet. Har erfarenhet av tvärfunktionella team och bidrar
+                aktivt till både tekniska diskussioner och ett bra klimat i
+                gruppen.
               </p>
             </section>
 
@@ -301,14 +301,27 @@ export default function CVPage() {
                   Frontendutvecklare – LIA
                 </h3>
                 <p className={styles.timelineOrg}>Webdoc, Carasent Group</p>
-                <p className={styles.timelineDesc}>
-                  Utvecklade en intern dashboard- och presentationslösning för
-                  visualisering av nyckeltal och information. Jobbade med
-                  Next.js och TypeScript, byggde återanvändbara komponenter i
-                  Storybook, implementerade widget- och slidefunktionalitet samt
-                  drev gränssnittsarbete med fokus på UX, tydlig struktur och
-                  visuell genomtänkthet.
-                </p>
+                <ul
+                  className={styles.bulletList}
+                  style={{ marginTop: "0.25rem" }}>
+                  <li>
+                    Byggde produktionssatt dashboard- och presentationslösning
+                    med Next.js och TypeScript – används dagligen av ~100
+                    anställda
+                  </li>
+                  <li>
+                    Utvecklade 20–30 återanvändbara UI-komponenter i Storybook
+                    med isolerad testning och komponentdokumentation
+                  </li>
+                  <li>
+                    Implementerade drag-and-drop för slides (dnd-kit) och
+                    interaktiva datavisualiseringar (ECharts)
+                  </li>
+                  <li>
+                    Drev gränssnittsarbetet självständigt och bidrog till agila
+                    processer i ett team om 6–8 personer
+                  </li>
+                </ul>
                 <div className={styles.tags} style={{ marginTop: "0.5rem" }}>
                   {liaStack.map((s) => (
                     <span key={s} className={styles.tag}>
@@ -322,72 +335,199 @@ export default function CVPage() {
             {/* Lyko */}
             <div className={styles.timelineItem}>
               <div className={styles.timelineMeta}>
-                <span className={styles.timelineDate}>Jan 2019 – Pågående</span>
+                <span className={styles.timelineDate}>
+                  Jan 2019 – nu (deltid)
+                </span>
               </div>
               <div className={styles.timelineContent}>
                 <h3 className={styles.timelineRole}>Butiksäljare</h3>
                 <p className={styles.timelineOrg}>Lyko AB</p>
-                <p className={styles.timelineDesc}>
-                  Ansvarar för utmärkt kundservice inom skönhet och hårvård.
-                  Hjälper kunder att hitta rätt produkter baserat på deras
-                  individuella behov. Rollen har stärkt kompetenser inom
-                  kundbemötande, teamarbete och försäljning.
-                </p>
-              </div>
-            </div>
-
-            {/* Pondus */}
-            <div className={styles.timelineItem}>
-              <div className={styles.timelineMeta}>
-                <span className={styles.timelineDate}>Apr 2018 – Jan 2019</span>
-              </div>
-              <div className={styles.timelineContent}>
-                <h3 className={styles.timelineRole}>Butiksäljare</h3>
-                <p className={styles.timelineOrg}>Pondus</p>
-                <p className={styles.timelineDesc}>
-                  Retail med fokus på försäljning av märkeskläder, kundservice
-                  och att guida kunder till rätt produkter utifrån deras behov.
-                </p>
-              </div>
-            </div>
-
-            {/* Espresso House – grouped */}
-            <div className={styles.timelineItem}>
-              <div className={styles.timelineMeta}>
-                <span className={styles.timelineDate}>Aug 2016 – Maj 2018</span>
-              </div>
-              <div className={styles.timelineContent}>
-                <p className={styles.timelineOrg}>
-                  Espresso House Group · 1 år 10 mån
-                </p>
-
-                <h3 className={styles.timelineRole}>Seniorbarista</h3>
-                <p className={styles.timelineSubDate}>
-                  Mar 2017 – Maj 2018 · 1 år 3 mån
-                </p>
-                <p className={styles.timelineDesc}>
-                  Ansvarade för utbildning av nya baristor, kvalitetssäkring i
-                  det dagliga arbetet och maskinunderhåll. Under min tid utsågs
-                  butiken till Nordens trevligaste shop två år i rad, vilket gav
-                  mig möjligheten att resa till New York med teamet.
-                </p>
-
-                <h3
-                  className={styles.timelineRole}
-                  style={{ marginTop: "0.75rem" }}>
-                  Barista
-                </h3>
-                <p className={styles.timelineSubDate}>
-                  Aug 2016 – Mar 2017 · 8 mån
-                </p>
-                <p className={styles.timelineDesc}>
-                  Kundservice och baristaarbete i högt tempo med fokus på
-                  kvalitet och gästupplevelse.
-                </p>
+                <ul
+                  className={styles.bulletList}
+                  style={{ marginTop: "0.25rem" }}>
+                  <li>
+                    Rådgivande försäljning och kundservice inom hårvård och
+                    skönhet
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </section>
+
+        <section className={styles.section}>
+          <h2 className={styles.sectionLabel}>Projekt</h2>
+          <div className={styles.projectGrid}>
+            <div className={styles.projectCard}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "baseline",
+                  gap: "0.3rem",
+                  flexWrap: "wrap",
+                }}>
+                <h3 className={styles.projectName} style={{ margin: 0 }}>
+                  <a
+                    href="https://nextjs-webshop-ts-react-akarui.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      color: "inherit",
+                      textDecoration: "underline",
+                      textUnderlineOffset: "2px",
+                    }}>
+                    Hikari
+                    <ExtLinkIcon />
+                  </a>
+                </h3>
+                <span style={{ color: "var(--color-text-muted)", opacity: 0.35 }}>–</span>
+                <span className={styles.projectCategory}>Skolprojekt</span>
+              </div>
+              <p className={styles.projectDesc}>
+                Fullstack e-handelsplattform i grupp om 4 – produktlistning,
+                varukorg, checkout, orderbekräftelse och adminpanel.
+              </p>
+              <div
+                className={styles.tags}
+                style={{ marginTop: "auto", paddingTop: "0.5rem" }}>
+                <span className={styles.tag}>Next.js</span>
+                <span className={styles.tag}>TypeScript</span>
+                <span className={styles.tag}>Prisma</span>
+                <span className={styles.tag}>Material UI</span>
+              </div>
+            </div>
+
+            <div className={styles.projectCard}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "baseline",
+                  gap: "0.3rem",
+                  flexWrap: "wrap",
+                }}>
+                <h3 className={styles.projectName} style={{ margin: 0 }}>
+                  <a
+                    href="https://flinq.se/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      color: "inherit",
+                      textDecoration: "underline",
+                      textUnderlineOffset: "2px",
+                    }}>
+                    Flinq
+                    <ExtLinkIcon />
+                  </a>
+                </h3>
+                <span style={{ color: "var(--color-text-muted)", opacity: 0.35 }}>–</span>
+                <span className={styles.projectCategory}>Kunduppdrag</span>
+              </div>
+              <p className={styles.projectDesc}>
+                Designade och lanserade live-webbplats för verklig kund med
+                fokus på tydlig kommunikation och konvertering.
+              </p>
+              <div
+                className={styles.tags}
+                style={{ marginTop: "auto", paddingTop: "0.5rem" }}>
+                <span className={styles.tag}>Web Design</span>
+                <span className={styles.tag}>One.com</span>
+              </div>
+            </div>
+
+            <div className={styles.projectCard}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "baseline",
+                  gap: "0.3rem",
+                  flexWrap: "wrap",
+                }}>
+                <h3 className={styles.projectName} style={{ margin: 0 }}>
+                  <a
+                    href="https://boomi-countdown.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      color: "inherit",
+                      textDecoration: "underline",
+                      textUnderlineOffset: "2px",
+                    }}>
+                    Boomi Countdown
+                    <ExtLinkIcon />
+                  </a>
+                </h3>
+                <span style={{ color: "var(--color-text-muted)", opacity: 0.35 }}>–</span>
+                <span className={styles.projectCategory}>Skolprojekt</span>
+              </div>
+              <p className={styles.projectDesc}>
+                Realtids-multiplayerspel för 4–12 spelare med synkroniserat
+                spelläge via Firebase.
+              </p>
+              <div
+                className={styles.tags}
+                style={{ marginTop: "auto", paddingTop: "0.5rem" }}>
+                <span className={styles.tag}>React</span>
+                <span className={styles.tag}>Firebase</span>
+                <a
+                  href="https://www.figma.com/design/tYiUJVHlg6IAlJMTxUxRn0/Boomi?node-id=0-1&t=njOSmugY4CDMoU9N-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${styles.tag} ${styles.tagLink}`}
+                  style={{ textDecoration: "none" }}>
+                  Figma
+                  <ExtLinkIcon />
+                </a>
+              </div>
+            </div>
+
+            <div className={styles.projectCard}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "baseline",
+                  gap: "0.3rem",
+                  flexWrap: "wrap",
+                }}>
+                <h3 className={styles.projectName} style={{ margin: 0 }}>
+                  <a
+                    href="https://kaspervikstrom.se"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      color: "inherit",
+                      textDecoration: "underline",
+                      textUnderlineOffset: "2px",
+                    }}>
+                    Webdoc Dashboard
+                    <ExtLinkIcon />
+                  </a>
+                </h3>
+                <span style={{ color: "var(--color-text-muted)", opacity: 0.35 }}>–</span>
+                <span className={styles.projectCategory}>LIA</span>
+              </div>
+              <p className={styles.projectDesc}>
+                Produktionssatt dashboard- och presentationslösning med 20–30
+                Storybook-komponenter. Se portfolio för mer.
+              </p>
+              <div
+                className={styles.tags}
+                style={{ marginTop: "auto", paddingTop: "0.5rem" }}>
+                <span className={styles.tag}>Next.js</span>
+                <span className={styles.tag}>TypeScript</span>
+                <span className={styles.tag}>Storybook</span>
+                <span className={styles.tag}>ECharts</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* ─────────────────── SIDA 3 ─────────────────── */}
+      <div className={`${styles.page} ${styles.pageInner}`}>
+        <div className={styles.pageRunning}>
+          <span className={styles.pageRunningMonogram}>KV</span>
+          <span className={styles.pageRunningName}>Kasper Vikström</span>
+        </div>
 
         <section className={styles.section}>
           <h2 className={styles.sectionLabel}>Ideellt arbete</h2>
@@ -421,14 +561,6 @@ export default function CVPage() {
             </div>
           </div>
         </section>
-      </div>
-
-      {/* ─────────────────── SIDA 3 ─────────────────── */}
-      <div className={`${styles.page} ${styles.pageInner}`}>
-        <div className={styles.pageRunning}>
-          <span className={styles.pageRunningMonogram}>KV</span>
-          <span className={styles.pageRunningName}>Kasper Vikström</span>
-        </div>
 
         <section className={styles.section}>
           <h2 className={styles.sectionLabel}>Utbildning</h2>
@@ -446,23 +578,6 @@ export default function CVPage() {
                   form, funktion och användarupplevelse. HTML, CSS, JavaScript
                   och TypeScript samt API:er, databaser och komponentbibliotek i
                   agila projekt.
-                </p>
-              </div>
-            </div>
-
-            <div className={styles.timelineItem}>
-              <div className={styles.timelineMeta}>
-                <span className={styles.timelineDate}>Jun 2024 – Aug 2024</span>
-              </div>
-              <div className={styles.timelineContent}>
-                <h3 className={styles.timelineRole}>
-                  Risk- och kriskommunikation
-                </h3>
-                <p className={styles.timelineOrg}>Örebro Universitet</p>
-                <p className={styles.timelineDesc}>
-                  Grunderna i risk- och krishantering samt strategisk
-                  kommunikation. Praktisk träning i klarspråk och
-                  beredskapsplaner.
                 </p>
               </div>
             </div>

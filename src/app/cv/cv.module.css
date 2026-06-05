@@ -418,6 +418,22 @@
   flex-direction: column;
   gap: 0.3rem;
   background: var(--color-bg);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.projectCard:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.tagLink {
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.tagLink:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 .projectCategory {
