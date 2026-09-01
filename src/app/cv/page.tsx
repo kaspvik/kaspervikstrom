@@ -367,88 +367,6 @@ export default function CVPage() {
                 }}>
                 <h3 className={styles.projectName} style={{ margin: 0 }}>
                   <a
-                    href="https://nextjs-webshop-ts-react-akarui.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      color: "inherit",
-                      textDecoration: "underline",
-                      textUnderlineOffset: "2px",
-                    }}>
-                    Hikari
-                    <ExtLinkIcon />
-                  </a>
-                </h3>
-                <span
-                  style={{ color: "var(--color-text-muted)", opacity: 0.35 }}>
-                  –
-                </span>
-                <span className={styles.projectCategory}>Skolprojekt</span>
-              </div>
-              <p className={styles.projectDesc}>
-                Fullstack e-handelsplattform i grupp om 4 – produktlistning,
-                varukorg, checkout, orderbekräftelse och adminpanel.
-              </p>
-              <div
-                className={styles.tags}
-                style={{ marginTop: "auto", paddingTop: "0.5rem" }}>
-                <span className={styles.tag}>Next.js</span>
-                <span className={styles.tag}>TypeScript</span>
-                <span className={styles.tag}>Prisma</span>
-                <span className={styles.tag}>Material UI</span>
-              </div>
-            </div>
-
-            <div className={styles.projectCard}>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "baseline",
-                  gap: "0.3rem",
-                  flexWrap: "wrap",
-                }}>
-                <h3 className={styles.projectName} style={{ margin: 0 }}>
-                  <a
-                    href="https://flinq.se/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      color: "inherit",
-                      textDecoration: "underline",
-                      textUnderlineOffset: "2px",
-                    }}>
-                    Flinq
-                    <ExtLinkIcon />
-                  </a>
-                </h3>
-                <span
-                  style={{ color: "var(--color-text-muted)", opacity: 0.35 }}>
-                  –
-                </span>
-                <span className={styles.projectCategory}>Kunduppdrag</span>
-              </div>
-              <p className={styles.projectDesc}>
-                Designade och lanserade live-webbplats för verklig kund med
-                fokus på tydlig kommunikation och konvertering.
-              </p>
-              <div
-                className={styles.tags}
-                style={{ marginTop: "auto", paddingTop: "0.5rem" }}>
-                <span className={styles.tag}>Web Design</span>
-                <span className={styles.tag}>One.com</span>
-              </div>
-            </div>
-
-            <div className={styles.projectCard}>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "baseline",
-                  gap: "0.3rem",
-                  flexWrap: "wrap",
-                }}>
-                <h3 className={styles.projectName} style={{ margin: 0 }}>
-                  <a
                     href="https://boomi-countdown.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -528,6 +446,50 @@ export default function CVPage() {
                 <span className={styles.tag}>TypeScript</span>
                 <span className={styles.tag}>Storybook</span>
                 <span className={styles.tag}>ECharts</span>
+              </div>
+            </div>
+
+            <div className={styles.projectCard}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "baseline",
+                  gap: "0.3rem",
+                  flexWrap: "wrap",
+                }}>
+                <h3 className={styles.projectName} style={{ margin: 0 }}>
+                  <a
+                    href="https://kaspervikstrom.se"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      color: "inherit",
+                      textDecoration: "underline",
+                      textUnderlineOffset: "2px",
+                    }}>
+                    kaspervikstrom.se
+                    <ExtLinkIcon />
+                  </a>
+                </h3>
+                <span
+                  style={{ color: "var(--color-text-muted)", opacity: 0.35 }}>
+                  –
+                </span>
+                <span className={styles.projectCategory}>
+                  Personligt projekt
+                </span>
+              </div>
+              <p className={styles.projectDesc}>
+                Egen portfolio och CV byggd från grunden – design,
+                komponentarkitektur och animationer.
+              </p>
+              <div
+                className={styles.tags}
+                style={{ marginTop: "auto", paddingTop: "0.5rem" }}>
+                <span className={styles.tag}>Next.js</span>
+                <span className={styles.tag}>TypeScript</span>
+                <span className={styles.tag}>Framer Motion</span>
+                <span className={styles.tag}>CSS Modules</span>
               </div>
             </div>
           </div>
