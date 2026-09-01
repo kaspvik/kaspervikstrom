@@ -240,14 +240,13 @@ export default function CVPage() {
             <section className={styles.section}>
               <h2 className={styles.sectionLabel}>Profil</h2>
               <p className={styles.profileText}>
-                Frontendutvecklare med LIA på Webdoc (Carasent Group) där jag
-                byggde en produktionssatt dashboard- och presentationslösning
-                med Next.js, TypeScript och Storybook. Trivs i gränslandet
-                mellan design och kod – van att arbeta nära UX och omsätta
-                Figmaunderlag till välstrukturerade komponenter med hög visuell
-                kvalitet. Har erfarenhet av tvärfunktionella team och bidrar
-                aktivt till både tekniska diskussioner och ett bra klimat i
-                gruppen.
+                Nyutexaminerad frontendutvecklare som trivs i gränslandet mellan
+                design och kod. Van att arbeta nära UX och omsätta Figmaunderlag
+                till välstrukturerade komponenter med hög visuell kvalitet. Har
+                genom LIA och skarpa kunduppdrag erfarenhet av tvärfunktionella
+                team och bidrar aktivt till både tekniska diskussioner och ett
+                bra klimat i gruppen. Söker nu min första roll som
+                frontendutvecklare.
               </p>
             </section>
 
@@ -340,14 +339,14 @@ export default function CVPage() {
                 </span>
               </div>
               <div className={styles.timelineContent}>
-                <h3 className={styles.timelineRole}>Butiksäljare</h3>
+                <h3 className={styles.timelineRole}>Butikssäljare</h3>
                 <p className={styles.timelineOrg}>Lyko AB</p>
                 <ul
                   className={styles.bulletList}
                   style={{ marginTop: "0.25rem" }}>
                   <li>
                     Rådgivande försäljning och kundservice inom hårvård och
-                    skönhet
+                    skönhet.
                   </li>
                 </ul>
               </div>
@@ -380,7 +379,10 @@ export default function CVPage() {
                     <ExtLinkIcon />
                   </a>
                 </h3>
-                <span style={{ color: "var(--color-text-muted)", opacity: 0.35 }}>–</span>
+                <span
+                  style={{ color: "var(--color-text-muted)", opacity: 0.35 }}>
+                  –
+                </span>
                 <span className={styles.projectCategory}>Skolprojekt</span>
               </div>
               <p className={styles.projectDesc}>
@@ -419,7 +421,10 @@ export default function CVPage() {
                     <ExtLinkIcon />
                   </a>
                 </h3>
-                <span style={{ color: "var(--color-text-muted)", opacity: 0.35 }}>–</span>
+                <span
+                  style={{ color: "var(--color-text-muted)", opacity: 0.35 }}>
+                  –
+                </span>
                 <span className={styles.projectCategory}>Kunduppdrag</span>
               </div>
               <p className={styles.projectDesc}>
@@ -456,12 +461,16 @@ export default function CVPage() {
                     <ExtLinkIcon />
                   </a>
                 </h3>
-                <span style={{ color: "var(--color-text-muted)", opacity: 0.35 }}>–</span>
-                <span className={styles.projectCategory}>Skolprojekt</span>
+                <span
+                  style={{ color: "var(--color-text-muted)", opacity: 0.35 }}>
+                  –
+                </span>
+                <span className={styles.projectCategory}>Examensarbete</span>
               </div>
               <p className={styles.projectDesc}>
                 Realtids-multiplayerspel för 4–12 spelare med synkroniserat
-                spelläge via Firebase.
+                spelläge via Firebase. Utsedd till årets bästa examensarbete
+                2025 av Medieinstitutet.
               </p>
               <div
                 className={styles.tags}
@@ -502,7 +511,10 @@ export default function CVPage() {
                     <ExtLinkIcon />
                   </a>
                 </h3>
-                <span style={{ color: "var(--color-text-muted)", opacity: 0.35 }}>–</span>
+                <span
+                  style={{ color: "var(--color-text-muted)", opacity: 0.35 }}>
+                  –
+                </span>
                 <span className={styles.projectCategory}>LIA</span>
               </div>
               <p className={styles.projectDesc}>
@@ -545,18 +557,25 @@ export default function CVPage() {
                   Humanistsektionen / Humanistiska fakulteten, Göteborgs
                   Universitet
                 </p>
-                <p className={styles.timelineDesc}>
-                  Ansvarade för sektionens sociala medier och hemsida,
-                  producerade text och media för studiesociala aktiviteter samt
-                  marknadsförde föreningars evenemang i samarbete med andra
-                  sektioner och Göta studentkår.
-                </p>
-                <p className={styles.timelineDesc}>
-                  Studentrepresentant i Fakultetsstyrelsen och Humanistiska
-                  utbildningsberedningen, företrädde studentperspektivet i
-                  frågor om studiemiljö, kurslitteratur och utbildningskvalitet.
-                  Ledande ansvar inom eventföreningen Humöret.
-                </p>
+                <ul
+                  className={styles.bulletList}
+                  style={{ marginTop: "0.25rem" }}>
+                  <li>
+                    Ansvarade för sektionens sociala medier och hemsida,
+                    producerade text och media för studiesociala aktiviteter
+                  </li>
+                  <li>
+                    Marknadsförde föreningars evenemang i samarbete med andra
+                    sektioner och Göta studentkår
+                  </li>
+                  <li>
+                    Studentrepresentant i Fakultetsstyrelsen och Humanistiska
+                    utbildningsberedningen – företrädde studentperspektivet i
+                    frågor om studiemiljö, kurslitteratur och
+                    utbildningskvalitet
+                  </li>
+                  <li>Ledande ansvar inom eventföreningen Humöret</li>
+                </ul>
               </div>
             </div>
           </div>
