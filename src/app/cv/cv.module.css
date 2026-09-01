@@ -250,6 +250,33 @@
   margin: 0;
 }
 
+/* ── Highlights (sidebar stats) ──────────────────────── */
+.statsColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.statNumber {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--color-text);
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--color-text-muted);
+}
+
 /* ── Skill blocks ────────────────────────────────────── */
 .skillBlock {
   display: flex;
@@ -493,7 +520,7 @@
     border-radius: 0;
     page-break-after: always;
     break-after: page;
-    padding: 16mm 20mm;
+    padding: 56px 64px 64px;
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
   }

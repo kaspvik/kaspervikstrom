@@ -234,6 +234,33 @@ export default function CVPage() {
                 </span>
               </div>
             </section>
+
+            <section className={styles.section} style={{ marginTop: "4.8rem" }}>
+              <h2 className={styles.sectionLabel}>Höjdpunkter</h2>
+              <div className={styles.statsColumn}>
+                <div className={styles.statItem}>
+                  <span className={styles.statNumber}>~100</span>
+                  <span className={styles.statLabel}>
+                    Användare dagligen av dashboarden jag byggde under praktiken
+                    på Webdoc
+                  </span>
+                </div>
+                <div className={styles.statItem}>
+                  <span className={styles.statNumber}>20–30</span>
+                  <span className={styles.statLabel}>
+                    Återanvändbara komponenter byggda och dokumenterade i
+                    Storybook och används i produktion på Webdoc
+                  </span>
+                </div>
+                <div className={styles.statItem}>
+                  <span className={styles.statNumber}>2025</span>
+                  <span className={styles.statLabel}>
+                    Bästa examensarbete enligt Medieinstitutet, för Boomi
+                    Countdown
+                  </span>
+                </div>
+              </div>
+            </section>
           </aside>
 
           <div className={styles.main}>
@@ -264,7 +291,9 @@ export default function CVPage() {
                   ))}
                 </div>
               </div>
-              <div className={styles.skillBlock}>
+              <div
+                className={styles.skillBlock}
+                style={{ marginTop: "0.75rem" }}>
                 <span className={styles.skillGroupLabel}>Verktyg & övrigt</span>
                 <div className={styles.tags}>
                   {techTools.map((s) => (
