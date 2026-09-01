@@ -26,6 +26,7 @@ const techTools = [
   "One CMS",
   "dnd-kit",
   "ECharts",
+  "Framer Motion",
 ];
 const liaStack = [
   "Next.js",
@@ -293,7 +294,7 @@ export default function CVPage() {
               </div>
               <div
                 className={styles.skillBlock}
-                style={{ marginTop: "0.75rem" }}>
+                style={{ marginTop: "1.5rem" }}>
                 <span className={styles.skillGroupLabel}>Verktyg & övrigt</span>
                 <div className={styles.tags}>
                   {techTools.map((s) => (
