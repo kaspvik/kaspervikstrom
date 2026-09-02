@@ -13,6 +13,7 @@ const techFrontend = [
   "Next.js",
   "CSS Modules",
   "Tailwind CSS",
+  "Tillgänglighet (WCAG)",
 ];
 const techTools = [
   "Git",
@@ -270,11 +271,11 @@ export default function CVPage() {
               <p className={styles.profileText}>
                 Nyutexaminerad frontendutvecklare som trivs i gränslandet mellan
                 design och kod. Van att arbeta nära UX och omsätta Figmaunderlag
-                till välstrukturerade komponenter med hög visuell kvalitet. Har
-                genom LIA och skarpa kunduppdrag erfarenhet av tvärfunktionella
-                team och bidrar aktivt till både tekniska diskussioner och ett
-                bra klimat i gruppen. Söker nu min första roll som
-                frontendutvecklare.
+                till välstrukturerade, tillgängliga komponenter med hög visuell
+                kvalitet. Har genom LIA och skarpa kunduppdrag erfarenhet av
+                tvärfunktionella team och bidrar aktivt till både tekniska
+                diskussioner och ett bra klimat i gruppen. Söker nu min första
+                roll som UX-designer.
               </p>
             </section>
 

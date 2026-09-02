@@ -37,14 +37,12 @@ export default function BrevPage() {
         <div className={styles.dateLine}>Göteborg, {today}</div>
 
         <div className={styles.letterBody}>
-          <p className={styles.greeting}>
-            Hej Evelina och alla på Friday Väst!
-          </p>
+          <p className={styles.greeting}>Hej alla på Deploja!</p>
 
           <p>
             Jag heter Kasper Vikström och bor i centrala Göteborg. Jag är
-            nyutexaminerad Frontend utvecklare från Medieinstitutet, där jag
-            under min LIA period fick byta skolbänk mot en produktionssatt
+            nyutexaminerad frontendutvecklare från Medieinstitutet, där jag
+            under min LIA fick byta skolbänk mot en produktionssatt
             dashboard och presentationslösning hos Webdoc, Carasent Group.
             Lösningen används i dag dagligen av ungefär 100 anställda. Innan
             dess var jag aktiv som kommunikatör och studentrepresentant vid
@@ -53,26 +51,35 @@ export default function BrevPage() {
           </p>
 
           <p>
-            Jag har god erfarenhet av JavaScript, TypeScript och React, och har
-            under utbildning och praktik jobbat i allt från Next.js projekt till
-            komponentbibliotek i Storybook. Under LIA:n byggde jag 20 till 30
-            återanvändbara UI komponenter och integrerade bland annat drag och
-            släpp samt datavisualisering i skarp drift. Mitt examensarbete, ett
-            realtidsspel byggt med React och Firebase, blev utsett till årets
-            bästa examensarbete 2025 på Medieinstitutet. Jag är alltså van vid
-            att röra mig mellan frontend och de delar av backend och databas som
-            krävs för att få en lösning hel, och ser gärna fram emot att
-            fördjupa mig ytterligare där, gärna med nya verktyg som .NET/C# om
-            det är vad rollen kräver.
+            Även om min bakgrund är som utvecklare har jag alltid jobbat nära
+            design. Jag har använt Figma genomgående under mina år som
+            utvecklare, och tillgänglighet är något jag konsekvent vägt in i
+            alla mina projekt, från kontrast och tangentbordsnavigering till
+            semantisk struktur. Under LIA:n omsatte jag Figmaunderlag till 20
+            till 30 återanvändbara och tillgänglighetsanpassade UI
+            komponenter i Storybook, i tätt samarbete med UX i ett team om 6
+            till 8 personer. Jag tog även fram Figmaunderlag till mitt eget
+            examensarbete Boomi Countdown, som blev utsett till årets bästa
+            examensarbete 2025 på Medieinstitutet, och har designat och
+            byggt min egen portfolio från grunden. Min erfarenhet av Figma
+            kommer alltså mest från utvecklarhållet snarare än som ren
+            designer, men jag ser det som en styrka snarare än en
+            begränsning: jag vet vad som är rimligt att implementera, hur
+            komponenter bör dokumenteras för att vara enkla att bygga vidare
+            på, och hur man för en dialog mellan design och utveckling utan
+            att något går förlorat på vägen.
           </p>
 
           <p>
-            Det som lockar mig med den här tjänsten är att få vara med och bygga
-            digitala självbetjäningslösningar som faktiskt gör vardagen enklare
-            för människor. Det är precis den typen av användarnära och praktiska
-            produkter jag trivs bäst med att jobba i. Jag gillar när tekniken
-            får vara osynlig och lösningen bara funkar, och det är den känslan
-            jag vill fortsätta jaga i nästa roll.
+            Det som lockar mig med rollen som UX designer hos Deploja är just
+            möjligheten att växa vidare inom det jag redan brinner mest för,
+            att skapa digitala upplevelser som är både genomtänkta och
+            tillgängliga. Jag har fortfarande mest erfarenhet från
+            utvecklarsidan, men jag söker mig aktivt mot roller där
+            designarbetet väger tyngre, och jag är övertygad om att min
+            bakgrund som utvecklare gör mig till en UX designer som
+            kommunicerar väl med utvecklingsteam och förstår vad som faktiskt
+            går att bygga.
           </p>
 
           <p>
@@ -81,13 +88,12 @@ export default function BrevPage() {
             kunskap. Jag trivs bäst i samarbeten där man stöttar varandra och
             delar med sig, och bidrar gärna med både engagemang och energi i
             vardagen. Kort sagt: en glädjespridare med viljan att växa in i en
-            fullstack roll!
+            designroll!
           </p>
 
           <p>
-            Jag ser fram emot att höra mer om tekniken och teamet bakom
-            tjänsten, och tar gärna ett samtal för att prata vidare om hur jag
-            skulle kunna bidra.
+            Jag ser gärna att vi hörs för att prata vidare om hur min
+            bakgrund som utvecklare kan komplettera ert designteam.
           </p>
 
           <p className={styles.signoff}>
