@@ -275,7 +275,7 @@ export default function CVPage() {
                 kvalitet. Har genom LIA och skarpa kunduppdrag erfarenhet av
                 tvärfunktionella team och bidrar aktivt till både tekniska
                 diskussioner och ett bra klimat i gruppen. Söker nu min första
-                roll som UX-designer.
+                roll inom Frontend eller UX.
               </p>
             </section>
 
@@ -419,7 +419,7 @@ export default function CVPage() {
               <p className={styles.projectDesc}>
                 Realtids-multiplayerspel för 4–12 spelare med synkroniserat
                 spelläge via Firebase. Utsedd till årets bästa examensarbete
-                2025 av Medieinstitutet.
+                2026 av Medieinstitutet.
               </p>
               <div
                 className={styles.tags}
