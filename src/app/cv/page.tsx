@@ -255,7 +255,7 @@ export default function CVPage() {
                   </span>
                 </div>
                 <div className={styles.statItem}>
-                  <span className={styles.statNumber}>2025</span>
+                  <span className={styles.statNumber}>2026</span>
                   <span className={styles.statLabel}>
                     Bästa examensarbete enligt Medieinstitutet, för Boomi
                     Countdown
