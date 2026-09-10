@@ -160,6 +160,7 @@ export default function CVPage() {
       </button>
 
       {/* ─────────────────── SIDA 1 ─────────────────── */}
+      <div className={styles.pageScale}>
       <div className={styles.page}>
         <header className={styles.heroHeader}>
           <div className={styles.heroRow}>
@@ -309,8 +310,10 @@ export default function CVPage() {
           </div>
         </div>
       </div>
+      </div>
 
       {/* ─────────────────── SIDA 2 ─────────────────── */}
+      <div className={styles.pageScale}>
       <div className={`${styles.page} ${styles.pageInner}`}>
         <div className={styles.pageRunning}>
           <span className={styles.pageRunningMonogram}>KV</span>
@@ -526,8 +529,10 @@ export default function CVPage() {
           </div>
         </section>
       </div>
+      </div>
 
       {/* ─────────────────── SIDA 3 ─────────────────── */}
+      <div className={styles.pageScale}>
       <div className={`${styles.page} ${styles.pageInner}`}>
         <div className={styles.pageRunning}>
           <span className={styles.pageRunningMonogram}>KV</span>
@@ -625,6 +630,7 @@ export default function CVPage() {
             </div>
           </div>
         </section>
+      </div>
       </div>
     </div>
   );

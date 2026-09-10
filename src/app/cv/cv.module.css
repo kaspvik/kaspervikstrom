@@ -28,6 +28,34 @@
   opacity: 0.85;
 }
 
+/* ── Scale wrapper: shrinks the fixed A4 page to fit small screens ── */
+.pageScale {
+  width: 100%;
+  max-width: 794px;
+}
+
+@media screen and (max-width: 794px) {
+  .root {
+    padding: 1.5rem 0.5rem 3rem;
+  }
+
+  .printBtn {
+    margin-right: 0;
+  }
+
+  .pageScale {
+    container-type: inline-size;
+    aspect-ratio: 794 / 1123;
+    overflow: hidden;
+  }
+
+  .page {
+    width: 794px;
+    transform: scale(calc(100cqw / 794px));
+    transform-origin: top left;
+  }
+}
+
 /* ── A4 page ─────────────────────────────────────────── */
 .page {
   width: 794px;
